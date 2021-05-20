@@ -1,0 +1,12 @@
+{
+	"": {
+        "FOUNDATIONEBF_EXAMPLE_NAME": "Foundation EBF Examples",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_ANIMATIONS_CATEGORY": "Foundation EBF Animation Examples",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_RESOURCE_PRODUCTION_CATEGORY": "Foundation EBF Resource Production Examples",
+        "SINGLE_DOOR_PART_NAME": "Single Door Example",
+        "DOUBLE_DOOR_PART_NAME": "Double Door Example",
+        "PORTCULLIS_PART_NAME": "Portcullis Example",
+        "SIMPLE_DRAWBRIDGE_PART_NAME": "Simple Drawbridge Example",
+        "DEFINED_RESOURCE_GENERATOR_PART_NAME": "Defined Resource Generator Example"
+    }
+}

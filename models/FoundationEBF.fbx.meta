@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta id="2ff63da0-a05f-4c78-b8e6-b975f980b19c">
+	<meta id="84146db4-01cd-474f-ae55-4da683bd63d2" type="group" folder="true" name="Materials">
+		<meta id="7e723158-6d48-4381-944b-39e4cb7ef786" name="Material.Brown"/>
+		<meta id="7fb40cd8-2f5e-44c8-a956-80957bd771b0" name="Material.Red"/>
+		<meta id="0f214f60-5d7b-420c-9779-47499d36d098" name="Material.Grey"/>
+		<meta id="60d03c46-ffdd-420e-8764-b8ebf35973fb" name="Material.Blue"/>
+		<meta id="da3e206f-ff1d-40dc-b24e-e6d306c3ed30" name="Material.Purple"/>
+	</meta>
+	<meta id="23bbd79c-5cf5-4b8b-9fe1-232053a4507d" type="group" folder="true" name="Meshes">
+		<meta id="1673c43a-f701-4ff1-8979-fe60e4b2c9ff" name="Left_Material.Brown"/>
+		<meta id="32028320-3813-48bc-bf82-180bfa98e52b" name="Trigger.001_Material.Red"/>
+		<meta id="f7e8dda8-27d4-42a1-8107-117b528d30e7" name="Cube.009_Material.Grey"/>
+		<meta id="5633f588-dc57-4391-96a5-288342fa00ad" name="Door.001_Material.Brown"/>
+		<meta id="8c14cdd9-9af5-4a6e-b122-4e53f56c33c1" name="Cube.011_Material.Grey"/>
+		<meta id="cbb73cb9-b7ef-4af7-8c76-c2a4e4765370" name="Cube.014_Material.Grey"/>
+		<meta id="3adde392-e79f-4a7f-993e-f682c821d7d2" name="Cube.017_Material.Grey"/>
+		<meta id="7327fcf8-afb4-4641-8efc-b3ef6e4e2186" name="Cube_Material.Blue"/>
+		<meta id="0e748788-46f4-4751-80aa-48ee6f046567" name="Cube.007_Material.Blue"/>
+		<meta id="f754fcd2-c6bc-4f4a-a9bc-7f2c283aaa12" name="Cube.016_Material.Blue"/>
+		<meta id="464263ae-bbb5-43de-b414-9baae3c75999" name="Drawbridge_Material.Brown"/>
+		<meta id="0697ed7e-ea61-4b1a-9838-cb8d361fed27" name="SimpleDrawbridgePart_COLLIDER"/>
+		<meta id="91895a9b-873e-4f30-9b9a-eaf1963b6c13" name="Chain.002_Material.Purple"/>
+		<meta id="897dc7a4-9f75-4a67-9177-15f46bdd03b8" name="Chain1.001_Material.Purple"/>
+		<meta id="0df10663-2aec-4be2-b3ad-41e59abbf545" name="Chain1.002_Material.Purple"/>
+		<meta id="ac55f98d-46ff-4f19-a37a-54971cc2592a" name="Chain1.003_Material.Purple"/>
+		<meta id="7d88652f-5a96-493f-93a7-bf02d9edd439" name="Chain1.004_Material.Purple"/>
+		<meta id="d9900cc7-79c0-42a5-a925-76d579e843a5" name="Chain1.005_Material.Purple"/>
+		<meta id="06442c41-0c1c-4b2f-a954-9a2c145a29ea" name="Chain1.006_Material.Purple"/>
+		<meta id="0e211308-70e6-4e48-96a2-e0f7ae7e69f4" name="Chain1.007_Material.Purple"/>
+		<meta id="092b3c9e-0a66-4c37-9427-9eed8383a6d9" name="Chain1.008_Material.Purple"/>
+		<meta id="7096862e-d2fb-4da9-b577-8c1bae01bd93" name="Chain1.009_Material.Purple"/>
+		<meta id="ad4b2d71-0a43-4d36-ba75-8fea4533ea0a" name="Chain1.010_Material.Purple"/>
+		<meta id="de78fda8-731f-4ff7-a7a0-5411e6da84c0" name="Chain1.011_Material.Purple"/>
+		<meta id="270cac70-8ed0-445f-a84b-be488debbe8d" name="Chain1.012_Material.Purple"/>
+		<meta id="7969a282-06a8-49a1-a55d-24140f65574c" name="Chain1.013_Material.Purple"/>
+		<meta id="15c7b81a-59d0-4b09-9643-6baef34da924" name="Chain1.014_Material.Purple"/>
+		<meta id="5fcebef8-2ab0-4e92-89c6-27a443806db0" name="Chain1.015_Material.Purple"/>
+		<meta id="a6e82b50-7a5b-46b1-9fab-8b9022fd8801" name="Chain1.016_Material.Purple"/>
+		<meta id="3fcaf529-d7d7-4d91-9de0-9a30bc009a11" name="Chain1.017_Material.Purple"/>
+		<meta id="8142acc0-3c72-4786-b5a6-bd6c6992edee" name="Chain1.018_Material.Purple"/>
+		<meta id="6c1cbeff-71af-4d8b-b0c0-a2c0f6e56052" name="Chain1.019_Material.Purple"/>
+		<meta id="b7e32229-e423-4ffb-a078-36c47dcc8d29" name="Chain1.020_Material.Purple"/>
+		<meta id="967d0a51-2b16-4bb5-b5fc-9b6f71816d18" name="Chain1.021_Material.Purple"/>
+		<meta id="856d4a34-1177-4cfe-bfa7-be5f101e6f93" name="Chain1.022_Material.Purple"/>
+		<meta id="488c109a-f8e8-47a2-bc10-a59f22f6d728" name="Chain1.023_Material.Purple"/>
+		<meta id="18815090-e03c-4fb6-8dce-46a870ed9a36" name="Chain1.024_Material.Purple"/>
+		<meta id="51ce7c45-617a-4370-856f-6851031d65b0" name="Chain1.025_Material.Purple"/>
+		<meta id="1d9a0a06-eee8-441b-bc5d-f722a3ca0c16" name="Chain1.026_Material.Purple"/>
+		<meta id="d95f0674-00ec-4698-a2b1-307c62ca9c1a" name="Chain1.027_Material.Purple"/>
+		<meta id="38a6cc80-1fd3-4f3f-ba8d-16ac152d8cd1" name="Chain1.028_Material.Purple"/>
+		<meta id="d16128c3-b954-4c02-895d-0c12d53cc1ef" name="Chain1.029_Material.Purple"/>
+		<meta id="c23b4969-a4a3-4680-b55e-9109e3e1490d" name="Chain1.030_Material.Purple"/>
+	</meta>
+	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
+		<meta id="e056f393-c1b2-4506-9707-5c8b4e311002" name="Light"/>
+		<meta id="2dcda8ec-876b-4f43-83f4-c845b0bc87b4" name="Camera"/>
+		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
+			<meta id="546649af-2e2b-445f-8f2e-ebfab8b36f33" name="Cube"/>
+			<meta id="44312eab-d42d-4c68-8c75-a631f299efef" name="Cube.001"/>
+			<meta id="4615318a-8c1e-4708-aa94-e655962e09d6" name="Left"/>
+			<meta id="86fca4c0-a392-46ae-9724-f556428ff88d" name="Right"/>
+			<meta id="c484447c-7be4-4a54-868e-4055f475a05f" name="Trigger.001"/>
+		</meta>
+		<meta id="509ce43f-a999-4edc-a5dd-2ae58fe68a39" name="SingleDoorPart">
+			<meta id="66382ffc-b8c8-4b60-89e3-b08bf613237f" name="Cube.004"/>
+			<meta id="60994562-2976-44bf-a31b-4d5b212c19cf" name="Cube.005"/>
+			<meta id="3a60d9bf-caf9-4a9e-85f5-135a717285e6" name="Door"/>
+			<meta id="755e7856-c883-4fb6-9346-8b5d3c48ed5b" name="Trigger"/>
+		</meta>
+		<meta id="0551c87f-d1f6-4488-a2b9-ad87b9994a4f" name="PortcullisPart">
+			<meta id="95cc10d2-a2d7-4b01-bbc1-155cdfdac307" name="Cube.007"/>
+			<meta id="98b74f16-24e3-4e18-bc8c-8499161e699b" name="Cube.008"/>
+			<meta id="319021ce-3685-474d-a4aa-7bb5c7a2a0fe" name="Cube.009"/>
+			<meta id="f8f24039-ad45-4e40-945b-134dada45fd2" name="Door.001"/>
+			<meta id="0d6b845e-1577-4bbf-bf04-482d3082f613" name="Cube.011"/>
+			<meta id="762f03a6-fe0b-4c50-a599-e669a4d38188" name="Trigger.002"/>
+			<meta id="e390953f-37e4-46ae-9c1d-a875e95291a9" name="COLLIDER.001"/>
+		</meta>
+		<meta id="5d8d2b5f-dbfb-460d-9a91-6636deaffc18" name="SimpleDrawbridgePart">
+			<meta id="7648029e-2ac4-4c11-ade8-92bf867c7ad7" name="Cube.014"/>
+			<meta id="51fca778-79d6-448c-be2d-af725e16aeee" name="Cube.017"/>
+			<meta id="a5bf570f-654d-4d49-9516-d5c3696d195e" name="Cube.016"/>
+			<meta id="44150059-865d-4620-98d5-02f16fb2d348" name="Trigger.004"/>
+			<meta id="3d87025b-c15e-4fa3-911e-8edbbbbba90f" name="Trigger.003"/>
+			<meta id="cbbe6b9d-7f71-43f9-9518-8bd9ad07aa36" name="Drawbridge"/>
+			<meta id="a1a67863-3f4c-4cc1-a0de-42428de0aca2" name="DrawbridgeChain1Pivot"/>
+			<meta id="7cfdbc48-6d87-44d1-ae7b-08bb132a2db4" name="DrawbridgeChain2Pivot"/>
+			<meta id="8d5d1aa0-7f3b-4485-b863-a330d7d767c9" name="Chain1.001"/>
+			<meta id="7641f76e-2b38-4ea4-a1f6-731bc641e349" name="Chain1.002"/>
+			<meta id="f902cb82-16dd-4ce8-b2d8-ad44e940ab30" name="Chain1.003"/>
+			<meta id="854fbc91-71ca-4224-ab8e-47c64b54c00d" name="Chain1.004"/>
+			<meta id="e07f479b-2488-4bfb-bd72-f792956886ab" name="Chain1.005"/>
+			<meta id="001c9a73-83dc-4346-8452-6279fd753eb0" name="Chain1.006"/>
+			<meta id="8bc6e26d-9792-4e99-8d2c-28ff32a99142" name="Chain1.007"/>
+			<meta id="ff6c28eb-bbb8-4bb3-8ee6-10843c67f501" name="Chain1.008"/>
+			<meta id="edd00b42-cc84-4fea-899a-a32e01e26a4a" name="Chain1.009"/>
+			<meta id="9b4ba3b6-4126-4c6f-8a87-981a9eb3ece1" name="Chain1.010"/>
+			<meta id="ea2e50e6-d886-4e7f-aec4-471452491350" name="Chain1.011"/>
+			<meta id="bf5e41b1-8879-4e96-9199-1382dcb39be2" name="Chain1.012"/>
+			<meta id="5196faf0-a8cc-4519-ad47-90ca5b2347d2" name="Chain1.013"/>
+			<meta id="bcdfbd29-6908-46af-8750-1e0df7281919" name="Chain1.014"/>
+			<meta id="4a880ffb-f089-4bab-8ad4-f424e4019c59" name="Chain1.015"/>
+			<meta id="7fca58ff-df2e-4519-9692-eebcf7ab4497" name="Chain1.016"/>
+			<meta id="c22cdf8d-674e-49fe-8dd6-91c055aedebc" name="Chain1.017"/>
+			<meta id="cae2dfb8-d1b1-42be-859a-178059d63ec4" name="Chain1.018"/>
+			<meta id="72620ba3-92f6-4a8e-903e-a32f6fc603ee" name="Chain1.019"/>
+			<meta id="3e4e11ac-ee50-4ee0-9148-a50bfedfcc4c" name="Chain1.020"/>
+			<meta id="20ddbeab-6109-4548-b117-67557cc3e635" name="Chain1.021"/>
+			<meta id="0d6c137e-79f0-4d39-a86c-d5209f06a31c" name="Chain1.022"/>
+			<meta id="b8543e74-d573-4b27-bd95-219113ac8299" name="Chain1.023"/>
+			<meta id="c010937e-6b5f-4971-835b-fa0d2c0a8326" name="Chain1.024"/>
+			<meta id="610b1755-6035-4b41-ac6f-c39f7810f678" name="Chain1.025"/>
+			<meta id="68588c58-0c4a-4fa9-ad5e-3138123c13d9" name="Chain1.026"/>
+			<meta id="0b501d4c-b44b-41d5-95e5-f596070b545b" name="Chain1.027"/>
+			<meta id="3799b9d7-26e8-46b6-9ead-f8a9cad5231b" name="Chain1.028"/>
+			<meta id="d0df6a0d-b6b9-4f0f-9389-49de8b35a5d9" name="Chain1.029"/>
+			<meta id="87e03935-a14b-42fe-8234-f03978ef62d0" name="Chain1.030"/>
+			<meta id="19b984e7-636a-492f-80ac-fc0b07885cd2" name="Cube.002"/>
+			<meta id="7e3b2f79-2709-41db-8bec-208ef5aa7380" name="Chain2.031"/>
+			<meta id="2c38b92d-eebc-4de2-bf16-d00b11fd13e5" name="Chain2.032"/>
+			<meta id="232dc220-f9ba-4145-a2bb-58c758d50f6c" name="Chain2.033"/>
+			<meta id="7afc9d5a-bc41-4f78-86b4-5ff1c451a9ee" name="Chain2.034"/>
+			<meta id="4dad41a9-7f46-45e4-bea5-fdd10e8ffe6f" name="Chain2.035"/>
+			<meta id="1e33ffb2-8301-4714-b681-147ab233d01a" name="Chain2.036"/>
+			<meta id="98423df8-56c2-456b-a43f-04558498b060" name="Chain2.037"/>
+			<meta id="d7cfc988-fb26-4a66-85ed-5be73d3b5846" name="Chain2.038"/>
+			<meta id="379f0f24-ffc7-445b-8454-61e9aafa346a" name="Chain2.039"/>
+			<meta id="d01f3b40-dc99-4a09-beba-878b709b8333" name="Chain2.040"/>
+			<meta id="620e0465-45c7-4387-a844-02b96dadf0dc" name="Chain2.041"/>
+			<meta id="bad450e7-26a0-4b98-a0f1-592e119006dd" name="Chain2.042"/>
+			<meta id="f5c5680d-6898-4457-9fbf-7025cd068d12" name="Chain2.043"/>
+			<meta id="0fc22ac7-8c34-4b7a-9dae-5016a54de872" name="Chain2.044"/>
+			<meta id="1cb866ff-1d4c-4fb2-b66c-8351508c5431" name="Chain2.045"/>
+			<meta id="bce93b5a-cf82-4992-8499-6bb2c4c12db4" name="Chain2.046"/>
+			<meta id="7219579b-39ec-4233-b2d5-f34aa0b431c5" name="Chain2.047"/>
+			<meta id="974e52dd-d908-4680-a99b-0e84bebde9b8" name="Chain2.048"/>
+			<meta id="9b1d84f7-71c2-4209-a3aa-372e0fe90352" name="Chain2.049"/>
+			<meta id="54abe343-8209-4697-bca5-1c910e9e59ee" name="Chain2.050"/>
+			<meta id="4d1d5957-acaf-40f0-a696-ff66937b25de" name="Chain2.051"/>
+			<meta id="0cdd2784-3ed2-49a0-9ccb-9740397142c8" name="Chain2.052"/>
+			<meta id="893524c7-7994-488c-9d91-fc5c2c4aacc0" name="Chain2.053"/>
+			<meta id="9255bb36-fb3e-4d96-8deb-1a66244b2dee" name="Chain2.054"/>
+			<meta id="490414b7-f9fe-4e01-8411-8f072b9ad2c7" name="Chain2.055"/>
+			<meta id="7182c437-482a-42e9-80da-3d71a402bdb4" name="Chain2.056"/>
+			<meta id="9f00f933-cdee-4f70-8a74-91d7eb556148" name="Chain2.057"/>
+			<meta id="99f99982-b567-406e-a3ef-42092effe7a2" name="Chain2.058"/>
+			<meta id="594692ae-29c2-45ef-8ca6-95b787765532" name="Chain2.059"/>
+			<meta id="b226f5b2-1b85-4cef-92d8-c8dc64295ffc" name="Chain2.060"/>
+		</meta>
+		<meta id="d365580a-15d5-42bb-9ca5-d48454e0c257" name="Chain.002"/>
+		<meta id="1bdd1767-5664-4f2c-955a-9491e850ecb5" name="DefinedResourceGeneratorPart">
+			<meta id="d87616be-7854-4b81-95dd-4b1dff789174" name="Cube.003"/>
+		</meta>
+	</meta>
+</meta>
+<importer type="GamCFbxImporterConfiguration">
+	<Md5Checksum value="a7b1bea3c2364cccb72beef07fd09107"/>
+	<Scale value="0.01"/>
+	<PatchMeshOffset value="true"/>
+	<UniqueNodeName value="false"/>
+	<ImportAnimation value="false"/>
+	<IgnoreRootAnimation value="false"/>
+	<FlipXAxis value="true"/>
+	<MergeDuplicateMeshes value="true"/>
+	<GenerateLod value="false"/>
+	<OverrideExistingLod value="false"/>
+	<NodeConfig type="GenCFbxNodeConfig">
+		<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+		<ChildList>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Light"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Camera"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Left"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Right"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="DoubleDoorPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Door"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger"/>
+					</Item>
+				</ChildList>
+				<NodeName value="SingleDoorPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Door.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.011"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="COLLIDER.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="PortcullisPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.014"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.017"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.016"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Drawbridge"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DrawbridgeChain1Pivot"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DrawbridgeChain2Pivot"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.010"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.011"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.012"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.013"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.014"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.015"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.016"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.017"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.018"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.019"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.020"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.021"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.022"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.023"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.024"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.025"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.026"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.027"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.028"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.029"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain1.030"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.031"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.032"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.033"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.034"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.035"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.036"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.037"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.038"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.039"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.040"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.041"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.042"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.043"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.044"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.045"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.046"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.047"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.048"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.049"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.050"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.051"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.052"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.053"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.054"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.055"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.056"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.057"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.058"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.059"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Chain2.060"/>
+					</Item>
+				</ChildList>
+				<NodeName value="SimpleDrawbridgePart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Chain.002"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.003"/>
+					</Item>
+				</ChildList>
+				<NodeName value="DefinedResourceGeneratorPart"/>
+			</Item>
+		</ChildList>
+		<NodeName value="Prefab"/>
+	</NodeConfig>
+	<MaterialList>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="60d03c46-ffdd-420e-8764-b8ebf35973fb"/>
+			<MaterialName value="Material.Blue"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="7e723158-6d48-4381-944b-39e4cb7ef786"/>
+			<MaterialName value="Material.Brown"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="0f214f60-5d7b-420c-9779-47499d36d098"/>
+			<MaterialName value="Material.Grey"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="da3e206f-ff1d-40dc-b24e-e6d306c3ed30"/>
+			<MaterialName value="Material.Purple"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="7fb40cd8-2f5e-44c8-a956-80957bd771b0"/>
+			<MaterialName value="Material.Red"/>
+		</Item>
+	</MaterialList>
+</importer>
+

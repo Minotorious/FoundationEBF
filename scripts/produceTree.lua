@@ -27,8 +27,9 @@ local BUILDING_FUNCTION_PRODUCE_TREE = {
 }
 
 function BUILDING_FUNCTION_PRODUCE_TREE:activateBuilding(gameObject)
-    EBF:log("Building Function Activate Building")
-    comp = gameObject:getOrCreateComponent("COMP_PRODUCE_TREE")
+    --EBF:log("Building Function Activate Building")
+    
+    local comp = gameObject:getOrCreateComponent("COMP_PRODUCE_TREE")
     comp:setProduceTreeData(self)
     comp:calculateNoSpawners()
     
@@ -36,8 +37,8 @@ function BUILDING_FUNCTION_PRODUCE_TREE:activateBuilding(gameObject)
 end
 
 function BUILDING_FUNCTION_PRODUCE_TREE:reloadBuildingFunction(gameObject)
-    EBF:log("Building Function Reload")
-    comp = gameObject:getOrCreateComponent("COMP_PRODUCE_TREE")
+    --EBF:log("Building Function Reload")
+    local comp = gameObject:getOrCreateComponent("COMP_PRODUCE_TREE")
     comp:setProduceTreeData(self)
 end
 
@@ -113,7 +114,7 @@ function COMP_PRODUCE_TREE:raycast(pos)
 end
 
 function COMP_PRODUCE_TREE:setStartingScaling()
-    EBF:log("Setting Starting Scaling: " .. tostring(self.CurrentScaling))
+    --EBF:log("Setting Starting Scaling: " .. tostring(self.CurrentScaling))
     local i = 0
     if self.SpawnerScaling == true then
         self:getOwner():forEachChild(
@@ -133,13 +134,13 @@ function COMP_PRODUCE_TREE:init()
     local compMainGameLoop = self:getLevel():find("COMP_MAIN_GAME_LOOP")
     event.register(self, compMainGameLoop.ON_NEW_MONTH, 
         function()
-            EBF:log("New Month!")
+            --EBF:log("New Month!")
             self:deleteResourceContainers()
             self:getOwner():forEachChild(
                 function(child)
                     if starts_with(child.Name, self.SpawnerNodeName) then
                         if child.Scale.x == 1 then
-                            EBF:log(child.Name)
+                            --EBF:log(child.Name)
                             self:resourceContainerSpawningSequence(child:getGlobalPosition())
                         end
                     end
@@ -185,14 +186,14 @@ function COMP_PRODUCE_TREE:update()
 end
 
 function COMP_PRODUCE_TREE:resourceContainerSpawningSequence(centerPos)
-    EBF:log("Spawning Resource Containers")
+    --EBF:log("Spawning Resource Containers")
     local spawnPos = 1
     for i=1,self.ResourceContainersPerSpawner do
         if spawnPos == 1 then
             local position = { centerPos.x, centerPos.y, centerPos.z }
             local orientation = { 0, 0, 0, 1 }
             quaternion.setEulerAngles(orientation, { 0, math.random(-90, 90), 0 })
-            local resourceContainer = self:getLevel():createObject("PREFAB_RESOURCE_CHERRIES", position, orientation)
+            local resourceContainer = self:getLevel():createObject(self.ResourceContainer, position, orientation)
             local comp = resourceContainer:getOrCreateComponent("COMP_FALLING_RESOURCE_CONTAINER")
             comp.ResourceContainerFallingSpeed = randomFloat(self.ResourceContainerFallingSpeedRange.x, self.ResourceContainerFallingSpeedRange.y)
             comp.GroundLevel = self:raycast(position)
@@ -201,7 +202,7 @@ function COMP_PRODUCE_TREE:resourceContainerSpawningSequence(centerPos)
         elseif spawnPos == 2 then
             local position = { centerPos.x-0.2, centerPos.y, centerPos.z }
             local orientation = { 0, 0, 0, 1 }
-            local resourceContainer = self:getLevel():createObject("PREFAB_RESOURCE_CHERRIES", position, orientation)
+            local resourceContainer = self:getLevel():createObject(self.ResourceContainer, position, orientation)
             local comp = resourceContainer:getOrCreateComponent("COMP_FALLING_RESOURCE_CONTAINER")
             comp.ResourceContainerFallingSpeed = randomFloat(self.ResourceContainerFallingSpeedRange.x, self.ResourceContainerFallingSpeedRange.y)
             comp.GroundLevel = self:raycast(position)
@@ -211,7 +212,7 @@ function COMP_PRODUCE_TREE:resourceContainerSpawningSequence(centerPos)
             local position = { centerPos.x+0.2, centerPos.y, centerPos.z }
             local orientation = { 0, 0, 0, 1 }
             quaternion.setEulerAngles(orientation, { 0, math.random(-90, 90), 0 })
-            local resourceContainer = self:getLevel():createObject("PREFAB_RESOURCE_CHERRIES", position, orientation)
+            local resourceContainer = self:getLevel():createObject(self.ResourceContainer, position, orientation)
             local comp = resourceContainer:getOrCreateComponent("COMP_FALLING_RESOURCE_CONTAINER")
             comp.ResourceContainerFallingSpeed = randomFloat(self.ResourceContainerFallingSpeedRange.x, self.ResourceContainerFallingSpeedRange.y)
             comp.GroundLevel = self:raycast(position)
@@ -221,7 +222,7 @@ function COMP_PRODUCE_TREE:resourceContainerSpawningSequence(centerPos)
             local position = { centerPos.x, centerPos.y, centerPos.z-0.2 }
             local orientation = { 0, 0, 0, 1 }
             quaternion.setEulerAngles(orientation, { 0, math.random(-90, 90), 0 })
-            local resourceContainer = self:getLevel():createObject("PREFAB_RESOURCE_CHERRIES", position, orientation)
+            local resourceContainer = self:getLevel():createObject(self.ResourceContainer, position, orientation)
             local comp = resourceContainer:getOrCreateComponent("COMP_FALLING_RESOURCE_CONTAINER")
             comp.ResourceContainerFallingSpeed = randomFloat(self.ResourceContainerFallingSpeedRange.x, self.ResourceContainerFallingSpeedRange.y)
             comp.GroundLevel = self:raycast(position)
@@ -231,7 +232,7 @@ function COMP_PRODUCE_TREE:resourceContainerSpawningSequence(centerPos)
             local position = { centerPos.x, centerPos.y, centerPos.z+0.2 }
             local orientation = { 0, 0, 0, 1 }
             quaternion.setEulerAngles(orientation, { 0, math.random(-90, 90), 0 })
-            local resourceContainer = self:getLevel():createObject("PREFAB_RESOURCE_CHERRIES", position, orientation)
+            local resourceContainer = self:getLevel():createObject(self.ResourceContainer, position, orientation)
             local comp = resourceContainer:getOrCreateComponent("COMP_FALLING_RESOURCE_CONTAINER")
             comp.ResourceContainerFallingSpeed = randomFloat(self.ResourceContainerFallingSpeedRange.x, self.ResourceContainerFallingSpeedRange.y)
             comp.GroundLevel = self:raycast(position)
@@ -263,7 +264,7 @@ function COMP_PRODUCE_TREE:deleteResourceContainers()
 end
 
 function COMP_PRODUCE_TREE:spawnerResetSequence()
-    EBF:log("Resetting Spawners")
+    --EBF:log("Resetting Spawners")
     if self.SpawnerScaling == true then
         self:getOwner():forEachChild(
             function(child)
@@ -289,7 +290,7 @@ function COMP_PRODUCE_TREE:spawnerScalingSequence()
                             child:setScale(child.Scale.x + self.SpawnerScalingSpeed*dt)
                             self.CurrentScaling = child.Scale.x
                         else
-                            EBF:log("Scaling Finished")
+                            --EBF:log("Scaling Finished")
                             child:setScale(1)
                             self.CurrentScaling = 1
                             self.Sequence = 2
@@ -302,9 +303,9 @@ function COMP_PRODUCE_TREE:spawnerScalingSequence()
 end
 
 function COMP_PRODUCE_TREE:calculateNoSpawners()
-    EBF:log("Calculating Spawners")
+    --EBF:log("Calculating Spawners")
     self.NoSpawners = self.DefaultSpawners
-    EBF:log("Current Number: " .. self.NoSpawners)
+    --EBF:log("Current Number: " .. self.NoSpawners)
     local building = self:getOwner():getParent():getComponent("COMP_BUILDING")
     --EBF:log("Building: " .. tostring(building))
     if building ~= nil then
@@ -339,7 +340,7 @@ function COMP_PRODUCE_TREE:calculateNoSpawners()
                 end
             end
         end
-        EBF:log("New Number: " .. self.NoSpawners)
+        --EBF:log("New Number: " .. self.NoSpawners)
     end
 end
 
@@ -348,3 +349,195 @@ function COMP_PRODUCE_TREE:onDestroy(isClearingLevel)
 end
 
 EBF:registerClass(COMP_PRODUCE_TREE)
+
+--[[------------------------------ BEHAVIOUR TREE -----------------------------]]--
+
+EBF:registerBehaviorTree({
+	Id = "BEHAVIOR_PRODUCE_TREE_COLLECTOR",
+	VariableList = {
+		{
+			Name = "AgentData",
+			DataType = "BEHAVIOR_TREE_DATA_AGENT",
+			IsPublic = true,
+			InitialValue = {}
+		},
+        {
+			Name = "GatheringData",
+			DataType = "BEHAVIOR_TREE_DATA_GATHERING",
+			IsPublic = false,
+			InitialValue = {}
+		},
+		{
+			Name = "DoJobTimer",
+			DataType = "BEHAVIOR_TREE_DATA_WAIT",
+			IsPublic = false,
+			InitialValue = {
+				TimeToWait = 0,
+				Animation = AGENT_ANIMATION.GATHER,
+				SetIdleAfterWait = false
+			}
+		},
+		{
+			Name = "WorkplacePosition",
+			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+			IsPublic = false,
+			InitialValue = {
+				CanNavigateOnGround = true,
+				CanNavigateOnWater = false,
+				IsSetOrientationOnDestination = true
+			}
+		},
+        {
+			Name = "ResourcePosition",
+			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+			IsPublic = false,
+			InitialValue = {
+				CanNavigateOnGround = true,
+				CanNavigateOnWater = false,
+				IsSetOrientationOnDestination = true
+			}
+		},
+        {
+			Name = "AroundResourcePosition",
+			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+			IsPublic = false,
+			InitialValue = {
+				CanNavigateOnGround = true,
+				CanNavigateOnWater = false,
+				IsSetOrientationOnDestination = true
+			}
+		},
+        {
+			Name = "ShouldLookAtResourcePosition",
+			DataType = "BEHAVIOR_TREE_DATA_BOOL",
+			IsPublic = false,
+			InitialValue = {
+				Value = true
+			}
+		},
+        {
+			Name = "ShouldReceiveXp",
+			DataType = "BEHAVIOR_TREE_DATA_BOOL",
+			IsPublic = false,
+			InitialValue = {
+				Value = false
+			}
+		},
+		{
+			Name = "WorkLoop",
+			DataType = "BEHAVIOR_TREE_DATA_LOOP",
+			IsPublic = true,
+			InitialValue = {
+				LoopCount = 1,
+				Duration = 0,
+				IsInfinite = false,
+				IsDuration = false
+			}
+		}
+	},
+	Root = {
+        Name = "WorkLoopRepeater",
+        Type = "REPEAT",
+        RepeatData = "WorkLoop",
+        Child = {
+            Name = "WorkLoopSequencer",
+            Type = "SEQUENCER",
+            Children = {
+                {
+                    Name = "SetupGatheringWork",
+                    Type = "SETUP_GATHERING_WORK",
+                    AgentData = "AgentData",
+                    GatheringData = "GatheringData",
+                    StepsCountLoopData = "WorkLoop",
+                    GatherWaitData = "DoJobTimer"
+                },
+                {
+                    Name = "SetWorkplaceDestination",
+                    Type = "SET_WORKPLACE_AS_DESTINATION",
+                    AgentData = "AgentData",
+                    WorkplacePosition = "WorkplacePosition",
+                },
+                {
+                    Name = "GoToWorkplace",
+                    Type = "GO_TO",
+                    AgentData = "AgentData",
+                    Destination = "WorkplacePosition",
+                    BuildingPathType = "",
+                    AnimationData = "",
+                    AnimationSpeedMultiplier = ""
+                },
+                {
+                    Name = "GatherRequest",
+                    Type = "GATHER_REQUEST",
+                    AgentData = "AgentData",
+                    GatheringData = "GatheringData",
+                    GatherInOneStepLoopData = "WorkLoop"
+                },
+                {
+                    Name = "FetchProduce",
+                    Type = "FETCH_NEXT_GATHERABLE",
+                    AgentData = "AgentData",
+                    GatheringData = "GatheringData",
+                    TimeToWait = "DoJobTimer",
+                    ResourcePosition = "ResourcePosition",
+                    AroundResourcePosition = "AroundResourcePosition",
+                    ShouldLookAtResourcePosition = "ShouldLookAtResourcePosition"
+                },
+                {
+                    Name = "DisablePaths",
+                    Type = "DISABLE_PATH_TRACING",
+                    AgentData = "AgentData"
+                },
+                {
+                    Name = "GoToGatherable",
+                    Type = "GO_TO",
+                    AgentData = "AgentData",
+                    Destination = "ResourcePosition",
+                    BuildingPathType = "",
+                    AnimationData = "",
+                    AnimationSpeedMultiplier = ""
+                },
+                {
+                    Name = "LookAtGatherable",
+                    Type = "LOOK_AT",
+                    AgentData = "AgentData",
+                    Destination = "ResourcePosition"
+                },
+                {
+                    Name = "GatherResource",
+                    Type = "GATHER_RESOURCE",
+                    AgentData = "AgentData",
+                    TimeToWait = "DoJobTimer",
+                    Gather = "GatheringData",
+                    ShouldReceiveXp = "ShouldReceiveXp"
+                },
+                {
+                    Name = "GoToWorkplaceFin",
+                    Type = "GO_TO",
+                    AgentData = "AgentData",
+                    Destination = "WorkplacePosition",
+                    BuildingPathType = "",
+                    AnimationData = "",
+                    AnimationSpeedMultiplier = ""
+                },
+                {
+                    Name = "EnablePaths",
+                    Type = "ENABLE_PATH_TRACING",
+                    AgentData = "AgentData"
+                },
+                {
+                    Name = "AddToInventory",
+                    Type = "ADD_TO_INVENTORY",
+                    AgentData = "AgentData",
+                    GatheringData = "GatheringData"
+                },
+                {
+                    Name = "GiveXp",
+                    Type = "GIVE_JOB_XP",
+                    AgentData = "AgentData",
+                    ShouldReceiveXp = "ShouldReceiveXp"
+                }
+            }
+        }
+	}
+})

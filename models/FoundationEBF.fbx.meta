@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<meta id="2ff63da0-a05f-4c78-b8e6-b975f980b19c">
+<meta id="29bb3c7c-f208-4670-a273-cd0e318cef67">
 	<meta id="84146db4-01cd-474f-ae55-4da683bd63d2" type="group" folder="true" name="Materials">
 		<meta id="7e723158-6d48-4381-944b-39e4cb7ef786" name="Material.Brown"/>
 		<meta id="7fb40cd8-2f5e-44c8-a956-80957bd771b0" name="Material.Red"/>
@@ -51,6 +51,7 @@
 		<meta id="38a6cc80-1fd3-4f3f-ba8d-16ac152d8cd1" name="Chain1.028_Material.Purple"/>
 		<meta id="d16128c3-b954-4c02-895d-0c12d53cc1ef" name="Chain1.029_Material.Purple"/>
 		<meta id="c23b4969-a4a3-4680-b55e-9109e3e1490d" name="Chain1.030_Material.Purple"/>
+		<meta id="0cbd9e23-48ef-49f3-ad81-317759dcb889" name="PortcullisPart_COLLIDER"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
 		<meta id="e056f393-c1b2-4506-9707-5c8b4e311002" name="Light"/>
@@ -75,7 +76,6 @@
 			<meta id="f8f24039-ad45-4e40-945b-134dada45fd2" name="Door.001"/>
 			<meta id="0d6b845e-1577-4bbf-bf04-482d3082f613" name="Cube.011"/>
 			<meta id="762f03a6-fe0b-4c50-a599-e669a4d38188" name="Trigger.002"/>
-			<meta id="e390953f-37e4-46ae-9c1d-a875e95291a9" name="COLLIDER.001"/>
 		</meta>
 		<meta id="5d8d2b5f-dbfb-460d-9a91-6636deaffc18" name="SimpleDrawbridgePart">
 			<meta id="7648029e-2ac4-4c11-ade8-92bf867c7ad7" name="Cube.014"/>
@@ -267,11 +267,6 @@
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
 						<NodeName value="Trigger.002"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="COLLIDER.001"/>
 					</Item>
 				</ChildList>
 				<NodeName value="PortcullisPart"/>

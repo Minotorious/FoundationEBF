@@ -26,7 +26,7 @@ EBF:dofile("scripts/simpleDrawbridge.lua")
 
 -- Resource Production
 EBF:dofile("scripts/definedResourceGenerator.lua")
---EBF:dofile("scripts/produceTree.lua")
+EBF:dofile("scripts/produceTree.lua")
 
 -- Examples
 --EBF:dofile("scripts/examples.lua")

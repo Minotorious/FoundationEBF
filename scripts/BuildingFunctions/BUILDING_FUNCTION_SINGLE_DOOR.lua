@@ -2,7 +2,7 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                  SUPPLEMENTARY FILE                  | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |             PORTCULLIS BUILDING FUNCTION             | |
+| ||   \/   ||  V_/_  |            SINGLE DOOR BUILDING FUNCTION             | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
@@ -10,55 +10,57 @@ local EBF = ...
 
 --[[---------------------------- BUILDING FUNCTION ----------------------------]]--
 
-local BUILDING_FUNCTION_PORTCULLIS = {
-    TypeName = "BUILDING_FUNCTION_PORTCULLIS",
+local BUILDING_FUNCTION_SINGLE_DOOR = {
+    TypeName = "BUILDING_FUNCTION_SINGLE_DOOR",
     ParentType = "BUILDING_FUNCTION",
     Properties = {
-        { Name = "OpeningSpeed", Type = "float", Default = 3.0 },
+        { Name = "OpeningAngle", Type = "float", Default = 90.0 },
+        { Name = "OpeningSpeed", Type = "float", Default = 2.0 },
         { Name = "OpenHoldTime", Type = "float", Default = 2.0 },
         { Name = "TriggerNodeName", Type = "string", Default = "Trigger" },
         { Name = "TriggeringDistance", Type = "float", Default = 4.0 },
         { Name = "DoorNodeName", Type = "string", Default = "Door" },
-        { Name = "DoorRaiseDistance", Type = "float", Default = 3.0 }
+        { Name = "DoorPivotPoint", Type = "vec3f", Default = { 0.0, 0.0, 0.0 } }
     }
 }
 
-function BUILDING_FUNCTION_PORTCULLIS:activateBuilding(gameObject)
-    EBF:log("Building Function Activate Building")
-    comp = gameObject:getOrCreateComponent("COMP_PORTCULLIS")
-    comp:setPortcullisData(self)
+function BUILDING_FUNCTION_SINGLE_DOOR:activateBuilding(gameObject)
+    --EBF:log("Building Function Activate Building")
+    comp = gameObject:getOrCreateComponent("COMP_SINGLE_DOOR")
+    comp:setSingleDoorData(self)
     
     return true
 end
 
-function BUILDING_FUNCTION_PORTCULLIS:reloadBuildingFunction(gameObject)
-    EBF:log("Building Function Reload")
-    comp = gameObject:getOrCreateComponent("COMP_PORTCULLIS")
-    comp:setPortcullisData(self)
+function BUILDING_FUNCTION_SINGLE_DOOR:reloadBuildingFunction(gameObject)
+    --EBF:log("Building Function Reload")
+    comp = gameObject:getOrCreateComponent("COMP_SINGLE_DOOR")
+    comp:setSingleDoorData(self)
 end
 
-EBF:registerClass(BUILDING_FUNCTION_PORTCULLIS)
+EBF:registerClass(BUILDING_FUNCTION_SINGLE_DOOR)
 
 --[[---------------------------- CUSTOM COMPONENTS ----------------------------]]--
 
-local COMP_PORTCULLIS = {
-    TypeName = "COMP_PORTCULLIS",
+local COMP_SINGLE_DOOR = {
+    TypeName = "COMP_SINGLE_DOOR",
     ParentType = "COMPONENT",
     Properties = {
-        { Name = "OpeningSpeed", Type = "float", Default = 3.0 },
+        { Name = "OpeningAngle", Type = "float", Default = 90.0 },
+        { Name = "OpeningSpeed", Type = "float", Default = 2.0 },
         { Name = "OpenHoldTime", Type = "float", Default = 2.0 },
         { Name = "TriggerNodeName", Type = "string", Default = "Trigger" },
         { Name = "TriggeringDistance", Type = "float", Default = 4.0 },
         { Name = "DoorNodeName", Type = "string", Default = "Door" },
-        { Name = "DoorRaiseDistance", Type = "float", Default = 3.0 }
+        { Name = "DoorPivotPoint", Type = "vec3f", Default = { 0.0, 0.0, 0.0 } }
     }
 }
 
-function COMP_PORTCULLIS:create()
+function COMP_SINGLE_DOOR:create()
     self.DataDelivered = false
     self.triggerPos = nil
     self.sequence = 0
-    self.moveDistance = 0
+    self.angle = 0
     self.timer = 0
 end
 
@@ -66,13 +68,14 @@ local function starts_with(str, start)
    return str:sub(1, #start) == start
 end
 
-function COMP_PORTCULLIS:setPortcullisData(buildingFunctionData)
+function COMP_SINGLE_DOOR:setSingleDoorData(buildingFunctionData)
+    self.OpeningAngle = buildingFunctionData.OpeningAngle
     self.OpeningSpeed = buildingFunctionData.OpeningSpeed
     self.OpenHoldTime = buildingFunctionData.OpenHoldTime
     self.TriggerNodeName = buildingFunctionData.TriggerNodeName
     self.TriggeringDistance = buildingFunctionData.TriggeringDistance
     self.DoorNodeName = buildingFunctionData.DoorNodeName
-    self.DoorRaiseDistance = buildingFunctionData.DoorRaiseDistance
+    self.DoorPivotPoint = buildingFunctionData.DoorPivotPoint
     
     self:getOwner():forEachChild(
         function(child)
@@ -85,64 +88,64 @@ function COMP_PORTCULLIS:setPortcullisData(buildingFunctionData)
     self.DataDelivered = true
 end
 
-function COMP_PORTCULLIS:init()
+function COMP_SINGLE_DOOR:init()
     
 end
 
-function COMP_PORTCULLIS:openingSequence()
+function COMP_SINGLE_DOOR:openingSequence()
     local dt = self:getLevel():getDeltaTime()
-    local moveIncrement = dt*self.OpeningSpeed
+    local rotation = dt*self.OpeningSpeed
     
-    if self.moveDistance < self.DoorRaiseDistance then
+    if self.angle < self.OpeningAngle*math.pi/180 then
         self:getOwner():forEachChild(
             function(child)
                 if starts_with(child.Name, self.DoorNodeName) then
-                    child:move({ 0, moveIncrement, 0 })
+                    child:rotateAround(self.DoorPivotPoint, { 0, 1, 0 }, rotation)
                 end
             end
         )
-        self.moveDistance = self.moveDistance + moveIncrement
+        self.angle = self.angle + rotation
     else
-        local diff = self.moveDistance - self.DoorRaiseDistance
+        local diff = self.angle - self.OpeningAngle*math.pi/180
         self:getOwner():forEachChild(
             function(child)
                 if starts_with(child.Name, self.DoorNodeName) then
-                    child:move({ 0, -diff, 0 })
+                    child:rotateAround(self.DoorPivotPoint, { 0, 1, 0 }, -diff)
                 end
             end
         )
-        self.moveDistance = self.DoorRaiseDistance
+        self.angle = self.OpeningAngle*math.pi/180
         self.sequence = 2
     end
 end
 
-function COMP_PORTCULLIS:closingSequence()
+function COMP_SINGLE_DOOR:closingSequence()
     local dt = self:getLevel():getDeltaTime()
-    local moveIncrement = dt*self.OpeningSpeed
+    local rotation = dt*self.OpeningSpeed
     
-    if self.moveDistance > 0 then
+    if self.angle > 0 then
         self:getOwner():forEachChild(
             function(child)
                 if starts_with(child.Name, self.DoorNodeName) then
-                    child:move({ 0, -moveIncrement, 0 })
+                    child:rotateAround(self.DoorPivotPoint, { 0, 1, 0 }, -rotation)
                 end
             end
         )
-        self.moveDistance = self.moveDistance - moveIncrement
+        self.angle = self.angle - rotation
     else
-        local diff = 0 - self.moveDistance
+        local diff = 0 - self.angle
         self:getOwner():forEachChild(
             function(child)
                 if starts_with(child.Name, self.DoorNodeName) then
-                    child:move({ 0, diff, 0 })
+                    child:rotateAround(self.DoorPivotPoint, { 0, 1, 0 }, diff)
                 end
             end
         )
-        self.moveDistance = 0
+        self.angle = 0
     end
 end
 
-function COMP_PORTCULLIS:update()
+function COMP_SINGLE_DOOR:update()
     if self.DataDelivered == true then
         self:getLevel():getComponentManager("COMP_AGENT"):getAllComponent():forEach(
             function(agent)
@@ -170,4 +173,4 @@ function COMP_PORTCULLIS:update()
     end
 end
 
-EBF:registerClass(COMP_PORTCULLIS)
+EBF:registerClass(COMP_SINGLE_DOOR)

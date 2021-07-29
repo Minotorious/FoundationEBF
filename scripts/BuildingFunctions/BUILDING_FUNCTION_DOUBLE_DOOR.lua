@@ -27,7 +27,7 @@ local BUILDING_FUNCTION_DOUBLE_DOOR = {
 }
 
 function BUILDING_FUNCTION_DOUBLE_DOOR:activateBuilding(gameObject)
-    EBF:log("Building Function Activate Building")
+    --EBF:log("Building Function Activate Building")
     comp = gameObject:getOrCreateComponent("COMP_DOUBLE_DOOR")
     comp:setDoubleDoorData(self)
     
@@ -35,7 +35,7 @@ function BUILDING_FUNCTION_DOUBLE_DOOR:activateBuilding(gameObject)
 end
 
 function BUILDING_FUNCTION_DOUBLE_DOOR:reloadBuildingFunction(gameObject)
-    EBF:log("Building Function Reload")
+    --EBF:log("Building Function Reload")
     comp = gameObject:getOrCreateComponent("COMP_DOUBLE_DOOR")
     comp:setDoubleDoorData(self)
 end

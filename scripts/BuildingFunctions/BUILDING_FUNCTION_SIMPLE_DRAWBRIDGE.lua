@@ -31,7 +31,7 @@ local BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE = {
 }
 
 function BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE:activateBuilding(gameObject)
-    EBF:log("Building Function Activate Building")
+    --EBF:log("Building Function Activate Building")
     comp = gameObject:getOrCreateComponent("COMP_SIMPLE_DRAWBRIDGE")
     comp:setDrawbridgeData(self)
     
@@ -39,7 +39,7 @@ function BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE:activateBuilding(gameObject)
 end
 
 function BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE:reloadBuildingFunction(gameObject)
-    EBF:log("Building Function Reload")
+    --EBF:log("Building Function Reload")
     comp = gameObject:getOrCreateComponent("COMP_SIMPLE_DRAWBRIDGE")
     comp:setDrawbridgeData(self)
 end
@@ -146,7 +146,7 @@ function COMP_SIMPLE_DRAWBRIDGE:chainClosingSequence()
         local Chain1PivotPoint = self.Chain1PivotNode.Position
         local Chain2PivotPoint = self.Chain2PivotNode.Position
         
-        EBF:log("Chain Closing Correction")
+        --EBF:log("Chain Closing Correction")
         local diff = self.chainAngle - self.OpeningAngle*math.pi/360
         self:getOwner():forEachChild(
             function(child)
@@ -219,9 +219,8 @@ function COMP_SIMPLE_DRAWBRIDGE:chainOpeningSequence()
         local Chain1PivotPoint = self.Chain1PivotNode.Position
         local Chain2PivotPoint = self.Chain2PivotNode.Position
         
-        EBF:log("Chain Opening Correction")
+        --EBF:log("Chain Opening Correction")
         local diff = 0 - self.chainAngle
-        EBF:log(tostring(diff))
         self:getOwner():forEachChild(
             function(child)
                 if starts_with(child.Name, self.Chain1NodeName) then

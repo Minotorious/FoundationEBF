@@ -345,7 +345,9 @@ function COMP_PRODUCE_TREE:calculateNoSpawners()
 end
 
 function COMP_PRODUCE_TREE:onDestroy(isClearingLevel)
-    self:deleteResourceContainers()
+    if not isClearingLevel then
+        self:deleteResourceContainers()
+    end
 end
 
 EBF:registerClass(COMP_PRODUCE_TREE)

@@ -40,4 +40,42 @@ EBF:dofile("scripts/BehaviorTrees/BEHAVIOR_RADIAL_CONFINED_AGENT.lua")
 EBF:dofile("scripts/BehaviorTrees/BEHAVIOR_RECTANGULAR_CONFINED_AGENT.lua")
 
 -- Examples
---EBF:dofile("scripts/examples.lua")
+EBF:dofile("scripts/Examples/registerExamples.lua")
+
+--[[------------------------------ MAIN MONUMENT ------------------------------]]--
+
+EBF:register({
+	DataType = "BUILDING",
+	Id = "FOUNDATIONEBF_EXAMPLES",
+	Name = "FOUNDATIONEBF_EXAMPLES_NAME",
+	Description = "FOUNDATIONEBF_EXAMPLES_DESC",
+	BuildingType = "GENERAL",
+	AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE",
+    BuildingPartSetList = {
+        {
+            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_ANIMATIONS_CATEGORY",
+            BuildingPartList = { 
+                "SINGLE_DOOR_PART", "DOUBLE_DOOR_PART", "PORTCULLIS_PART",
+                "SIMPLE_DRAWBRIDGE_PART"
+            }
+        },
+        {
+            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_RESOURCE_PRODUCTION_CATEGORY",
+            BuildingPartList = { 
+                "DEFINED_RESOURCE_GENERATOR_PART"
+            }
+        },
+        {
+            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_PRODUCE_TREE_CATEGORY",
+            BuildingPartList = { 
+                "PRODUCE_TREE_PART", "SPAWNER_INCREASE_1_PART", "SPAWNER_INCREASE_2_PART"
+            }
+        },
+        {
+            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_BEHAVIOR_TREES_CATEGORY",
+            BuildingPartList = { 
+                "RADIAL_ENFORCER_PART", "RECTANGULAR_ENFORCER_PART"
+            }
+        }
+    }
+})

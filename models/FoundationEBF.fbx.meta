@@ -20,7 +20,6 @@
 		<meta id="f754fcd2-c6bc-4f4a-a9bc-7f2c283aaa12" name="Cube.016_Material.Blue"/>
 		<meta id="464263ae-bbb5-43de-b414-9baae3c75999" name="Drawbridge_Material.Brown"/>
 		<meta id="0697ed7e-ea61-4b1a-9838-cb8d361fed27" name="SimpleDrawbridgePart_COLLIDER"/>
-		<meta id="91895a9b-873e-4f30-9b9a-eaf1963b6c13" name="Chain.002_Material.Purple"/>
 		<meta id="897dc7a4-9f75-4a67-9177-15f46bdd03b8" name="Chain1.001_Material.Purple"/>
 		<meta id="0df10663-2aec-4be2-b3ad-41e59abbf545" name="Chain1.002_Material.Purple"/>
 		<meta id="ac55f98d-46ff-4f19-a37a-54971cc2592a" name="Chain1.003_Material.Purple"/>
@@ -52,10 +51,20 @@
 		<meta id="d16128c3-b954-4c02-895d-0c12d53cc1ef" name="Chain1.029_Material.Purple"/>
 		<meta id="c23b4969-a4a3-4680-b55e-9109e3e1490d" name="Chain1.030_Material.Purple"/>
 		<meta id="0cbd9e23-48ef-49f3-ad81-317759dcb889" name="PortcullisPart_COLLIDER"/>
+		<meta id="19a4dab8-7b9a-4a57-ae3c-8de73731c2e5" name="Cube.003_Material.Grey"/>
+		<meta id="6dff525d-7ffc-47ae-9208-eadfb8da5e70" name="Cube.006_Material.Grey"/>
+		<meta id="412b1963-544f-4b86-94a0-778acb50338d" name="Cube.010_Material.Purple"/>
+		<meta id="79f14a8d-16e3-4c50-8f94-e4b0e027d051" name="Cube.012_Material.Brown"/>
+		<meta id="e607b306-7b8c-4116-b467-0233733fead4" name="ChainOriginal_Material.Purple"/>
+		<meta id="a7540486-35ce-4517-a723-2a1a7e606807" name="Cube.015_Material.Grey"/>
+		<meta id="fb6c652d-aef5-40c1-998c-e82c493d2403" name="Cube.018_Material.Grey"/>
+		<meta id="a3ae28f6-df80-498f-8158-531a1b51ff5b" name="Cylinder_Material.Blue"/>
+		<meta id="cdf0f7e9-52a2-4087-b616-8e8b428e3712" name="Cylinder.001_Material.Brown"/>
+		<meta id="16e57b55-c89d-4ed6-b204-c7de595d8ccc" name="Cube.019_Material.Red"/>
+		<meta id="57817bcf-5612-4d85-96d1-2e0808151cee" name="ResourceSpawner.002_Material.Purple"/>
+		<meta id="c9101368-efca-4f13-a071-825d91755349" name="Cube.020_Material.Red"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
-		<meta id="e056f393-c1b2-4506-9707-5c8b4e311002" name="Light"/>
-		<meta id="2dcda8ec-876b-4f43-83f4-c845b0bc87b4" name="Camera"/>
 		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
 			<meta id="546649af-2e2b-445f-8f2e-ebfab8b36f33" name="Cube"/>
 			<meta id="44312eab-d42d-4c68-8c75-a631f299efef" name="Cube.001"/>
@@ -148,14 +157,44 @@
 			<meta id="594692ae-29c2-45ef-8ca6-95b787765532" name="Chain2.059"/>
 			<meta id="b226f5b2-1b85-4cef-92d8-c8dc64295ffc" name="Chain2.060"/>
 		</meta>
-		<meta id="d365580a-15d5-42bb-9ca5-d48454e0c257" name="Chain.002"/>
 		<meta id="1bdd1767-5664-4f2c-955a-9491e850ecb5" name="DefinedResourceGeneratorPart">
 			<meta id="d87616be-7854-4b81-95dd-4b1dff789174" name="Cube.003"/>
+		</meta>
+		<meta id="96d27fe0-eb09-4582-9a36-900d62b96e42" name="RadialEnforcerPart">
+			<meta id="528d40d3-1bd9-489b-a50b-28ef55c39657" name="Cube.006"/>
+		</meta>
+		<meta id="2a5d710e-41ab-45a3-8d72-370ee878f7bc" name="RectangularEnforcerPart">
+			<meta id="111ea758-b951-43f8-b189-3fef79a9e3d7" name="Cube.013"/>
+		</meta>
+		<meta id="a3b5888c-2f8f-447b-b874-e43f69522410" name="RadialConfinedAgent">
+			<meta id="f65aca78-dcf3-4b3d-8b7e-ee8cb3031dc1" name="Cube.010"/>
+		</meta>
+		<meta id="2650baaa-3a7e-4f52-89aa-024011a17e69" name="RectangularConfinedAgent">
+			<meta id="459e01f0-e718-4e9c-bc19-5d16fa8b7340" name="Cube.012"/>
+		</meta>
+		<meta id="32a3b5d6-32a0-4232-8ff3-6c1cb85e840c" name="ChainOriginal"/>
+		<meta id="50283201-f3b2-4875-9afb-928cc2c061db" name="ProduceTreePart">
+			<meta id="e1752bb5-e240-4824-9f57-94ca3c2659a0" name="Cube.015"/>
+			<meta id="03a9fb19-8978-4b4d-b720-54fca9f7c493" name="Cube.018"/>
+			<meta id="c3363278-fc98-4caf-b91b-f3c9e4fba72e" name="ResourceSpawner.002"/>
+			<meta id="3ead3dd1-93e6-469b-8a6a-72be826403d5" name="ResourceSpawner.003"/>
+			<meta id="c9b2be40-c42c-4a32-b01a-c6d7b9310197" name="ResourceSpawner.001"/>
+			<meta id="8507f508-16a0-48b0-9482-02d43b8e9202" name="ResourceSpawner.004"/>
+		</meta>
+		<meta id="26e478c0-06e9-48cb-b4b2-af9702ac85a8" name="SpawnerIncrease1Part">
+			<meta id="2a6b1ab8-4282-439f-98a9-0ebc75df873a" name="Cylinder"/>
+		</meta>
+		<meta id="25ec3880-28a6-4981-972d-be85b44fe6ba" name="SpawnerIncrease2Part">
+			<meta id="025e88bc-815e-41cf-a5c2-9f5364c2acf4" name="Cylinder.001"/>
+		</meta>
+		<meta id="781c22a7-3994-4306-91c4-d9971e5b55b6" name="ResourceNodeExample">
+			<meta id="9d1ca0dc-cf65-4a98-88c7-73bee75b6fe6" name="Cube.019"/>
+			<meta id="7ab2c1c0-3a18-4694-85b4-8cad9d41bd0a" name="Cube.020"/>
 		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="a7b1bea3c2364cccb72beef07fd09107"/>
+	<Md5Checksum value="450ea662cc09a06f808cf475aa5e859d"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -168,16 +207,6 @@
 	<NodeConfig type="GenCFbxNodeConfig">
 		<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 		<ChildList>
-			<Item type="GenCFbxNodeConfig">
-				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-				<ChildList/>
-				<NodeName value="Light"/>
-			</Item>
-			<Item type="GenCFbxNodeConfig">
-				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-				<ChildList/>
-				<NodeName value="Camera"/>
-			</Item>
 			<Item type="GenCFbxNodeConfig">
 				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 				<ChildList>
@@ -624,11 +653,6 @@
 			</Item>
 			<Item type="GenCFbxNodeConfig">
 				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-				<ChildList/>
-				<NodeName value="Chain.002"/>
-			</Item>
-			<Item type="GenCFbxNodeConfig">
-				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 				<ChildList>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -637,6 +661,129 @@
 					</Item>
 				</ChildList>
 				<NodeName value="DefinedResourceGeneratorPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.006"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RadialEnforcerPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.013"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RectangularEnforcerPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.010"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RadialConfinedAgent"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.012"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RectangularConfinedAgent"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="ChainOriginal"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.015"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.018"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.004"/>
+					</Item>
+				</ChildList>
+				<NodeName value="ProduceTreePart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cylinder"/>
+					</Item>
+				</ChildList>
+				<NodeName value="SpawnerIncrease1Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cylinder.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="SpawnerIncrease2Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.019"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.020"/>
+					</Item>
+				</ChildList>
+				<NodeName value="ResourceNodeExample"/>
 			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>

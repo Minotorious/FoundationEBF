@@ -2,7 +2,7 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                  SUPPLEMENTARY FILE                  | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |                       EXAMPLES                       | |
+| ||   \/   ||  V_/_  |                  ANIMATION EXAMPLES                  | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
@@ -14,13 +14,10 @@ EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/SingleDoorPart", "PREFAB_SI
 EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/DoubleDoorPart", "PREFAB_DOUBLE_DOOR_PART")
 EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/PortcullisPart", "PREFAB_PORTCULLIS_PART")
 EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/SimpleDrawbridgePart", "PREFAB_SIMPLE_DRAWBRIDGE_PART")
-EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/DefinedResourceGeneratorPart", "PREFAB_DEFINED_RESOURCE_GENERATOR_PART")
 
 --[[--------------------- ASSET PROCESSOR & NODE HANDLING ---------------------]]--
 --[[--------------------------- COMPONENT ASSIGNMENT --------------------------]]--
 --[[-------------------------------- COLLIDERS --------------------------------]]--
-
-EBF:registerAssetProcessor("models/FoundationEBF.fbx", { DataType = "BUILDING_ASSET_PROCESSOR" })
 
 EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/SingleDoorPart/Trigger", { DataType = "COMP_GROUNDED" })
 EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DoubleDoorPart/Trigger.001", { DataType = "COMP_GROUNDED" })
@@ -29,30 +26,6 @@ EBF:configurePrefabFlagList("models/FoundationEBF.fbx/Prefab/PortcullisPart", { 
 EBF:configurePrefabFlagList("models/FoundationEBF.fbx/Prefab/SimpleDrawbridgePart", { "PLATFORM" })
 
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
-
-EBF:register({
-	DataType = "BUILDING",
-	Id = "FOUNDATIONEBF_EXAMPLE",
-	Name = "FOUNDATIONEBF_EXAMPLE_NAME",
-	Description = "FOUNDATIONEBF_EXAMPLE_DESC",
-	BuildingType = "GENERAL",
-	AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE",
-    BuildingPartSetList = {
-        {
-            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_ANIMATIONS_CATEGORY",
-            BuildingPartList = { 
-                "SINGLE_DOOR_PART", "DOUBLE_DOOR_PART",
-                "PORTCULLIS_PART", "SIMPLE_DRAWBRIDGE_PART"
-            }
-        },
-        {
-            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_RESOURCE_PRODUCTION_CATEGORY",
-            BuildingPartList = { 
-                "DEFINED_RESOURCE_GENERATOR_PART"
-            }
-        }
-    }
-})
 
 EBF:register({
 	DataType = "BUILDING_PART",
@@ -194,32 +167,6 @@ EBF:register({
     IsVisibleWhenBuilt = true
 })
 
-EBF:register({
-	DataType = "BUILDING_PART",
-	Id = "DEFINED_RESOURCE_GENERATOR_PART",
-    Name = "DEFINED_RESOURCE_GENERATOR_PART_NAME",
-	--Description = "DEFINED_RESOURCE_GENERATOR_PART_DESC",
-    Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_DEFINED_RESOURCE_GENERATOR_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
-            {
-                Polygon = polygon.createRectangle( { 1, 1 }, { 0, 0 } ),
-                Type = { DEFAULT = true, NAVIGABLE = false, GRASS_CLEAR = true }
-			}
-        }
-    },
-	ConstructionVisual = nil,
-	Cost = {
-		RessourcesNeeded = {}
-	},
-    AssetBuildingFunction = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_EXAMPLE",
-    IsVisibleWhenBuilt = true
-})
-
 --[[------------------------- JOBS & BUILDING FUNCTIONS -----------------------]]--
 
 EBF:register({
@@ -249,22 +196,4 @@ EBF:register({
     Name = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE_NAME",
     DrawbridgePivotPoint = { 0, 0.8, -2.2 },
     ChainEclipsePoint = -2.5
-})
-
-EBF:register({
-    DataType = "BUILDING_FUNCTION_RESOURCE_GENERATOR",
-    Id = "BUILDING_FUNCTION_RESOURCE_GENERATOR_GEMS",
-    ResourceGenerated = "GEMS",
-    IsForConsumer = true,
-    IsInfinite = false
-    
-})
-
-EBF:register({
-    DataType = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR",
-    Id = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_EXAMPLE",
-    Name = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_NAME",
-    ResourceGenerator = "BUILDING_FUNCTION_RESOURCE_GENERATOR_GEMS",
-    MaxQuantity = 50,
-    GrowRate = 2.5
 })

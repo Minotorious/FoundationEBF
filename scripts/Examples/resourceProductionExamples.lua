@@ -144,5 +144,7 @@ EBF:register({
     Id = "BUILDING_FUNCTION_PRODUCE_TREE_EXAMPLE",
     Name = "BUILDING_FUNCTION_PRODUCE_TREE_EXAMPLE_NAME",
     DefaultSpawners = 2,
+    DaysToSpawn = 7,
+    SpawnerScalingSpeed = 0.01,
     ResourceContainer = "PREFAB_RESOURCE_EXAMPLE"
 })

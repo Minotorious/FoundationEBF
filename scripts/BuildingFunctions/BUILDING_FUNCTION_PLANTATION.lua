@@ -37,7 +37,11 @@ local COMP_PLANTING_POT = {
 	TypeName = "COMP_PLANTING_POT",
 	ParentType = "COMPONENT",
 	Properties = {
-        { Name = "IsOccupied", Type = "boolean", Default = false, Flags = { "SAVE_GAME" } }
+        { Name = "IsOccupied", Type = "boolean", Default = false, Flags = { "SAVE_GAME" } },
+        { Name = "CurrentGrowingStep", Type = "integer", Default = 0, Flags = { "SAVE_GAME" } },
+        { Name = "CurrentDay", Type = "integer", Default = 0, Flags = { "SAVE_GAME" } },
+        { Name = "CurrentPlant", Type = "GAME_OBJECT", Default = nil, Flags = { "SAVE_GAME" } }
+        
     }
 }
 
@@ -56,7 +60,10 @@ local COMP_PLANTATION = {
 	TypeName = "COMP_PLANTATION",
 	ParentType = "COMPONENT",
 	Properties = {
-        
+        { Name = "Plantable", Type = "PREFAB", Default = nil },
+        { Name = "DaysToGrowing", Type = "PREFAB", Default = 3 },
+        --{ Name = "GrowingStepList", Type = "list<GROWING_STEP>", Default = {} },
+        { Name = "ResourceContainer", Type = "COMP_RESOURCE_CONTAINER", Default = nil }
     }
 }
 

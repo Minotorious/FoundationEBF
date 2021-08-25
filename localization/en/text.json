@@ -4,6 +4,7 @@
         "FOUNDATIONEBF_EXAMPLES_DESC": "Foundation EBF Examples",
         
         "FOUNDATIONEBF_EXAMPLE_PARTS_ANIMATIONS_CATEGORY": "Animations",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_PARTICLE_EMITTERS_CATEGORY": "Particle Emitters",
         "FOUNDATIONEBF_EXAMPLE_PARTS_RESOURCE_PRODUCTION_CATEGORY": "Resource Production",
         "FOUNDATIONEBF_EXAMPLE_PARTS_PRODUCE_TREE_CATEGORY": "Produce Tree",
         "FOUNDATIONEBF_EXAMPLE_PARTS_BEHAVIOR_TREES_CATEGORY": "Behaviour Trees",
@@ -12,6 +13,9 @@
         "DOUBLE_DOOR_PART_NAME": "Double Door Example",
         "PORTCULLIS_PART_NAME": "Portcullis Example",
         "SIMPLE_DRAWBRIDGE_PART_NAME": "Simple Drawbridge Example",
+        
+        "TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART_NAME": "Trigger Activated Particle Emitter Example",
+        "TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART_NAME": "Trigger Deactivated Particle Emitter Example",
         
         "DEFINED_RESOURCE_GENERATOR_PART_NAME": "Defined Resource Generator Example",
         

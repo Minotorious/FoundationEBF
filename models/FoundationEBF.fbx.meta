@@ -191,10 +191,28 @@
 			<meta id="9d1ca0dc-cf65-4a98-88c7-73bee75b6fe6" name="Cube.019"/>
 			<meta id="7ab2c1c0-3a18-4694-85b4-8cad9d41bd0a" name="Cube.020"/>
 		</meta>
+		<meta id="9414f166-7be5-441c-89f8-c31af3a50965" name="TriggerActivatedParticleEmitterPart">
+			<meta id="49790dda-01a2-44ea-88f7-728261b0d7d1" name="Cube.021"/>
+			<meta id="74da82aa-6c52-4087-b2d5-cfe0a9267c15" name="ActivatedEmitter.000"/>
+			<meta id="0b30b988-2474-4ae3-aeb5-8b6dc5c9fc64" name="Trigger.005"/>
+			<meta id="a1caea88-2492-4be0-9b72-11808c7334ca" name="ActivatedEmitter.001"/>
+			<meta id="81afa1e6-58f6-403f-8ee0-2a20b23659b8" name="ActivatedEmitter.002"/>
+			<meta id="1cba5c2f-0a0d-48ea-9afb-58ef5b795672" name="ActivatedEmitter.003"/>
+		</meta>
+		<meta id="f626549f-b77b-4c9e-af80-99d3e677e906" name="TriggerDeactivatedParticleEmitterPart">
+			<meta id="e53a8a6b-2330-485b-8e7c-e036727978c6" name="Cube.022"/>
+			<meta id="6cda1c82-224c-4edf-9fb1-b770ed001818" name="Emitter.001"/>
+			<meta id="fe9e8ea6-1299-4055-83e6-26eab24cc7e3" name="Trigger.006"/>
+			<meta id="7fcbf04d-1f1b-41c5-9559-1e68eb7cb281" name="DeactivatedEmitter.000"/>
+			<meta id="1334b52e-2fe6-4fe1-873d-d5298a8fa71b" name="DeactivatedEmitter.001"/>
+			<meta id="0d9b1038-73e7-4382-9513-d31255be7945" name="Cube.023"/>
+			<meta id="913ab99c-46ef-44bd-acbc-6aa983a982ef" name="Emitter.000"/>
+			<meta id="82471670-c0ea-4e33-a026-8bf84ec54d85" name="DeactivatedEmitter.002"/>
+		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="450ea662cc09a06f808cf475aa5e859d"/>
+	<Md5Checksum value="0ef430906abf536a769fa2883da351d9"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -784,6 +802,88 @@
 					</Item>
 				</ChildList>
 				<NodeName value="ResourceNodeExample"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.021"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.003"/>
+					</Item>
+				</ChildList>
+				<NodeName value="TriggerActivatedParticleEmitterPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.022"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Emitter.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DeactivatedEmitter.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DeactivatedEmitter.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.023"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Emitter.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DeactivatedEmitter.002"/>
+					</Item>
+				</ChildList>
+				<NodeName value="TriggerDeactivatedParticleEmitterPart"/>
 			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>

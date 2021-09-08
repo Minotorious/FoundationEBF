@@ -58,10 +58,6 @@ function COMP_TRIGGER_ACTIVATED_PARTICLE_EMITTER:create()
     self.timer = 0
 end
 
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
-
 function COMP_TRIGGER_ACTIVATED_PARTICLE_EMITTER:addToEmitterCompList(entry)
     table.insert(self.emitterCompList, entry)
 end

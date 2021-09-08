@@ -47,10 +47,6 @@ EBF:registerClass(BUILDING_FUNCTION_PRODUCE_TREE)
 
 --[[---------------------------- CUSTOM COMPONENTS ----------------------------]]--
 
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
-
 local function randomFloat(low, high)
     return low + math.random()  * (high - low);
 end

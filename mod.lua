@@ -10,6 +10,12 @@ local EBF = foundation.createMod();
 
 --[[-------------------------------- DO FILES ---------------------------------]]--
 
+-- Global Utility Functions
+EBF:dofile("scripts/globalUtilityFunctions.lua")
+
+-- Assets
+EBF:dofile("scripts/assets/registerAssets.lua")
+ 
 -- Building Functions
 EBF:dofile("scripts/BuildingFunctions/registerBuildingFunctions.lua")
     

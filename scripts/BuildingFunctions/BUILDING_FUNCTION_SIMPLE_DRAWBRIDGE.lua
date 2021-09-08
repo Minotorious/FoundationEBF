@@ -80,10 +80,6 @@ function COMP_SIMPLE_DRAWBRIDGE:create()
     self.timer = 0
 end
 
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
-
 function COMP_SIMPLE_DRAWBRIDGE:setDrawbridgeData(buildingFunctionData)
     self.OpeningAngle = buildingFunctionData.OpeningAngle
     self.OpeningSpeed = buildingFunctionData.OpeningSpeed

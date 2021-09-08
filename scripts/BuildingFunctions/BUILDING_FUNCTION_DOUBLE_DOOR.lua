@@ -68,10 +68,6 @@ function COMP_DOUBLE_DOOR:create()
     self.timer = 0
 end
 
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
-
 function COMP_DOUBLE_DOOR:setDoubleDoorData(buildingFunctionData)
     self.OpeningAngle = buildingFunctionData.OpeningAngle
     self.OpeningSpeed = buildingFunctionData.OpeningSpeed

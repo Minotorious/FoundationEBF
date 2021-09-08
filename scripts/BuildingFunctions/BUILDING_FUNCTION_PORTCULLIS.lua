@@ -62,10 +62,6 @@ function COMP_PORTCULLIS:create()
     self.timer = 0
 end
 
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
-
 function COMP_PORTCULLIS:setPortcullisData(buildingFunctionData)
     self.OpeningSpeed = buildingFunctionData.OpeningSpeed
     self.OpenHoldTime = buildingFunctionData.OpenHoldTime

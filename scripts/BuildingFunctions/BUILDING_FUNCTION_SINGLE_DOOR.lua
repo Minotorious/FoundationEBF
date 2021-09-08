@@ -64,10 +64,6 @@ function COMP_SINGLE_DOOR:create()
     self.timer = 0
 end
 
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
-
 function COMP_SINGLE_DOOR:setSingleDoorData(buildingFunctionData)
     self.OpeningAngle = buildingFunctionData.OpeningAngle
     self.OpeningSpeed = buildingFunctionData.OpeningSpeed

@@ -290,7 +290,7 @@ EBF:register({
     DataType = "BUILDING_FUNCTION_PLANTER",
     Id = "BUILDING_FUNCTION_PLANTER_1_EXAMPLE",
     Name = "BUILDING_FUNCTION_PLANTER_1_EXAMPLE_NAME",
-    GatheringAnimation = "HOPCARING",
+    GatheringAnimation = "SCYTHE",
     FollowPlantingPath = true
 })
 

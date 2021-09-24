@@ -142,6 +142,7 @@
 		<meta id="f2eb9cfb-5e58-4b63-bfee-32afbeb6d8c8" name="Step8.009_Material.Blue"/>
 		<meta id="ba9b1b86-db6b-4847-8592-920136b33dd3" name="Step9.002_Material.Blue"/>
 		<meta id="6f922264-15cb-4102-ac0b-116ba8aeb69d" name="Planter2Part_COLLIDER"/>
+		<meta id="bbfc7ff3-1db4-4e20-9f49-6e8acd7d6528" name="Step5.002Keep.001_Material.Purple.001"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
 		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
@@ -437,7 +438,7 @@
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="d9ee4458e2b55f6b9904c9c8d3fbac0c"/>
+	<Md5Checksum value="c62c382ec7e13457298f6a58b9faf6a5"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>

@@ -20,6 +20,7 @@ local BUILDING_FUNCTION_PRODUCE_TREE = {
         { Name = "SpawnerNodeName", Type = "string", Default = "ResourceSpawner" },
         { Name = "SpawnerScaling", Type = "boolean", Default = true },
         { Name = "SpawnerScalingSpeed", Type = "float", Default = 0.001 },
+        { Name = "DaysToSpawn", Type = "integer", Default = 21 },
         { Name = "ResourceContainer", Type = "PREFAB", Default = nil },
         { Name = "ResourceContainersPerSpawner", Type = "integer", Default = 5 },
         { Name = "ResourceContainerFallingSpeed", Type = "vec2f", Default = { 0.4, 0.6 } }
@@ -45,10 +46,6 @@ end
 EBF:registerClass(BUILDING_FUNCTION_PRODUCE_TREE)
 
 --[[---------------------------- CUSTOM COMPONENTS ----------------------------]]--
-
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
-end
 
 local function randomFloat(low, high)
     return low + math.random()  * (high - low);
@@ -87,18 +84,19 @@ local COMP_PRODUCE_TREE = {
         { Name = "SpawnerNodeName", Type = "string", Default = "ResourceSpawner" },
         { Name = "SpawnerScaling", Type = "boolean", Default = true },
         { Name = "SpawnerScalingSpeed", Type = "float", Default = 0.001 },
+        { Name = "DaysToSpawn", Type = "integer", Default = 21 },
         { Name = "ResourceContainer", Type = "PREFAB", Default = nil },
         { Name = "ResourceContainersPerSpawner", Type = "integer", Default = 5 },
         { Name = "ResourceContainerFallingSpeedRange", Type = "vec2f", Default = { 0.8, 1.2 } },
         { Name = "ResourceContainerIdList", Type = "list<string>", Default = nil, Flags = { "SAVE_GAME" } },
         { Name = "CurrentScaling", Type = "float", Default = 0.0, Flags = { "SAVE_GAME" } },
+        { Name = "CurrentDay", Type = "integer", Default = 0, Flags = { "SAVE_GAME" } },
         { Name = "NoSpawners", Type = "integer", Default = 0, Flags = { "SAVE_GAME" } }
     }
 }
 
 function COMP_PRODUCE_TREE:create()
     self.DataDelivered = false
-    self.posTree = nil
     self.Sequence = 0
 end
 
@@ -130,28 +128,35 @@ function COMP_PRODUCE_TREE:setStartingScaling()
     end
 end
 
-function COMP_PRODUCE_TREE:init()
-    local compMainGameLoop = self:getLevel():find("COMP_MAIN_GAME_LOOP")
-    event.register(self, compMainGameLoop.ON_NEW_MONTH, 
-        function()
-            --EBF:log("New Month!")
-            self:deleteResourceContainers()
-            self:getOwner():forEachChild(
-                function(child)
-                    if starts_with(child.Name, self.SpawnerNodeName) then
-                        if child.Scale.x == 1 then
-                            --EBF:log(child.Name)
-                            self:resourceContainerSpawningSequence(child:getGlobalPosition())
-                        end
-                    end
+function COMP_PRODUCE_TREE:triggerSpawning()
+    --EBF:log("Spawn!!!")
+    self:deleteResourceContainers()
+    self:getOwner():forEachChild(
+        function(child)
+            if starts_with(child.Name, self.SpawnerNodeName) then
+                if child.Scale.x == 1 then
+                    --EBF:log(child.Name)
+                    self:resourceContainerSpawningSequence(child:getGlobalPosition())
                 end
-            )
-            self:calculateNoSpawners()
-            self.CurrentScaling = 0
-            self.Sequence = 0
+            end
         end
     )
-    self.posTree = self:getOwner():getGlobalPosition()
+    self:calculateNoSpawners()
+    self.CurrentScaling = 0
+    self.Sequence = 0
+    self.CurrentDay = 0
+end
+
+function COMP_PRODUCE_TREE:init()
+    local compMainGameLoop = self:getLevel():find("COMP_MAIN_GAME_LOOP")
+    event.register(self, compMainGameLoop.ON_NEW_DAY, 
+        function()
+            self.CurrentDay = self.CurrentDay + 1
+            if self.CurrentDay >= self.DaysToSpawn then
+                self:triggerSpawning()
+            end
+        end
+    )
 end
 
 function COMP_PRODUCE_TREE:addToResourceContainerIdList(entry)
@@ -165,6 +170,7 @@ function COMP_PRODUCE_TREE:setProduceTreeData(buildingFunctionProduceTree)
     self.SpawnerNodeName = buildingFunctionProduceTree.SpawnerNodeName
     self.SpawnerScaling = buildingFunctionProduceTree.SpawnerScaling
     self.SpawnerScalingSpeed = buildingFunctionProduceTree.SpawnerScalingSpeed
+    self.DaysToSpawn = buildingFunctionProduceTree.DaysToSpawn
     self.ResourceContainer = buildingFunctionProduceTree.ResourceContainer
     self.ResourceContainerComponent = buildingFunctionProduceTree.ResourceContainerComponent
     self.ResourceContainersPerSpawner = buildingFunctionProduceTree.ResourceContainersPerSpawner
@@ -250,15 +256,8 @@ function COMP_PRODUCE_TREE:deleteResourceContainers()
             --EBF:log("Nil gameObject")
             self.ResourceContainerIdList[i] = nil
         else
-            local pos1 = gameObject:getGlobalPosition()
-            local pos2 = self.posTree
-            --EBF:log("Pos1: " .. tostring(pos1) .. ", Pos2: " .. tostring(pos2))
-            local distance = math.sqrt( (pos1.x - pos2.x)^2 + (pos1.y - pos2.y)^2 + (pos1.z - pos2.z)^2 )
-            --EBF:log("distance: " .. tostring(distance))
-            if distance < 6 then
-                gameObject:destroy()
-                self.ResourceContainerIdList[i] = nil
-            end
+            gameObject:destroy()
+            self.ResourceContainerIdList[i] = nil
         end
     end
 end
@@ -345,7 +344,9 @@ function COMP_PRODUCE_TREE:calculateNoSpawners()
 end
 
 function COMP_PRODUCE_TREE:onDestroy(isClearingLevel)
-    self:deleteResourceContainers()
+    if not isClearingLevel then
+        self:deleteResourceContainers()
+    end
 end
 
 EBF:registerClass(COMP_PRODUCE_TREE)

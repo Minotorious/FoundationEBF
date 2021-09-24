@@ -2,7 +2,7 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                  SUPPLEMENTARY FILE                  | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |            DOUBLE DOOR BUILDING FUNCTION             | |
+| ||   \/   ||  V_/_  |                     DOUBLE DOOR                      | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
@@ -66,10 +66,6 @@ function COMP_DOUBLE_DOOR:create()
     self.sequence = 0
     self.angle = 0
     self.timer = 0
-end
-
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
 end
 
 function COMP_DOUBLE_DOOR:setDoubleDoorData(buildingFunctionData)

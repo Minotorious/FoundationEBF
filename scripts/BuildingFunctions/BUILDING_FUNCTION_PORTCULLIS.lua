@@ -2,7 +2,7 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                  SUPPLEMENTARY FILE                  | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |             PORTCULLIS BUILDING FUNCTION             | |
+| ||   \/   ||  V_/_  |                      PORTCULLIS                      | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
@@ -60,10 +60,6 @@ function COMP_PORTCULLIS:create()
     self.sequence = 0
     self.moveDistance = 0
     self.timer = 0
-end
-
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
 end
 
 function COMP_PORTCULLIS:setPortcullisData(buildingFunctionData)

@@ -6,6 +6,13 @@
 		<meta id="0f214f60-5d7b-420c-9779-47499d36d098" name="Material.Grey"/>
 		<meta id="60d03c46-ffdd-420e-8764-b8ebf35973fb" name="Material.Blue"/>
 		<meta id="da3e206f-ff1d-40dc-b24e-e6d306c3ed30" name="Material.Purple"/>
+		<meta id="8c8fc4fb-1e22-4f23-a606-a2af16ce5b1b" name="Material.Green"/>
+		<meta id="0e777dbc-f63a-4180-b7d7-169a2d09b2a1" name="Material.Brown.001"/>
+		<meta id="40dfa9c9-0a81-4519-9f36-5d00205ff8b1" name="Material.Green.001"/>
+		<meta id="b602258f-86e5-4f02-925f-9a5d00456d9d" name="Material.Blue.001"/>
+		<meta id="b70cdff3-f4ed-4f68-bfb5-f5d8b8de64d8" name="Material.Grey.001"/>
+		<meta id="5fb6ba9e-cb74-4253-88ba-5b5c09f08ac1" name="Material.Red.001"/>
+		<meta id="815b8150-cc02-4935-842b-8e845efad18f" name="Material.Purple.001"/>
 	</meta>
 	<meta id="23bbd79c-5cf5-4b8b-9fe1-232053a4507d" type="group" folder="true" name="Meshes">
 		<meta id="1673c43a-f701-4ff1-8979-fe60e4b2c9ff" name="Left_Material.Brown"/>
@@ -20,7 +27,6 @@
 		<meta id="f754fcd2-c6bc-4f4a-a9bc-7f2c283aaa12" name="Cube.016_Material.Blue"/>
 		<meta id="464263ae-bbb5-43de-b414-9baae3c75999" name="Drawbridge_Material.Brown"/>
 		<meta id="0697ed7e-ea61-4b1a-9838-cb8d361fed27" name="SimpleDrawbridgePart_COLLIDER"/>
-		<meta id="91895a9b-873e-4f30-9b9a-eaf1963b6c13" name="Chain.002_Material.Purple"/>
 		<meta id="897dc7a4-9f75-4a67-9177-15f46bdd03b8" name="Chain1.001_Material.Purple"/>
 		<meta id="0df10663-2aec-4be2-b3ad-41e59abbf545" name="Chain1.002_Material.Purple"/>
 		<meta id="ac55f98d-46ff-4f19-a37a-54971cc2592a" name="Chain1.003_Material.Purple"/>
@@ -52,10 +58,92 @@
 		<meta id="d16128c3-b954-4c02-895d-0c12d53cc1ef" name="Chain1.029_Material.Purple"/>
 		<meta id="c23b4969-a4a3-4680-b55e-9109e3e1490d" name="Chain1.030_Material.Purple"/>
 		<meta id="0cbd9e23-48ef-49f3-ad81-317759dcb889" name="PortcullisPart_COLLIDER"/>
+		<meta id="19a4dab8-7b9a-4a57-ae3c-8de73731c2e5" name="Cube.003_Material.Grey"/>
+		<meta id="6dff525d-7ffc-47ae-9208-eadfb8da5e70" name="Cube.006_Material.Grey"/>
+		<meta id="412b1963-544f-4b86-94a0-778acb50338d" name="Cube.010_Material.Purple"/>
+		<meta id="79f14a8d-16e3-4c50-8f94-e4b0e027d051" name="Cube.012_Material.Brown"/>
+		<meta id="e607b306-7b8c-4116-b467-0233733fead4" name="ChainOriginal_Material.Purple"/>
+		<meta id="a7540486-35ce-4517-a723-2a1a7e606807" name="Cube.015_Material.Grey"/>
+		<meta id="fb6c652d-aef5-40c1-998c-e82c493d2403" name="Cube.018_Material.Grey"/>
+		<meta id="a3ae28f6-df80-498f-8158-531a1b51ff5b" name="Cylinder_Material.Blue"/>
+		<meta id="cdf0f7e9-52a2-4087-b616-8e8b428e3712" name="Cylinder.001_Material.Brown"/>
+		<meta id="16e57b55-c89d-4ed6-b204-c7de595d8ccc" name="Cube.019_Material.Red"/>
+		<meta id="57817bcf-5612-4d85-96d1-2e0808151cee" name="ResourceSpawner.002_Material.Purple"/>
+		<meta id="c9101368-efca-4f13-a071-825d91755349" name="Cube.020_Material.Red"/>
+		<meta id="fe959047-430d-4a35-a547-998bf9c283ac" name="Cube.024_Material.Brown"/>
+		<meta id="5c9e9516-6479-40f8-87b6-5f91c4ee9949" name="Cube.024_Material.Grey"/>
+		<meta id="e3d1cb33-706e-4e0b-b879-76134441fe9b" name="Base_Material.Brown"/>
+		<meta id="edb90362-ee10-4bf9-b440-6a39737319b8" name="Step2.000_Material.Green"/>
+		<meta id="ff22b32b-e648-4537-b366-3cf4b0caff2f" name="Step2.001_Material.Grey"/>
+		<meta id="7cc80067-0887-480d-9ab0-3ed8a42e2869" name="Step3.000_Material.Green"/>
+		<meta id="b49114d8-4270-4069-96d0-4d7dfe3077a0" name="Step3.001_Material.Grey"/>
+		<meta id="abc82e83-f2d5-412f-b9a6-f69b54a11d0a" name="Step4.000Keep_Material.Red"/>
+		<meta id="d97f4b24-3b77-48ba-bde7-93d3f995816b" name="Step4.001Keep_Material.Grey"/>
+		<meta id="e678c526-b56c-4c13-b1e5-ab07ed9ed461" name="Step5.000Keep_Material.Purple"/>
+		<meta id="9dce450e-0178-4c09-bc83-699981bc3c8c" name="Step6.002_Material.Purple"/>
+		<meta id="64f44271-3305-4d82-a6e9-aeea91295b66" name="Step7.002_Material.Purple"/>
+		<meta id="3e57d7d9-456f-4d4d-bd58-5342803541ca" name="Step9.002Keep_Material.Blue"/>
+		<meta id="68b34be3-57e2-48ac-8362-20836359e1b7" name="Step9.003Keep_Material.Blue"/>
+		<meta id="9d048531-974f-4b93-ac34-50ac775e9979" name="Step9.001Keep_Material.Blue"/>
+		<meta id="da6b4f72-cc78-41c4-bf94-9a86a6fd8e24" name="Step6.003_Material.Purple"/>
+		<meta id="c9e41642-0873-43d2-bb04-1a8f428b3db9" name="Step6.001_Material.Purple"/>
+		<meta id="ef2eaec8-4d5a-4406-9b92-f24c74e9a91f" name="Step7.003_Material.Purple"/>
+		<meta id="cdb89e9c-b18e-4262-9a20-e2fdfa9dabd1" name="Step7.001_Material.Purple"/>
+		<meta id="d7092d4f-5a38-4f02-9a7e-e319f0ea28d7" name="Step1.000_Material.Green"/>
+		<meta id="a76f50f2-1835-488b-ac01-149a806504ff" name="Step2.002_Material.Grey"/>
+		<meta id="01ef3a99-8bb1-46b7-9466-65c7e5868fa5" name="Step2.003_Material.Grey"/>
+		<meta id="e5871f1d-b06d-4382-98a5-8a55a47fc097" name="Step1.001_Material.Green"/>
+		<meta id="83fdb3a2-800c-4365-97e5-54cd7178e290" name="Step1.002_Material.Green"/>
+		<meta id="4bdc1bdc-bc6a-44aa-ad96-282596f19077" name="Step1.003_Material.Green"/>
+		<meta id="0d767db8-fdd9-4aea-95ad-346705ea9dd9" name="Step3.002_Material.Grey"/>
+		<meta id="98bbc04e-7088-4976-8a15-f2ead5d52931" name="Step3.003_Material.Grey"/>
+		<meta id="efc91cf9-53f1-4394-bcc8-55518f956000" name="Step4.002Keep_Material.Grey"/>
+		<meta id="edcdf27f-6cb1-4c06-b038-b4bac47fe9e0" name="Step4.003Keep_Material.Grey"/>
+		<meta id="ca930f61-0f5b-43c6-8126-fc2e2e5395b5" name="Base.001_Material.Brown.001"/>
+		<meta id="2b3e93b9-6466-44b4-9c53-7462d9cde5b7" name="Step10.001_Material.Blue.001"/>
+		<meta id="ea781e61-b5f2-4d5b-87dd-e35028ee36bd" name="Step2.007_Material.Green.001"/>
+		<meta id="24329aff-24b3-4d1c-a8c6-7fa139d33a23" name="Step2.006_Material.Grey.001"/>
+		<meta id="386430cc-927d-4ade-9140-de745c257f93" name="Step3.007_Material.Green.001"/>
+		<meta id="30468606-53f6-4920-aa70-482c7cc87e4b" name="Step3.006_Material.Grey.001"/>
+		<meta id="a2f13eb3-c590-4939-ac75-a44baa5514a2" name="Step4.000Keep.001_Material.Red.001"/>
+		<meta id="35008e92-580b-4030-9e65-2335f4ed524c" name="Step4.001Keep.001_Material.Grey.001"/>
+		<meta id="12eea166-97d3-42d4-95f5-a0ded26dc604" name="Step5.000Keep.001_Material.Purple.001"/>
+		<meta id="0d9709b9-b5d3-489c-a477-b4e5ca9956bd" name="Step10.000_Material.Blue"/>
+		<meta id="d7d2f56b-d7e9-4f49-9fb2-20b2b8149525" name="Step8.004_Material.Blue"/>
+		<meta id="9ff5dcc2-5acd-424d-83ac-9c9555d6b430" name="Step9.000_Material.Blue"/>
+		<meta id="a3d51b51-8235-4dff-9ae4-624c3765dde0" name="Step6.006_Material.Purple.001"/>
+		<meta id="ffec4d3d-8c51-4080-9b1c-d2e63cfbb917" name="Step6.005_Material.Purple.001"/>
+		<meta id="9e65eff9-1757-4f3d-9658-6670b614dc9e" name="Step6.004_Material.Purple.001"/>
+		<meta id="c6f24b69-e1e0-4529-87f6-b0ebb23a221d" name="Step7.006_Material.Purple.001"/>
+		<meta id="f15d41ad-8c7b-4d4d-9bbb-7c42beabd058" name="Step7.005_Material.Purple.001"/>
+		<meta id="93403b6d-2928-488c-a658-b0901d839e64" name="Step7.004_Material.Purple.001"/>
+		<meta id="b500c9a8-48e6-4a0d-b919-b2282dce1d8b" name="Step8.006_Material.Purple.001"/>
+		<meta id="c900647e-76aa-421a-a75e-c76ed21d816e" name="Step8.005_Material.Purple.001"/>
+		<meta id="8c7e521e-e1e9-4582-86fa-0ac68a66b179" name="Step8.007_Material.Purple.001"/>
+		<meta id="136406ea-42e3-42e0-9cd8-d37e0cdac313" name="Base.002_Material.Brown"/>
+		<meta id="e2cc8f4c-d692-4f3c-baf9-4ff13365b391" name="Step1.008_Material.Green"/>
+		<meta id="dea7c958-52b1-40f4-8ff1-2de455469d44" name="Step2.008_Material.Green"/>
+		<meta id="07b37177-0903-4b0a-bca9-e76e420a939d" name="Step2.009_Material.Grey"/>
+		<meta id="b79ec900-60fc-4493-826f-9b577db7e9e5" name="Step2.010_Material.Grey"/>
+		<meta id="71062101-5c7a-49d7-a80b-290349a89492" name="Step2.011_Material.Grey"/>
+		<meta id="2f49dda3-2ef8-4591-bf73-f87d7e9ef247" name="Step1.009_Material.Green"/>
+		<meta id="c91d299e-602b-4b73-ae43-6c4cbb0e3859" name="Step1.010_Material.Green"/>
+		<meta id="177bd7a9-5861-4726-b07a-e7c85d974eca" name="Step1.011_Material.Green"/>
+		<meta id="f22ff3e5-5e78-44ad-ae7e-7fec6cafeada" name="Step3.008_Material.Green"/>
+		<meta id="4a396403-6c93-4952-8481-c5bb6a26d7ee" name="Step3.009_Material.Grey"/>
+		<meta id="0fa242c9-049d-4fcc-8abb-1421d56c2034" name="Step3.010_Material.Grey"/>
+		<meta id="72f0f7f3-58a1-41aa-8da3-0ae6cdef2e32" name="Step3.011_Material.Grey"/>
+		<meta id="7e96fc6b-ba4b-475b-8af2-9b8f927dce4a" name="Step4.000Keep.002_Material.Red"/>
+		<meta id="beedd5da-b0f9-4926-90f1-1341b8056dde" name="Step4.001Keep.002_Material.Grey"/>
+		<meta id="afed4489-9370-4c15-b5d4-7ed7c4456679" name="Step4.002Keep.002_Material.Grey"/>
+		<meta id="39839ab5-32ad-4a8b-be39-3509c329c7ea" name="Step4.003Keep.002_Material.Grey"/>
+		<meta id="15cf32ba-28e5-4d26-9bc4-58985acec714" name="Step5.000Keep.002_Material.Purple"/>
+		<meta id="baa57074-ce0b-4f87-a6ca-ea71105c0441" name="Step10.002_Material.Blue"/>
+		<meta id="f2eb9cfb-5e58-4b63-bfee-32afbeb6d8c8" name="Step8.009_Material.Blue"/>
+		<meta id="ba9b1b86-db6b-4847-8592-920136b33dd3" name="Step9.002_Material.Blue"/>
+		<meta id="6f922264-15cb-4102-ac0b-116ba8aeb69d" name="Planter2Part_COLLIDER"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
-		<meta id="e056f393-c1b2-4506-9707-5c8b4e311002" name="Light"/>
-		<meta id="2dcda8ec-876b-4f43-83f4-c845b0bc87b4" name="Camera"/>
 		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
 			<meta id="546649af-2e2b-445f-8f2e-ebfab8b36f33" name="Cube"/>
 			<meta id="44312eab-d42d-4c68-8c75-a631f299efef" name="Cube.001"/>
@@ -148,14 +236,208 @@
 			<meta id="594692ae-29c2-45ef-8ca6-95b787765532" name="Chain2.059"/>
 			<meta id="b226f5b2-1b85-4cef-92d8-c8dc64295ffc" name="Chain2.060"/>
 		</meta>
-		<meta id="d365580a-15d5-42bb-9ca5-d48454e0c257" name="Chain.002"/>
 		<meta id="1bdd1767-5664-4f2c-955a-9491e850ecb5" name="DefinedResourceGeneratorPart">
 			<meta id="d87616be-7854-4b81-95dd-4b1dff789174" name="Cube.003"/>
+		</meta>
+		<meta id="96d27fe0-eb09-4582-9a36-900d62b96e42" name="RadialEnforcerPart">
+			<meta id="528d40d3-1bd9-489b-a50b-28ef55c39657" name="Cube.006"/>
+		</meta>
+		<meta id="2a5d710e-41ab-45a3-8d72-370ee878f7bc" name="RectangularEnforcerPart">
+			<meta id="111ea758-b951-43f8-b189-3fef79a9e3d7" name="Cube.013"/>
+		</meta>
+		<meta id="a3b5888c-2f8f-447b-b874-e43f69522410" name="RadialConfinedAgent">
+			<meta id="f65aca78-dcf3-4b3d-8b7e-ee8cb3031dc1" name="Cube.010"/>
+		</meta>
+		<meta id="2650baaa-3a7e-4f52-89aa-024011a17e69" name="RectangularConfinedAgent">
+			<meta id="459e01f0-e718-4e9c-bc19-5d16fa8b7340" name="Cube.012"/>
+		</meta>
+		<meta id="32a3b5d6-32a0-4232-8ff3-6c1cb85e840c" name="ChainOriginal"/>
+		<meta id="50283201-f3b2-4875-9afb-928cc2c061db" name="ProduceTreePart">
+			<meta id="e1752bb5-e240-4824-9f57-94ca3c2659a0" name="Cube.015"/>
+			<meta id="03a9fb19-8978-4b4d-b720-54fca9f7c493" name="Cube.018"/>
+			<meta id="c3363278-fc98-4caf-b91b-f3c9e4fba72e" name="ResourceSpawner.002"/>
+			<meta id="3ead3dd1-93e6-469b-8a6a-72be826403d5" name="ResourceSpawner.003"/>
+			<meta id="c9b2be40-c42c-4a32-b01a-c6d7b9310197" name="ResourceSpawner.001"/>
+			<meta id="8507f508-16a0-48b0-9482-02d43b8e9202" name="ResourceSpawner.004"/>
+		</meta>
+		<meta id="26e478c0-06e9-48cb-b4b2-af9702ac85a8" name="SpawnerIncrease1Part">
+			<meta id="2a6b1ab8-4282-439f-98a9-0ebc75df873a" name="Cylinder"/>
+		</meta>
+		<meta id="25ec3880-28a6-4981-972d-be85b44fe6ba" name="SpawnerIncrease2Part">
+			<meta id="025e88bc-815e-41cf-a5c2-9f5364c2acf4" name="Cylinder.001"/>
+		</meta>
+		<meta id="9414f166-7be5-441c-89f8-c31af3a50965" name="TriggerActivatedParticleEmitterPart">
+			<meta id="49790dda-01a2-44ea-88f7-728261b0d7d1" name="Cube.021"/>
+			<meta id="74da82aa-6c52-4087-b2d5-cfe0a9267c15" name="ActivatedEmitter.000"/>
+			<meta id="0b30b988-2474-4ae3-aeb5-8b6dc5c9fc64" name="Trigger.005"/>
+			<meta id="a1caea88-2492-4be0-9b72-11808c7334ca" name="ActivatedEmitter.001"/>
+			<meta id="81afa1e6-58f6-403f-8ee0-2a20b23659b8" name="ActivatedEmitter.002"/>
+			<meta id="1cba5c2f-0a0d-48ea-9afb-58ef5b795672" name="ActivatedEmitter.003"/>
+		</meta>
+		<meta id="f626549f-b77b-4c9e-af80-99d3e677e906" name="TriggerDeactivatedParticleEmitterPart">
+			<meta id="e53a8a6b-2330-485b-8e7c-e036727978c6" name="Cube.022"/>
+			<meta id="6cda1c82-224c-4edf-9fb1-b770ed001818" name="Emitter.001"/>
+			<meta id="fe9e8ea6-1299-4055-83e6-26eab24cc7e3" name="Trigger.006"/>
+			<meta id="7fcbf04d-1f1b-41c5-9559-1e68eb7cb281" name="DeactivatedEmitter.000"/>
+			<meta id="1334b52e-2fe6-4fe1-873d-d5298a8fa71b" name="DeactivatedEmitter.001"/>
+			<meta id="0d9b1038-73e7-4382-9513-d31255be7945" name="Cube.023"/>
+			<meta id="913ab99c-46ef-44bd-acbc-6aa983a982ef" name="Emitter.000"/>
+			<meta id="82471670-c0ea-4e33-a026-8bf84ec54d85" name="DeactivatedEmitter.002"/>
+		</meta>
+		<meta id="dc6e3dfe-8e28-47d2-91c7-597d4f5189da" name="ProduceTreeResourceNode">
+			<meta id="712fae2e-6120-4f2f-8d60-a66e263639e1" name="Cube.019"/>
+			<meta id="acc9064d-46bf-4198-abd4-2e35d3744b50" name="Cube.020"/>
+		</meta>
+		<meta id="99ee3b61-323c-43a6-91de-bdce16eba629" name="PlantationPlantable">
+			<meta id="72a98a78-a8fc-4988-8536-53715671a2af" name="Base"/>
+			<meta id="14ddbb91-d2f3-4e7b-900c-8199d405c1e1" name="Step1.000"/>
+			<meta id="7b3d245e-167d-403c-9bbd-cc369ab63b05" name="Step2.000"/>
+			<meta id="735c31c9-0d12-44e5-a867-3f81f170832c" name="Step2.001"/>
+			<meta id="4c71bfa3-2f91-4ca4-8022-b320c9e72a8d" name="Step2.002"/>
+			<meta id="3f0ffc0c-45cf-4c7a-bf65-66b9beb349e2" name="Step2.003"/>
+			<meta id="e83346db-9a69-4e91-bb07-53a82cedf7a2" name="Step1.001"/>
+			<meta id="846955e3-0786-43e2-832a-a852bb536c2d" name="Step1.002"/>
+			<meta id="3313c2c8-46f6-47f9-9d56-359a7c0b8004" name="Step1.003"/>
+			<meta id="9cc20008-2843-4e3a-bde0-7312308329d2" name="Step3.000"/>
+			<meta id="28bc7385-c055-473a-8777-cb4194ece9e2" name="Step3.001"/>
+			<meta id="fb73a3ed-28ea-459b-8a40-6077a5b03ec5" name="Step3.002"/>
+			<meta id="c3cf43e6-b694-4237-87c2-f05bd4c848bd" name="Step3.003"/>
+			<meta id="3a5449f6-229f-4947-b8e0-f66deb9f38a4" name="Step4.000Keep"/>
+			<meta id="9215f016-2e8f-4e0b-972f-fac06c0f85aa" name="Step4.001Keep"/>
+			<meta id="4f1efea2-6e2a-415a-83fc-9c85fda1ec79" name="Step4.002Keep"/>
+			<meta id="2d7317d1-2af7-4927-a6e5-baa4d0440694" name="Step4.003Keep"/>
+			<meta id="df47af54-79b9-48a4-a746-4be70f5df3b0" name="Step5.000Keep"/>
+			<meta id="f0db8952-c931-4132-a24d-25629550e99e" name="Step5.002Keep"/>
+			<meta id="ae20d91f-bdfa-437f-8fc8-cc032538686e" name="Step5.001Keep"/>
+			<meta id="f78da544-7df7-415a-b5ce-e39927ee8f4f" name="Step6.002"/>
+			<meta id="693d2120-1499-40d6-b902-2baaafd8c547" name="Step7.002"/>
+			<meta id="8439a8c9-c9c2-4b82-bcd2-bbd471a635e2" name="Step9.002Keep"/>
+			<meta id="0bab7645-5cb2-4e40-84ec-fc7aecec7d57" name="Step8.002"/>
+			<meta id="fb4dd77a-82ea-4c4d-98e2-17ddf3d961e5" name="Step9.003Keep"/>
+			<meta id="2a67dced-6eb7-4a3e-a86b-4fe00e663b8f" name="Step9.001Keep"/>
+			<meta id="6aa6de77-0dd5-459b-8fd8-e583c6c537c7" name="Step6.003"/>
+			<meta id="5941dc2f-6ded-4e49-9e0f-0bd925c73876" name="Step6.001"/>
+			<meta id="1f67ee4c-2466-4c3d-9c8c-26be8fbaff1d" name="Step7.003"/>
+			<meta id="daf984cb-76b7-4ebf-9115-41557031112f" name="Step7.001"/>
+			<meta id="560aa113-aa9f-4c72-9b3a-30b98b2d985e" name="Step8.003"/>
+			<meta id="9436d076-59f8-42e3-b808-c5f78e36c33f" name="Step8.001"/>
+			<meta id="2508fa96-a9ee-499c-84a5-672c16fda6c3" name="Step10.000"/>
+			<meta id="28144e29-aef0-42d8-87b0-1a8d245f5427" name="Step9.000"/>
+			<meta id="b145e2f2-eb9d-4c67-96d0-1be4a7906c6f" name="Step8.004"/>
+		</meta>
+		<meta id="6524a6db-ef10-40c2-adb1-692d814a4776" name="PlantationPart">
+			<meta id="71d517eb-d266-4494-b968-7a45c8eb57dc" name="Cube.025"/>
+			<meta id="a8fbbf45-0c57-4d56-8ab1-1d1b706c3e6f" name="PATH_A_1.001"/>
+		</meta>
+		<meta id="af0395ef-e06f-441c-a7ed-1d0bf03e41c8" name="PlantationPlantable_Orig">
+			<meta id="bde12027-b4bd-4249-8e87-643e0b710827" name="Base.001"/>
+			<meta id="c71657e1-3d65-4779-b3b7-2fa756b114e7" name="Step1.007"/>
+			<meta id="77a4d6de-044c-4e02-a83a-b09651fd9ede" name="Step1.006"/>
+			<meta id="b4741f98-fa7f-440e-abb5-ce4b941f7959" name="Step1.005"/>
+			<meta id="545d9f79-1536-48fb-982b-800339dcaa69" name="Step1.004"/>
+			<meta id="15a678bb-6dba-4efd-bad4-a80da570498d" name="Step10.001"/>
+			<meta id="a54fbc8a-bd32-4928-b2f1-eb4d51d47623" name="Step2.007"/>
+			<meta id="53e7dc4f-64ab-4d20-a7c2-c868c80bb75b" name="Step2.006"/>
+			<meta id="a24b5b62-2180-46d2-8432-d584d7d73d98" name="Step2.005"/>
+			<meta id="472e8efa-67d7-4e4c-bc5e-d8c12cb9a3aa" name="Step2.004"/>
+			<meta id="3c579434-2ab7-4536-b9de-5f1c3814dd2d" name="Step3.007"/>
+			<meta id="630d6810-e63c-4a94-8c0d-a0cf5eb46bec" name="Step3.006"/>
+			<meta id="0c93218a-75a9-4614-99fb-272be311cfd2" name="Step3.005"/>
+			<meta id="3948efc7-3453-49d3-bee2-854bf19d8961" name="Step3.004"/>
+			<meta id="d9e49687-8c80-4be8-a005-2399ead39346" name="Step4.000Keep.001"/>
+			<meta id="2b0dcf54-5c6d-4e82-ae2c-28074e0eed01" name="Step4.001Keep.001"/>
+			<meta id="e35cc783-5862-441e-999a-00d179c8a059" name="Step4.002Keep.001"/>
+			<meta id="c6742252-208c-4ee9-81d4-a559e9ff4d31" name="Step4.003Keep.001"/>
+			<meta id="0489b67e-1b2f-476b-8cc5-0d98ab6d278e" name="Step5.000Keep.001"/>
+			<meta id="3ee2ff69-ca91-40da-9d65-1b459f12617c" name="Step5.001Keep.001"/>
+			<meta id="458929e9-aa50-4d57-8f3c-5f659ce8248e" name="Step5.002Keep.001"/>
+			<meta id="29978af2-4e79-4afe-9744-c654bcee77ab" name="Step6.006"/>
+			<meta id="046c5289-d8a4-478a-b552-6119680a8471" name="Step6.005"/>
+			<meta id="49da6ffc-e8a1-47b1-9fe9-0e91c20efc2b" name="Step6.004"/>
+			<meta id="de5a02c3-3fb2-4d41-8b20-fa1b232af9ec" name="Step7.006"/>
+			<meta id="d7a6c31e-00d9-4985-9b80-b52dc0f07cbb" name="Step7.005"/>
+			<meta id="bd8ce7a9-8618-4f97-afac-8ff08c6d159d" name="Step7.004"/>
+			<meta id="d64bc08d-f876-4716-a4d6-d1c5bea5f18d" name="Step8.006"/>
+			<meta id="a9ae4357-602f-424a-89f3-ca3e521f2b35" name="Step8.005"/>
+			<meta id="0d250b0a-4a2e-458c-8f94-f327626449e3" name="Step8.007"/>
+			<meta id="aec05e96-c6e5-4b26-8841-d28eddac54bb" name="Step8.008"/>
+			<meta id="788e5f21-2dd9-4ae6-a30f-ae910e716eba" name="Step9.001Keep.001"/>
+			<meta id="a1657f54-d15f-417f-80a9-796d18f1bd4c" name="Step9.002Keep.001"/>
+			<meta id="9ed6c907-e098-46a9-8ebe-781fccf9dc6b" name="Step9.003Keep.001"/>
+			<meta id="7b76906d-973d-4368-9126-257c2e2cb79e" name="Step9.001"/>
+		</meta>
+		<meta id="570e99be-32b0-4b05-9c8a-f156488718d0" name="PlantationPlantable_1Scale">
+			<meta id="26284da5-7a1a-4480-8384-1e49c9bf7175" name="Base.002"/>
+			<meta id="7585e34d-2aba-414a-946a-9b5726c783da" name="Step1.008"/>
+			<meta id="aa8b1d6e-9bd2-40d4-83ab-570653d82c1c" name="Step2.008"/>
+			<meta id="8c30efff-5c47-4b32-b908-fea8ccb00225" name="Step2.009"/>
+			<meta id="0a3d3ea4-9021-4371-94db-46910fba36c2" name="Step2.010"/>
+			<meta id="37266b42-2eb7-4920-93dc-f40b460a113e" name="Step2.011"/>
+			<meta id="c6304835-54a0-41dc-a5bb-f555e42c9cc3" name="Step1.009"/>
+			<meta id="b9f572d7-4485-46ac-956a-31fd4e3d359e" name="Step1.010"/>
+			<meta id="9dd221b2-a41d-46d5-a61a-254ef62a2aa9" name="Step1.011"/>
+			<meta id="930e9606-3d3c-42a7-9189-5b14eaec730c" name="Step3.008"/>
+			<meta id="071c08d7-fd14-4ea7-9164-768609ccbaef" name="Step3.009"/>
+			<meta id="dda61d0a-1045-4737-a05a-19f293e8bf6e" name="Step3.010"/>
+			<meta id="d040ba24-48fc-4a70-90f4-e90a450176ef" name="Step3.011"/>
+			<meta id="48442bab-29fe-40ee-97d6-6880110d6e5e" name="Step4.000Keep.002"/>
+			<meta id="a0b84f31-ab09-4b4e-91a6-b973bfe43c83" name="Step4.001Keep.002"/>
+			<meta id="ee547bdc-0551-4023-a196-c422b357be82" name="Step4.002Keep.002"/>
+			<meta id="f4fe3cb4-f760-4f2c-8340-f3e827e6206a" name="Step4.003Keep.002"/>
+			<meta id="c2779d18-a8ec-4e7b-afe6-4a596049f37a" name="Step5.000Keep.002"/>
+			<meta id="00af453f-1d52-47d9-91e2-fa5b404b21ce" name="Step5.002Keep.002"/>
+			<meta id="56d5d4d4-3455-426c-a8eb-8cc6e64fbdef" name="Step5.001Keep.002"/>
+			<meta id="8bfcd95e-bbb9-422f-a167-1cfd3e552601" name="Step10.002"/>
+			<meta id="0155b354-d52b-49f8-adc2-41fdcad1fe27" name="Step8.009"/>
+			<meta id="c9305810-918a-458f-9a01-cfe7195acb2d" name="Step6.007"/>
+			<meta id="df2af9a1-0ee7-4485-a61d-977ebd10e92a" name="Step7.007"/>
+			<meta id="712ef8e4-d79c-4623-8e05-1a38847a79e2" name="Step9.002Keep.002"/>
+			<meta id="5132f7c9-1634-4eb5-b753-2e3be2ef259d" name="Step8.010"/>
+			<meta id="1b30e39b-eaf1-482f-bf0f-f59dd684ce09" name="Step9.003Keep.002"/>
+			<meta id="3250c556-2319-4e0a-b427-b5194ff535e5" name="Step9.001Keep.002"/>
+			<meta id="822d6ea3-2a9b-4128-a9e7-ab4c48963a8a" name="Step6.008"/>
+			<meta id="4b1054a6-7ac9-4391-809f-7275f69a0904" name="Step6.009"/>
+			<meta id="bbe54a42-31c6-43b4-b95a-af4e6a3100c8" name="Step7.008"/>
+			<meta id="9ccd20c5-ee03-4f81-b3d0-e488c07e59ac" name="Step7.009"/>
+			<meta id="f005b504-2a8d-4d54-a39c-707b203026d3" name="Step8.011"/>
+			<meta id="551d23ee-34af-4087-aa96-6ba7d8e670db" name="Step8.012"/>
+			<meta id="4cd3285b-ddc9-480c-b365-17b1f3f9d321" name="Step9.002"/>
+		</meta>
+		<meta id="a12fb692-9ef9-44b9-bce1-6b695a5afe75" name="Planter1Part">
+			<meta id="e40d1453-10ca-4cc3-b3e1-7d30f3692562" name="Cube.024">
+				<meta id="1924eee2-804a-49f5-8544-f02d85f6c469" name="Cube.024_0"/>
+				<meta id="9d32ccb6-7b1d-4d46-94a8-72ffa6b64536" name="Cube.024_1"/>
+			</meta>
+			<meta id="76f72546-faa1-4f4f-b849-7836ce9e8407" name="PlantPosition.000"/>
+			<meta id="84877366-30ea-46be-b6db-c5b1e310c8e2" name="PlantPosition.001"/>
+			<meta id="08aca4cf-3040-4f5e-b908-632fb9881427" name="PlantPosition.002"/>
+			<meta id="d93685e2-7e73-4f10-b3fd-6bd0d2d373ae" name="PlantPosition.003"/>
+			<meta id="903367e4-99fe-4444-92b4-c7b6e9c6e283" name="PlantPosition.004"/>
+			<meta id="fc1043a8-9379-4590-8d11-6525d146ea02" name="PlantPosition.005"/>
+			<meta id="826159ce-2db9-4282-8ee4-920ef34f8157" name="PlantPosition.006"/>
+			<meta id="5de487f7-11bc-4b80-a051-d1532ec651a8" name="PlantPosition.007"/>
+			<meta id="fe70757d-5fc9-4684-8e12-a904ca0a7576" name="PlantPosition.008"/>
+			<meta id="16089aaf-0352-4465-81ef-89ce0d1af48a" name="PATH_A_1_PLANTING"/>
+		</meta>
+		<meta id="1ebc2b21-dbc5-41a5-a4d2-f25797ab71ca" name="Planter2Part">
+			<meta id="b49cd388-7f3a-40b6-a333-06bfcec4cf1c" name="Cube.026">
+				<meta id="2517e379-d7db-4d95-a29b-53487a1b2931" name="Cube.026_0"/>
+				<meta id="2b141fb5-2b0f-419f-ae29-d19b3a16bebd" name="Cube.026_1"/>
+			</meta>
+			<meta id="e411dc0d-32e1-4f88-a9bf-edd517f48483" name="PlantPosition.009"/>
+			<meta id="d912e993-a8c4-42bc-b21b-79fb5a3d8033" name="PlantPosition.010"/>
+			<meta id="bc663ed4-356f-4fda-ab61-34a88c2ee525" name="PlantPosition.011"/>
+			<meta id="da6e4067-3a72-42c7-84c7-62fc5a23bd33" name="PlantPosition.012"/>
+			<meta id="06153204-b146-4d87-baea-bb21dbb3ca45" name="PlantPosition.013"/>
+			<meta id="b3a00660-d06c-480b-bff4-21432f9c298d" name="PlantPosition.014"/>
+			<meta id="d20377f2-1d58-4c3a-a84d-026a5721ebf5" name="PlantPosition.015"/>
+			<meta id="866dd655-9f2e-4009-a20b-ef4e0ed89206" name="PlantPosition.016"/>
+			<meta id="11fa72e4-7731-4664-81b1-5a24f4334e67" name="PlantPosition.017"/>
 		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="a7b1bea3c2364cccb72beef07fd09107"/>
+	<Md5Checksum value="d9ee4458e2b55f6b9904c9c8d3fbac0c"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -168,16 +450,6 @@
 	<NodeConfig type="GenCFbxNodeConfig">
 		<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 		<ChildList>
-			<Item type="GenCFbxNodeConfig">
-				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-				<ChildList/>
-				<NodeName value="Light"/>
-			</Item>
-			<Item type="GenCFbxNodeConfig">
-				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-				<ChildList/>
-				<NodeName value="Camera"/>
-			</Item>
 			<Item type="GenCFbxNodeConfig">
 				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 				<ChildList>
@@ -624,11 +896,6 @@
 			</Item>
 			<Item type="GenCFbxNodeConfig">
 				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-				<ChildList/>
-				<NodeName value="Chain.002"/>
-			</Item>
-			<Item type="GenCFbxNodeConfig">
-				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 				<ChildList>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -637,6 +904,909 @@
 					</Item>
 				</ChildList>
 				<NodeName value="DefinedResourceGeneratorPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.006"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RadialEnforcerPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.013"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RectangularEnforcerPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.010"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RadialConfinedAgent"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.012"/>
+					</Item>
+				</ChildList>
+				<NodeName value="RectangularConfinedAgent"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="ChainOriginal"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.015"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.018"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ResourceSpawner.004"/>
+					</Item>
+				</ChildList>
+				<NodeName value="ProduceTreePart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cylinder"/>
+					</Item>
+				</ChildList>
+				<NodeName value="SpawnerIncrease1Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cylinder.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="SpawnerIncrease2Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.021"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="ActivatedEmitter.003"/>
+					</Item>
+				</ChildList>
+				<NodeName value="TriggerActivatedParticleEmitterPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.022"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Emitter.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Trigger.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DeactivatedEmitter.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DeactivatedEmitter.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.023"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Emitter.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="DeactivatedEmitter.002"/>
+					</Item>
+				</ChildList>
+				<NodeName value="TriggerDeactivatedParticleEmitterPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.019"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.020"/>
+					</Item>
+				</ChildList>
+				<NodeName value="ProduceTreeResourceNode"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Base"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.000Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.001Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.002Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.003Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.000Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.002Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.001Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.002Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.003Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.001Keep"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step10.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.004"/>
+					</Item>
+				</ChildList>
+				<NodeName value="PlantationPlantable"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.025"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PATH_A_1.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="PlantationPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Base.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step10.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.000Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.001Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.002Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.003Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.000Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.001Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.002Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.001Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.002Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.003Keep.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="PlantationPlantable_Orig"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Base.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.010"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step2.011"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.010"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step1.011"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.010"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step3.011"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.000Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.001Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.002Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step4.003Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.000Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.002Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step5.001Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step10.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.002Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.010"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.003Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.001Keep.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step6.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step7.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.011"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step8.012"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Step9.002"/>
+					</Item>
+				</ChildList>
+				<NodeName value="PlantationPlantable_1Scale"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Cube.024_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Cube.024_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="Cube.024"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.000"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.004"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.005"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.006"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.007"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.008"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PATH_A_1_PLANTING"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Planter1Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Cube.026_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Cube.026_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="Cube.026"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.009"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.010"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.011"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.012"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.013"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.014"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.015"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.016"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="PlantPosition.017"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Planter2Part"/>
 			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>
@@ -647,20 +1817,48 @@
 			<MaterialName value="Material.Blue"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="b602258f-86e5-4f02-925f-9a5d00456d9d"/>
+			<MaterialName value="Material.Blue.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="7e723158-6d48-4381-944b-39e4cb7ef786"/>
 			<MaterialName value="Material.Brown"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="0e777dbc-f63a-4180-b7d7-169a2d09b2a1"/>
+			<MaterialName value="Material.Brown.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="8c8fc4fb-1e22-4f23-a606-a2af16ce5b1b"/>
+			<MaterialName value="Material.Green"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="40dfa9c9-0a81-4519-9f36-5d00205ff8b1"/>
+			<MaterialName value="Material.Green.001"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="0f214f60-5d7b-420c-9779-47499d36d098"/>
 			<MaterialName value="Material.Grey"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="b70cdff3-f4ed-4f68-bfb5-f5d8b8de64d8"/>
+			<MaterialName value="Material.Grey.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="da3e206f-ff1d-40dc-b24e-e6d306c3ed30"/>
 			<MaterialName value="Material.Purple"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="815b8150-cc02-4935-842b-8e845efad18f"/>
+			<MaterialName value="Material.Purple.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="7fb40cd8-2f5e-44c8-a956-80957bd771b0"/>
 			<MaterialName value="Material.Red"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="5fb6ba9e-cb74-4253-88ba-5b5c09f08ac1"/>
+			<MaterialName value="Material.Red.001"/>
 		</Item>
 	</MaterialList>
 </importer>

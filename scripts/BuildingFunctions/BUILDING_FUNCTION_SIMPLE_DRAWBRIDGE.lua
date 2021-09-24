@@ -2,7 +2,7 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                     MAIN MOD FILE                    | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |         SIMPLE DRAWBRIDGE BUILDING FUNCTION          | |
+| ||   \/   ||  V_/_  |                   SIMPLE DRAWBRIDGE                  | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
@@ -78,10 +78,6 @@ function COMP_SIMPLE_DRAWBRIDGE:create()
     self.drawbridgeAngle = 0
     self.chainAngle = 0
     self.timer = 0
-end
-
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
 end
 
 function COMP_SIMPLE_DRAWBRIDGE:setDrawbridgeData(buildingFunctionData)

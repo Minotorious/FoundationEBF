@@ -2,7 +2,7 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                  SUPPLEMENTARY FILE                  | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |            SINGLE DOOR BUILDING FUNCTION             | |
+| ||   \/   ||  V_/_  |                     SINGLE DOOR                      | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
@@ -62,10 +62,6 @@ function COMP_SINGLE_DOOR:create()
     self.sequence = 0
     self.angle = 0
     self.timer = 0
-end
-
-local function starts_with(str, start)
-   return str:sub(1, #start) == start
 end
 
 function COMP_SINGLE_DOOR:setSingleDoorData(buildingFunctionData)

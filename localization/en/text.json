@@ -1,12 +1,36 @@
 {
 	"": {
-        "FOUNDATIONEBF_EXAMPLE_NAME": "Foundation EBF Examples",
-        "FOUNDATIONEBF_EXAMPLE_PARTS_ANIMATIONS_CATEGORY": "Foundation EBF Animation Examples",
-        "FOUNDATIONEBF_EXAMPLE_PARTS_RESOURCE_PRODUCTION_CATEGORY": "Foundation EBF Resource Production Examples",
+        "FOUNDATIONEBF_EXAMPLES_NAME": "Foundation EBF Examples",
+        "FOUNDATIONEBF_EXAMPLES_DESC": "Foundation EBF Examples",
+        
+        "FOUNDATIONEBF_EXAMPLE_PARTS_ANIMATIONS_CATEGORY": "Animations",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_PARTICLE_EMITTERS_CATEGORY": "Particle Emitters",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_RESOURCE_PRODUCTION_CATEGORY": "Resource Production",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_PRODUCE_TREE_CATEGORY": "Produce Tree",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_PLANTATION_CATEGORY": "Plantation & Planters",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_BEHAVIOR_TREES_CATEGORY": "Behaviour Trees",
+        
         "SINGLE_DOOR_PART_NAME": "Single Door Example",
         "DOUBLE_DOOR_PART_NAME": "Double Door Example",
         "PORTCULLIS_PART_NAME": "Portcullis Example",
         "SIMPLE_DRAWBRIDGE_PART_NAME": "Simple Drawbridge Example",
-        "DEFINED_RESOURCE_GENERATOR_PART_NAME": "Defined Resource Generator Example"
+        
+        "TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART_NAME": "Trigger Activated Particle Emitter Example",
+        "TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART_NAME": "Trigger Deactivated Particle Emitter Example",
+        
+        "DEFINED_RESOURCE_GENERATOR_PART_NAME": "Defined Resource Generator Example",
+        
+        "PRODUCE_TREE_PART_NAME": "Produce Tree Example",
+        "SPAWNER_INCREASE_1_PART_NAME": "Spawner Increase 1",
+        "SPAWNER_INCREASE_2_PART_NAME": "Spawner Increase 2",
+        
+        "PLANTATION_PART_NAME": "Plantation Example",
+        "PLANTER_1_PART_NAME": "Planter with Path Example",
+        "PLANTER_2_PART_NAME": "Planter without Path Example",
+        "PLANTATION_FARMER_EXAMPLE_NAME": "Plantation Farmer Example",
+        "BUILDING_FUNCTION_PLANTATION_EXAMPLE_NAME": "Plantation Example",
+        
+        "RADIAL_ENFORCER_PART_NAME": "Radial Enforcer Example",
+        "RECTANGULAR_ENFORCER_PART_NAME": "Rectangular Enforcer Example"
     }
 }

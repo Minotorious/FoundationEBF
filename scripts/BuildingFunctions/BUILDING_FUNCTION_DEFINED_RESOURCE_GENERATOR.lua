@@ -30,7 +30,7 @@ function BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR:activateBuilding(gameObjec
 end
 
 function BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR:reloadBuildingFunction(gameObject)
-    --self:activateBuilding(gameObject)
+    self:activateBuilding(gameObject)
 end
 
 EBF:registerClass(BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR)

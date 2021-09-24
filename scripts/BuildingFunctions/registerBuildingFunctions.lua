@@ -24,5 +24,6 @@ EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_TRIGGER_DEACTIVATED_PART
 EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR.lua")
 EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_PRODUCE_TREE.lua")
 EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_PLANTATION.lua")
+EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_PLANTER.lua")
 
 -- Other

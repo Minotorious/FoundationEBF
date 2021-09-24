@@ -7,6 +7,7 @@
         "FOUNDATIONEBF_EXAMPLE_PARTS_PARTICLE_EMITTERS_CATEGORY": "Particle Emitters",
         "FOUNDATIONEBF_EXAMPLE_PARTS_RESOURCE_PRODUCTION_CATEGORY": "Resource Production",
         "FOUNDATIONEBF_EXAMPLE_PARTS_PRODUCE_TREE_CATEGORY": "Produce Tree",
+        "FOUNDATIONEBF_EXAMPLE_PARTS_PLANTATION_CATEGORY": "Plantation & Planters",
         "FOUNDATIONEBF_EXAMPLE_PARTS_BEHAVIOR_TREES_CATEGORY": "Behaviour Trees",
         
         "SINGLE_DOOR_PART_NAME": "Single Door Example",
@@ -22,6 +23,12 @@
         "PRODUCE_TREE_PART_NAME": "Produce Tree Example",
         "SPAWNER_INCREASE_1_PART_NAME": "Spawner Increase 1",
         "SPAWNER_INCREASE_2_PART_NAME": "Spawner Increase 2",
+        
+        "PLANTATION_PART_NAME": "Plantation Example",
+        "PLANTER_1_PART_NAME": "Planter with Path Example",
+        "PLANTER_2_PART_NAME": "Planter without Path Example",
+        "PLANTATION_FARMER_EXAMPLE_NAME": "Plantation Farmer Example",
+        "BUILDING_FUNCTION_PLANTATION_EXAMPLE_NAME": "Plantation Example",
         
         "RADIAL_ENFORCER_PART_NAME": "Radial Enforcer Example",
         "RECTANGULAR_ENFORCER_PART_NAME": "Rectangular Enforcer Example"

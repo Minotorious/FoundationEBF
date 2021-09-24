@@ -11,21 +11,28 @@ local EBF = foundation.createMod();
 --[[-------------------------------- DO FILES ---------------------------------]]--
 
 -- Global Utility Functions
+EBF:log("Registering Global Utility Functions")
 EBF:dofile("scripts/globalUtilityFunctions.lua")
 
--- Assets
-EBF:dofile("scripts/assets/registerAssets.lua")
- 
--- Building Functions
-EBF:dofile("scripts/BuildingFunctions/registerBuildingFunctions.lua")
-    
--- Components
+-- Data & Assets
+EBF:log("Registering Data and Assets")
+EBF:dofile("scripts/Data_Assets/registerData_Assets.lua")
+
+ -- Components
+EBF:log("Registering Components")
 EBF:dofile("scripts/Components/registerComponents.lua")
 
+ 
+-- Building Functions
+EBF:log("Registering Building Functions")
+EBF:dofile("scripts/BuildingFunctions/registerBuildingFunctions.lua")
+
 -- Behavior Tree Nodes
+EBF:log("Registering Behavior Tree Nodes")
 EBF:dofile("scripts/BehaviorTreeNodes/registerBehaviorTreeNodes.lua")
 
 -- Behavior Trees
+EBF:log("Registering Behavior Trees")
 EBF:dofile("scripts/BehaviorTrees/registerBehaviorTrees.lua")
 
 -- Examples
@@ -65,6 +72,12 @@ EBF:register({
             Name = "FOUNDATIONEBF_EXAMPLE_PARTS_PRODUCE_TREE_CATEGORY",
             BuildingPartList = { 
                 "PRODUCE_TREE_PART", "SPAWNER_INCREASE_1_PART", "SPAWNER_INCREASE_2_PART"
+            }
+        },
+        {
+            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_PLANTATION_CATEGORY",
+            BuildingPartList = { 
+                "PLANTATION_PART", "PLANTER_1_PART", "PLANTER_2_PART"
             }
         },
         {

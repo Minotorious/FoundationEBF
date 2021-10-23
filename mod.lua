@@ -12,28 +12,55 @@ local EBF = foundation.createMod();
 
 -- Global Utility Functions
 EBF:log("Registering Global Utility Functions")
-EBF:dofile("scripts/globalUtilityFunctions.lua")
-
+if (foundation.getGameVersion() == nil or version.cmp(foundation.getGameVersion(), "1.8") < 0) then
+    EBF:dofile("scripts_1.7/globalUtilityFunctions.lua")
+else
+    EBF:dofile("scripts/globalUtilityFunctions.lua")
+end
+    
 -- Data & Assets
 EBF:log("Registering Data and Assets")
-EBF:dofile("scripts/Data_Assets/registerData_Assets.lua")
+if (foundation.getGameVersion() == nil or version.cmp(foundation.getGameVersion(), "1.8") < 0) then
+    EBF:dofile("scripts_1.7/Data_Assets/registerData_Assets.lua")
+else
+    EBF:dofile("scripts/Data_Assets/registerData_Assets.lua")
+end
 
  -- Components
 EBF:log("Registering Components")
-EBF:dofile("scripts/Components/registerComponents.lua")
+if (foundation.getGameVersion() == nil or version.cmp(foundation.getGameVersion(), "1.8") < 0) then
+    EBF:dofile("scripts_1.7/Components/registerComponents.lua")
+else
+    EBF:dofile("scripts/Components/registerComponents.lua")
+end
 
- 
 -- Building Functions
 EBF:log("Registering Building Functions")
-EBF:dofile("scripts/BuildingFunctions/registerBuildingFunctions.lua")
+if (foundation.getGameVersion() == nil or version.cmp(foundation.getGameVersion(), "1.8") < 0) then
+    EBF:dofile("scripts_1.7/BuildingFunctions/registerBuildingFunctions.lua")
+else
+    EBF:dofile("scripts/BuildingFunctions/registerBuildingFunctions.lua")
+end
 
 -- Behavior Tree Nodes
 EBF:log("Registering Behavior Tree Nodes")
-EBF:dofile("scripts/BehaviorTreeNodes/registerBehaviorTreeNodes.lua")
+if (foundation.getGameVersion() == nil or version.cmp(foundation.getGameVersion(), "1.8") < 0) then
+    EBF:dofile("scripts_1.7/BehaviorTreeNodes/registerBehaviorTreeNodes.lua")
+else
+    EBF:dofile("scripts/BehaviorTreeNodes/registerBehaviorTreeNodes.lua")
+end
 
 -- Behavior Trees
 EBF:log("Registering Behavior Trees")
-EBF:dofile("scripts/BehaviorTrees/registerBehaviorTrees.lua")
+if (foundation.getGameVersion() == nil or version.cmp(foundation.getGameVersion(), "1.8") < 0) then
+    EBF:dofile("scripts_1.7/BehaviorTrees/registerBehaviorTrees.lua")
+else
+    EBF:dofile("scripts/BehaviorTrees/registerBehaviorTrees.lua")
+end
 
 -- Examples
---EBF:dofile("scripts/Examples/registerExamples.lua")
+if (foundation.getGameVersion() == nil or version.cmp(foundation.getGameVersion(), "1.8") < 0) then
+
+else
+    --EBF:dofile("scripts/Examples/registerExamples.lua")
+end

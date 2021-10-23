@@ -27,7 +27,7 @@ EBF:configurePrefabFlagList("models/FoundationEBF.fbx/Prefab/SimpleDrawbridgePar
 
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "SINGLE_DOOR_PART",
     Name = "SINGLE_DOOR_PART_NAME",
@@ -53,15 +53,10 @@ EBF:register({
 			}
         }
     },
-	ConstructionVisual = nil,
-	Cost = {
-		RessourcesNeeded = {}
-	},
-    AssetBuildingFunction = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE",
-    IsVisibleWhenBuilt = true
+    AssetBuildingFunction = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE"
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "DOUBLE_DOOR_PART",
     Name = "DOUBLE_DOOR_PART_NAME",
@@ -87,15 +82,10 @@ EBF:register({
 			}
         }
     },
-	ConstructionVisual = nil,
-	Cost = {
-		RessourcesNeeded = {}
-	},
-    AssetBuildingFunction = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE",
-    IsVisibleWhenBuilt = true
+    AssetBuildingFunction = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE"
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PORTCULLIS_PART",
     Name = "PORTCULLIS_PART_NAME",
@@ -121,15 +111,10 @@ EBF:register({
 			}
         }
     },
-	ConstructionVisual = nil,
-	Cost = {
-		RessourcesNeeded = {}
-	},
-    AssetBuildingFunction = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE",
-    IsVisibleWhenBuilt = true
+    AssetBuildingFunction = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE"
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "SIMPLE_DRAWBRIDGE_PART",
     Name = "SIMPLE_DRAWBRIDGE_PART_NAME",
@@ -159,24 +144,19 @@ EBF:register({
 			}
         }
     },
-	ConstructionVisual = nil,
-	Cost = {
-		RessourcesNeeded = {}
-	},
-    AssetBuildingFunction = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE",
-    IsVisibleWhenBuilt = true
+    AssetBuildingFunction = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE"
 })
 
 --[[------------------------- JOBS & BUILDING FUNCTIONS -----------------------]]--
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_SINGLE_DOOR",
     Id = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE",
     Name = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE_NAME",
     DoorPivotPoint = { 1, 1, 0 }
 })
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_DOUBLE_DOOR",
     Id = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE",
     Name = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE_NAME",
@@ -184,13 +164,13 @@ EBF:register({
     RightPivotPoint = { -2, 1, 0 }
 })
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PORTCULLIS",
     Id = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE",
     Name = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE_NAME"
 })
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE",
     Id = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE",
     Name = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE_NAME",

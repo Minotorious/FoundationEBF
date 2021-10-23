@@ -10,74 +10,74 @@ local EBF = ...
 
 --[[--------------------------- PREFABS & MATERIALS ---------------------------]]--
 
-EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/TriggerActivatedParticleEmitterPart", "PREFAB_TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART")
-EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedParticleEmitterPart", "PREFAB_TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART")
+EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/ActivatedParticleEmitterPart", "PREFAB_ACTIVATED_PARTICLE_EMITTER_PART")
+EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/DeactivatedParticleEmitterPart", "PREFAB_DEACTIVATED_PARTICLE_EMITTER_PART")
 
 --[[--------------------- ASSET PROCESSOR & NODE HANDLING ---------------------]]--
 --[[--------------------------- COMPONENT ASSIGNMENT --------------------------]]--
 --[[-------------------------------- COLLIDERS --------------------------------]]--
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerActivatedParticleEmitterPart/Trigger.005", { DataType = "COMP_GROUNDED" })
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/ActivatedParticleEmitterPart/Trigger.005", { DataType = "COMP_GROUNDED" })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerActivatedParticleEmitterPart/ActivatedEmitter.000", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/ActivatedParticleEmitterPart/ActivatedEmitter.000", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = false
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerActivatedParticleEmitterPart/ActivatedEmitter.001", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/ActivatedParticleEmitterPart/ActivatedEmitter.001", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = false
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerActivatedParticleEmitterPart/ActivatedEmitter.002", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/ActivatedParticleEmitterPart/ActivatedEmitter.002", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = false
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerActivatedParticleEmitterPart/ActivatedEmitter.003", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/ActivatedParticleEmitterPart/ActivatedEmitter.003", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = false
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedParticleEmitterPart/Trigger.006", { DataType = "COMP_GROUNDED" })
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DeactivatedParticleEmitterPart/Trigger.006", { DataType = "COMP_GROUNDED" })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedParticleEmitterPart/Emitter.000", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DeactivatedParticleEmitterPart/Emitter.000", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = true
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedParticleEmitterPart/Emitter.001", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DeactivatedParticleEmitterPart/Emitter.001", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = true
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedParticleEmitterPart/DeactivatedEmitter.000", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DeactivatedParticleEmitterPart/DeactivatedEmitter.000", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = true
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedParticleEmitterPart/DeactivatedEmitter.001", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DeactivatedParticleEmitterPart/DeactivatedEmitter.001", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
     IsEmitting = true
 })
 
-EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedParticleEmitterPart/DeactivatedEmitter.002", {
+EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DeactivatedParticleEmitterPart/DeactivatedEmitter.002", {
     DataType = "COMP_PARTICLE_EMITTER",
     ParticleSystem = "PARTICLE_SYSTEM_HOUSING_SMOKE",
     IsPlaying = true,
@@ -86,15 +86,15 @@ EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/TriggerDeactivatedP
 
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
-	Id = "TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART",
-    Name = "TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART_NAME",
-	--Description = "TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART_DESC",
+	Id = "ACTIVATED_PARTICLE_EMITTER_PART",
+    Name = "ACTIVATED_PARTICLE_EMITTER_PART_NAME",
+	--Description = "ACTIVATED_PARTICLE_EMITTER_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART"
+		CoreObjectPrefab = "PREFAB_ACTIVATED_PARTICLE_EMITTER_PART"
 	},
 	BuildingZone = {
 		ZoneEntryList = {
@@ -104,23 +104,18 @@ EBF:register({
 			}
         }
     },
-	ConstructionVisual = nil,
-	Cost = {
-		RessourcesNeeded = {}
-	},
-    AssetBuildingFunction = "BUILDING_FUNCTION_TRIGGER_ACTIVATED_PARTICLE_EMITTER_EXAMPLE",
-    IsVisibleWhenBuilt = true
+    AssetBuildingFunction = "BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER_EXAMPLE"
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
-	Id = "TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART",
-    Name = "TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART_NAME",
-	--Description = "TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART_DESC",
+	Id = "DEACTIVATED_PARTICLE_EMITTER_PART",
+    Name = "DEACTIVATED_PARTICLE_EMITTER_PART_NAME",
+	--Description = "DEACTIVATED_PARTICLE_EMITTER_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART"
+		CoreObjectPrefab = "PREFAB_DEACTIVATED_PARTICLE_EMITTER_PART"
 	},
 	BuildingZone = {
 		ZoneEntryList = {
@@ -134,24 +129,19 @@ EBF:register({
 			}
         }
     },
-	ConstructionVisual = nil,
-	Cost = {
-		RessourcesNeeded = {}
-	},
-    AssetBuildingFunction = "BUILDING_FUNCTION_TRIGGER_DEACTIVATED_PARTICLE_EMITTER_EXAMPLE",
-    IsVisibleWhenBuilt = true
+    AssetBuildingFunction = "BUILDING_FUNCTION_DEACTIVATED_PARTICLE_EMITTER_EXAMPLE"
 })
 
 --[[------------------------- JOBS & BUILDING FUNCTIONS -----------------------]]--
 
-EBF:register({
-    DataType = "BUILDING_FUNCTION_TRIGGER_ACTIVATED_PARTICLE_EMITTER",
-    Id = "BUILDING_FUNCTION_TRIGGER_ACTIVATED_PARTICLE_EMITTER_EXAMPLE",
+EBF:registerAsset({
+    DataType = "BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER",
+    Id = "BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER_EXAMPLE",
     Name = "BUILDING_FUNCTION_TRIGGER_ACTIVATED_PARTICLE_EMITTER_NAME"
 })
 
-EBF:register({
-    DataType = "BUILDING_FUNCTION_TRIGGER_DEACTIVATED_PARTICLE_EMITTER",
-    Id = "BUILDING_FUNCTION_TRIGGER_DEACTIVATED_PARTICLE_EMITTER_EXAMPLE",
-    Name = "BUILDING_FUNCTION_TRIGGER_DEACTIVATED_PARTICLE_EMITTER_NAME"
+EBF:registerAsset({
+    DataType = "BUILDING_FUNCTION_DEACTIVATED_PARTICLE_EMITTER",
+    Id = "BUILDING_FUNCTION_DEACTIVATED_PARTICLE_EMITTER_EXAMPLE",
+    Name = "BUILDING_FUNCTION_DEACTIVATED_PARTICLE_EMITTER_NAME"
 })

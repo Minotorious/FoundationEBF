@@ -24,7 +24,7 @@ EBF:dofile("scripts/Examples/BehaviorTreeExamples/rectangularConfinedAgent.lua")
 
 --[[------------------------------ MAIN MONUMENT ------------------------------]]--
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING",
 	Id = "FOUNDATIONEBF_EXAMPLES",
 	Name = "FOUNDATIONEBF_EXAMPLES_NAME",
@@ -42,8 +42,8 @@ EBF:register({
         {
             Name = "FOUNDATIONEBF_EXAMPLE_PARTS_PARTICLE_EMITTERS_CATEGORY",
             BuildingPartList = { 
-                "TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART", 
-                "TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART"
+                "ACTIVATED_PARTICLE_EMITTER_PART", 
+                "DEACTIVATED_PARTICLE_EMITTER_PART"
             }
         },
         {

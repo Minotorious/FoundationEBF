@@ -17,8 +17,8 @@ EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_PORTCULLIS.lua")
 EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE.lua")
 
 -- Particle Emitters
-EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_TRIGGER_ACTIVATED_PARTICLE_EMITTER.lua")
-EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_TRIGGER_DEACTIVATED_PARTICLE_EMITTER.lua")
+EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER.lua")
+EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_DEACTIVATED_PARTICLE_EMITTER.lua")
 
 -- Resource Production
 EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR.lua")

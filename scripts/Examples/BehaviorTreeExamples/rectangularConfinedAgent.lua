@@ -78,7 +78,7 @@ EBF:registerPrefabComponent(
 )
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "RECTANGULAR_ENFORCER_PART",
     Name = "RECTANGULAR_ENFORCER_PART_NAME",

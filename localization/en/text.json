@@ -1,5 +1,5 @@
 {
-	"": {
+    "": {
         "FOUNDATIONEBF_EXAMPLES_NAME": "Foundation EBF Examples",
         "FOUNDATIONEBF_EXAMPLES_DESC": "Foundation EBF Examples",
         
@@ -15,8 +15,8 @@
         "PORTCULLIS_PART_NAME": "Portcullis Example",
         "SIMPLE_DRAWBRIDGE_PART_NAME": "Simple Drawbridge Example",
         
-        "TRIGGER_ACTIVATED_PARTICLE_EMITTER_PART_NAME": "Trigger Activated Particle Emitter Example",
-        "TRIGGER_DEACTIVATED_PARTICLE_EMITTER_PART_NAME": "Trigger Deactivated Particle Emitter Example",
+        "ACTIVATED_PARTICLE_EMITTER_PART_NAME": "Activated Particle Emitter Example",
+        "DEACTIVATED_PARTICLE_EMITTER_PART_NAME": "Deactivated Particle Emitter Example",
         
         "DEFINED_RESOURCE_GENERATOR_PART_NAME": "Defined Resource Generator Example",
         

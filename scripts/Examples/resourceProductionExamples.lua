@@ -30,7 +30,7 @@ EBF:configurePrefabFlagList("PREFAB_PLANTER_2_PART", { "PLATFORM" })
 
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "DEFINED_RESOURCE_GENERATOR_PART",
     Name = "DEFINED_RESOURCE_GENERATOR_PART_NAME",
@@ -52,7 +52,7 @@ EBF:register({
     IsVisibleWhenBuilt = true
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PRODUCE_TREE_PART",
     Name = "PRODUCE_TREE_PART_NAME",
@@ -74,7 +74,7 @@ EBF:register({
     IsVisibleWhenBuilt = true
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "SPAWNER_INCREASE_1_PART",
     Name = "SPAWNER_INCREASE_1_PART_NAME",
@@ -95,7 +95,7 @@ EBF:register({
     IsVisibleWhenBuilt = true
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "SPAWNER_INCREASE_2_PART",
     Name = "SPAWNER_INCREASE_2_PART_NAME",
@@ -116,7 +116,7 @@ EBF:register({
     IsVisibleWhenBuilt = true
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PLANTATION_PART",
     Name = "PLANTATION_PART_NAME",
@@ -138,7 +138,7 @@ EBF:register({
     IsVisibleWhenBuilt = true
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PLANTER_1_PART",
     Name = "PLANTER_1_PART_NAME",
@@ -160,7 +160,7 @@ EBF:register({
     IsVisibleWhenBuilt = true
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PLANTER_2_PART",
     Name = "PLANTER_2_PART_NAME",
@@ -202,7 +202,7 @@ EBF:register({
 
 -- BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_RESOURCE_GENERATOR",
     Id = "BUILDING_FUNCTION_RESOURCE_GENERATOR_GEMS",
     ResourceGenerated = "GEMS",
@@ -210,7 +210,7 @@ EBF:register({
     IsInfinite = false --<-- IMPORTANT!!!
 })
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR",
     Id = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_EXAMPLE",
     Name = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_NAME",
@@ -232,7 +232,7 @@ EBF:registerPrefabComponent("PREFAB_PRODUCE_TREE_RESOURCE_NODE", {
     HasMaximumWorkstation = false
 })
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PRODUCE_TREE",
     Id = "BUILDING_FUNCTION_PRODUCE_TREE_EXAMPLE",
     Name = "BUILDING_FUNCTION_PRODUCE_TREE_EXAMPLE_NAME",
@@ -244,7 +244,7 @@ EBF:register({
 
 -- BUILDING_FUNCTION_PLANTATION
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PLANTATION",
     Id = "BUILDING_FUNCTION_PLANTATION_EXAMPLE",
     Name = "BUILDING_FUNCTION_PLANTATION_EXAMPLE_NAME",
@@ -262,7 +262,7 @@ EBF:register({
     }
 })
 
-EBF:register({
+EBF:registerAsset({
 	DataType = "JOB",
 	Id = "PLANTATION_FARMER_EXAMPLE",
 	JobName = "PLANTATION_FARMER_EXAMPLE_NAME",
@@ -281,12 +281,12 @@ local overridenCompatibleJobList = {
     Action = "APPEND",
     "PLANTATION_FARMER_EXAMPLE"
 }
-EBF:override({ Id = "NEWCOMER", CompatibleJobList = overridenCompatibleJobList })
-EBF:override({ Id = "SERF", CompatibleJobList = overridenCompatibleJobList })
+EBF:overrideAsset({ Id = "NEWCOMER", CompatibleJobList = overridenCompatibleJobList })
+EBF:overrideAsset({ Id = "SERF", CompatibleJobList = overridenCompatibleJobList })
 
 -- BUILDING_FUNCTION_PLANTER
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PLANTER",
     Id = "BUILDING_FUNCTION_PLANTER_1_EXAMPLE",
     Name = "BUILDING_FUNCTION_PLANTER_1_EXAMPLE_NAME",
@@ -294,7 +294,7 @@ EBF:register({
     FollowPlantingPath = true
 })
 
-EBF:register({
+EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PLANTER",
     Id = "BUILDING_FUNCTION_PLANTER_2_EXAMPLE",
     Name = "BUILDING_FUNCTION_PLANTER_2_EXAMPLE_NAME",

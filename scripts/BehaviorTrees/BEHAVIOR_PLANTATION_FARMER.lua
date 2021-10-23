@@ -126,7 +126,7 @@ EBF:registerBehaviorTree({
                 },
                 {
                     Name = "StartProduction",
-                    Type = "START_PRODUCTION",
+                    Type = "START_WORK_SHIFT",
                     AgentData = "AgentData"
                 },
                 {
@@ -247,7 +247,7 @@ EBF:registerBehaviorTree({
                 },
                 {
                     Name = "FinishProduction",
-                    Type = "FINISH_PRODUCTION",
+                    Type = "FINISH_WORK_SHIFT",
                     AgentData = "AgentData"
                 },
                 {

@@ -7,12 +7,20 @@
 		<meta id="60d03c46-ffdd-420e-8764-b8ebf35973fb" name="Material.Blue"/>
 		<meta id="da3e206f-ff1d-40dc-b24e-e6d306c3ed30" name="Material.Purple"/>
 		<meta id="8c8fc4fb-1e22-4f23-a606-a2af16ce5b1b" name="Material.Green"/>
-		<meta id="0e777dbc-f63a-4180-b7d7-169a2d09b2a1" name="Material.Brown.001"/>
-		<meta id="40dfa9c9-0a81-4519-9f36-5d00205ff8b1" name="Material.Green.001"/>
-		<meta id="b602258f-86e5-4f02-925f-9a5d00456d9d" name="Material.Blue.001"/>
-		<meta id="b70cdff3-f4ed-4f68-bfb5-f5d8b8de64d8" name="Material.Grey.001"/>
-		<meta id="5fb6ba9e-cb74-4253-88ba-5b5c09f08ac1" name="Material.Red.001"/>
-		<meta id="815b8150-cc02-4935-842b-8e845efad18f" name="Material.Purple.001"/>
+		<meta id="87583285-6d3e-44bd-8aee-839bf808272e" name="Material.Decimal"/>
+		<meta id="647a5ca7-edb0-44b0-b76f-be9e3000940c" name="Material.Eight"/>
+		<meta id="b69f4097-fd2b-4919-9546-c4880aaada57" name="Material.Five"/>
+		<meta id="7bd257a1-9901-4d90-a1ba-983161874b6e" name="Material.Four"/>
+		<meta id="78edd1de-3a42-4559-b973-f610a3f24586" name="Material.Minus"/>
+		<meta id="b0c7565c-09ba-4a3f-a1a7-167ced3e59d3" name="Material.Nine"/>
+		<meta id="9bea5e6a-c7c0-46fc-b017-e8cdc2ee0d8e" name="Material.One"/>
+		<meta id="2ac7899f-e90d-453c-b7f7-429a40058717" name="Material.Plus"/>
+		<meta id="6c75b593-6d20-4f38-92cd-7d46bc5c1377" name="Material.Seven"/>
+		<meta id="651e31dc-7004-4260-b9fe-5ecab1fc36ad" name="Material.Six"/>
+		<meta id="5583e320-2b23-4fbf-8a4d-9f13f59817de" name="Material.Three"/>
+		<meta id="bc5f4494-4b47-4a1e-a48a-2b3b9218fbb6" name="Material.Two"/>
+		<meta id="b5e77cdf-0d0f-4c55-84aa-78721bbd45d4" name="Material.Unit"/>
+		<meta id="f414a833-ee88-4f14-8fa4-ce391306b6bc" name="Material.Zero"/>
 	</meta>
 	<meta id="23bbd79c-5cf5-4b8b-9fe1-232053a4507d" type="group" folder="true" name="Meshes">
 		<meta id="1673c43a-f701-4ff1-8979-fe60e4b2c9ff" name="Left_Material.Brown"/>
@@ -99,27 +107,9 @@
 		<meta id="98bbc04e-7088-4976-8a15-f2ead5d52931" name="Step3.003_Material.Grey"/>
 		<meta id="efc91cf9-53f1-4394-bcc8-55518f956000" name="Step4.002Keep_Material.Grey"/>
 		<meta id="edcdf27f-6cb1-4c06-b038-b4bac47fe9e0" name="Step4.003Keep_Material.Grey"/>
-		<meta id="ca930f61-0f5b-43c6-8126-fc2e2e5395b5" name="Base.001_Material.Brown.001"/>
-		<meta id="2b3e93b9-6466-44b4-9c53-7462d9cde5b7" name="Step10.001_Material.Blue.001"/>
-		<meta id="ea781e61-b5f2-4d5b-87dd-e35028ee36bd" name="Step2.007_Material.Green.001"/>
-		<meta id="24329aff-24b3-4d1c-a8c6-7fa139d33a23" name="Step2.006_Material.Grey.001"/>
-		<meta id="386430cc-927d-4ade-9140-de745c257f93" name="Step3.007_Material.Green.001"/>
-		<meta id="30468606-53f6-4920-aa70-482c7cc87e4b" name="Step3.006_Material.Grey.001"/>
-		<meta id="a2f13eb3-c590-4939-ac75-a44baa5514a2" name="Step4.000Keep.001_Material.Red.001"/>
-		<meta id="35008e92-580b-4030-9e65-2335f4ed524c" name="Step4.001Keep.001_Material.Grey.001"/>
-		<meta id="12eea166-97d3-42d4-95f5-a0ded26dc604" name="Step5.000Keep.001_Material.Purple.001"/>
 		<meta id="0d9709b9-b5d3-489c-a477-b4e5ca9956bd" name="Step10.000_Material.Blue"/>
 		<meta id="d7d2f56b-d7e9-4f49-9fb2-20b2b8149525" name="Step8.004_Material.Blue"/>
 		<meta id="9ff5dcc2-5acd-424d-83ac-9c9555d6b430" name="Step9.000_Material.Blue"/>
-		<meta id="a3d51b51-8235-4dff-9ae4-624c3765dde0" name="Step6.006_Material.Purple.001"/>
-		<meta id="ffec4d3d-8c51-4080-9b1c-d2e63cfbb917" name="Step6.005_Material.Purple.001"/>
-		<meta id="9e65eff9-1757-4f3d-9658-6670b614dc9e" name="Step6.004_Material.Purple.001"/>
-		<meta id="c6f24b69-e1e0-4529-87f6-b0ebb23a221d" name="Step7.006_Material.Purple.001"/>
-		<meta id="f15d41ad-8c7b-4d4d-9bbb-7c42beabd058" name="Step7.005_Material.Purple.001"/>
-		<meta id="93403b6d-2928-488c-a658-b0901d839e64" name="Step7.004_Material.Purple.001"/>
-		<meta id="b500c9a8-48e6-4a0d-b919-b2282dce1d8b" name="Step8.006_Material.Purple.001"/>
-		<meta id="c900647e-76aa-421a-a75e-c76ed21d816e" name="Step8.005_Material.Purple.001"/>
-		<meta id="8c7e521e-e1e9-4582-86fa-0ac68a66b179" name="Step8.007_Material.Purple.001"/>
 		<meta id="136406ea-42e3-42e0-9cd8-d37e0cdac313" name="Base.002_Material.Brown"/>
 		<meta id="e2cc8f4c-d692-4f3c-baf9-4ff13365b391" name="Step1.008_Material.Green"/>
 		<meta id="dea7c958-52b1-40f4-8ff1-2de455469d44" name="Step2.008_Material.Green"/>
@@ -142,7 +132,40 @@
 		<meta id="f2eb9cfb-5e58-4b63-bfee-32afbeb6d8c8" name="Step8.009_Material.Blue"/>
 		<meta id="ba9b1b86-db6b-4847-8592-920136b33dd3" name="Step9.002_Material.Blue"/>
 		<meta id="6f922264-15cb-4102-ac0b-116ba8aeb69d" name="Planter2Part_COLLIDER"/>
-		<meta id="bbfc7ff3-1db4-4e20-9f49-6e8acd7d6528" name="Step5.002Keep.001_Material.Purple.001"/>
+		<meta id="9e1e37f0-b052-4001-800f-7c9386f321cf" name="Base.001_Material.Brown"/>
+		<meta id="68625a10-69f4-4011-a044-58ac5abfa073" name="Step10.001_Material.Blue"/>
+		<meta id="5bd2df47-02db-4f05-979f-6351c3cf6200" name="Step2.007_Material.Green"/>
+		<meta id="86ddceb6-bde3-4c9e-9bd0-c27b8d3160ec" name="Step2.006_Material.Grey"/>
+		<meta id="3a66c07c-b9d7-4482-ba6e-0a0274e2c59d" name="Step3.007_Material.Green"/>
+		<meta id="58bf556d-5f1c-465e-b1cc-f27eda97ba23" name="Step3.006_Material.Grey"/>
+		<meta id="9e2e32db-e1c3-4f39-a83e-1f401d9aded9" name="Step4.000Keep.001_Material.Red"/>
+		<meta id="05928b1b-b8a0-4c17-924c-1f18cf332d16" name="Step4.001Keep.001_Material.Grey"/>
+		<meta id="08b4d004-c65f-4d1b-97e3-8eb6a2d504c4" name="Step5.000Keep.001_Material.Purple"/>
+		<meta id="5ecb85d6-8243-466b-bbf2-185a73a055cf" name="Step5.002Keep.001_Material.Purple"/>
+		<meta id="0173014c-8f08-4623-8762-535e1770a4ed" name="Step6.006_Material.Purple"/>
+		<meta id="35a1f65d-ad46-49cc-b2cb-bc4a6846ba9e" name="Step6.005_Material.Purple"/>
+		<meta id="54163eef-0bd2-4fc9-b859-43d689255537" name="Step6.004_Material.Purple"/>
+		<meta id="2cf4e53c-f3a4-465f-bfd0-295057cec9a2" name="Step7.006_Material.Purple"/>
+		<meta id="e015d178-5a2f-478b-b006-0fa1abeefad2" name="Step7.005_Material.Purple"/>
+		<meta id="a20ada0a-12ee-46fa-b0d7-861fa865303e" name="Step7.004_Material.Purple"/>
+		<meta id="6d49a6a2-4ed3-420f-9931-1fba4d2fa8df" name="Step8.006_Material.Purple"/>
+		<meta id="8fc4be80-7757-46ab-8b60-784887e35e09" name="Step8.005_Material.Purple"/>
+		<meta id="2222d863-9caf-4a0e-8cb5-9daa901a21f0" name="Step8.007_Material.Purple"/>
+		<meta id="3a57cb77-7df4-4cd8-90cb-276343356cdc" name="DefaultDecimal_Material.Decimal"/>
+		<meta id="7b23868c-e783-42dd-bce2-7facba00f290" name="DefaultEight_Material.Eight"/>
+		<meta id="7568c470-28eb-4c62-90e4-1cd011727782" name="DefaultFive_Material.Five"/>
+		<meta id="1362ca83-089e-403f-95e7-c0ed6c54de39" name="DefaultFour_Material.Four"/>
+		<meta id="91b47c0b-8f19-4712-baa6-9540676a38ba" name="DefaultMinus_Material.Minus"/>
+		<meta id="5be191bd-9f91-494e-b4d2-f7202c29ddb3" name="DefaultNine_Material.Nine"/>
+		<meta id="57bd880f-f64d-4134-9a3f-9212de152a87" name="DefaultOne_Material.One"/>
+		<meta id="5ecfa685-4b2e-46c1-be3b-080796b8da43" name="DefaultPlus_Material.Plus"/>
+		<meta id="ee1ed216-ac20-42e3-bdc6-58b8c6aaeaa0" name="DefaultSeven_Material.Seven"/>
+		<meta id="1272f8f2-41f0-441e-813c-62d4d61fed7a" name="DefaultSix_Material.Six"/>
+		<meta id="c7b78fa7-1c0f-4cfd-b15a-6ff0b2e13b6b" name="DefaultThree_Material.Three"/>
+		<meta id="a607ef71-fe79-4512-8a09-b398c7851884" name="DefaultTwo_Material.Two"/>
+		<meta id="18e1b0d6-4414-4e74-a47e-9fba44526ac5" name="DefaultUnit_Material.Unit"/>
+		<meta id="c0cfdfa2-099d-4482-ac2b-1cc37748ce55" name="DefaultZero_Material.Zero"/>
+		<meta id="6d98894c-9101-4fd6-afe4-befc96a496b3" name="Cube.027_Material.Grey"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
 		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
@@ -435,10 +458,33 @@
 			<meta id="d3f8a54d-8c21-4da0-9605-c07c3bc1988b" name="Cube.023"/>
 			<meta id="eba43dbb-0873-4ccb-a7af-d50d856635b8" name="Emitter.001"/>
 		</meta>
+		<meta id="2220efa8-4958-47bd-b98d-5231afcc9ad6" name="DefaultDecimal"/>
+		<meta id="298d8191-d0e0-40d2-b0ee-09c2e4af1d2a" name="DefaultEight"/>
+		<meta id="0b21e309-d5f2-4546-b088-0e216bf1d9e5" name="DefaultFive"/>
+		<meta id="21793d38-ffdc-443c-8438-af227e60df4a" name="DefaultFour"/>
+		<meta id="277382ac-1847-4dd7-8df9-7705d7c007d2" name="DefaultMinus"/>
+		<meta id="4e9ee61a-44ef-42cd-9a01-ffd10f6ba982" name="DefaultNine"/>
+		<meta id="288124da-c3ba-4400-b9ae-4511bee7d94d" name="DefaultOne"/>
+		<meta id="bb403e7a-9389-4625-8416-c787d9c33bf6" name="DefaultPlus"/>
+		<meta id="68df12be-b7db-4ebc-8c2b-ac6407dc40a0" name="DefaultSeven"/>
+		<meta id="1db61e86-6959-41ae-986f-a8aebeedea35" name="DefaultSix"/>
+		<meta id="13af85d2-c870-4a18-9950-86a168b782a0" name="DefaultThree"/>
+		<meta id="0a7e5081-7fd0-48ef-8b5a-4f812b93e1be" name="DefaultTwo"/>
+		<meta id="769ef041-a621-4179-b1ee-373b183bc5a0" name="DefaultUnit"/>
+		<meta id="9892ec55-8fb1-438b-b0bd-fe31d7bb7e38" name="DefaultZero"/>
+		<meta id="eecd0d0c-da24-4eeb-ae51-cee1390a012f" name="NumberDisplayPart">
+			<meta id="a7130611-358c-4113-9fff-e6dbbd3ed25b" name="Cube.027"/>
+			<meta id="77c71d46-ebb5-4fca-805a-86dd0ad8ae61" name="Node.Decimal"/>
+			<meta id="f58cc434-802d-47df-9696-6cde376ebf1b" name="Node.DecimalPoint"/>
+			<meta id="a15e1b2e-64cc-45ff-8b2e-e577925baf59" name="Node.One"/>
+			<meta id="3fde4124-ce9e-424d-b82d-46a485586b26" name="Node.Sign"/>
+			<meta id="1426f5fe-2d98-40dc-83cd-bebc05df2674" name="Node.Ten"/>
+			<meta id="5ad90ed0-1474-4271-9283-c78137790294" name="Node.Unit"/>
+		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="0716d5352cb5996c3fc72782c340cfa5"/>
+	<Md5Checksum value="213ffb5474e7420a252c77d4cce280cd"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -1809,6 +1855,117 @@
 				</ChildList>
 				<NodeName value="DeactivatedParticleEmitterPart"/>
 			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultDecimal"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultEight"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultFive"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultFour"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultMinus"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultNine"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultOne"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultPlus"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultSeven"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultSix"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultThree"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultTwo"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultUnit"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="DefaultZero"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.027"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.Decimal"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.DecimalPoint"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.One"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.Sign"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.Ten"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.Unit"/>
+					</Item>
+				</ChildList>
+				<NodeName value="NumberDisplayPart"/>
+			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>
 	</NodeConfig>
@@ -1818,48 +1975,80 @@
 			<MaterialName value="Material.Blue"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="b602258f-86e5-4f02-925f-9a5d00456d9d"/>
-			<MaterialName value="Material.Blue.001"/>
-		</Item>
-		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="7e723158-6d48-4381-944b-39e4cb7ef786"/>
 			<MaterialName value="Material.Brown"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="0e777dbc-f63a-4180-b7d7-169a2d09b2a1"/>
-			<MaterialName value="Material.Brown.001"/>
+			<MaterialGuid value="87583285-6d3e-44bd-8aee-839bf808272e"/>
+			<MaterialName value="Material.Decimal"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="647a5ca7-edb0-44b0-b76f-be9e3000940c"/>
+			<MaterialName value="Material.Eight"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="b69f4097-fd2b-4919-9546-c4880aaada57"/>
+			<MaterialName value="Material.Five"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="7bd257a1-9901-4d90-a1ba-983161874b6e"/>
+			<MaterialName value="Material.Four"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="8c8fc4fb-1e22-4f23-a606-a2af16ce5b1b"/>
 			<MaterialName value="Material.Green"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="40dfa9c9-0a81-4519-9f36-5d00205ff8b1"/>
-			<MaterialName value="Material.Green.001"/>
-		</Item>
-		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="0f214f60-5d7b-420c-9779-47499d36d098"/>
 			<MaterialName value="Material.Grey"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="b70cdff3-f4ed-4f68-bfb5-f5d8b8de64d8"/>
-			<MaterialName value="Material.Grey.001"/>
+			<MaterialGuid value="78edd1de-3a42-4559-b973-f610a3f24586"/>
+			<MaterialName value="Material.Minus"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="b0c7565c-09ba-4a3f-a1a7-167ced3e59d3"/>
+			<MaterialName value="Material.Nine"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="9bea5e6a-c7c0-46fc-b017-e8cdc2ee0d8e"/>
+			<MaterialName value="Material.One"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="2ac7899f-e90d-453c-b7f7-429a40058717"/>
+			<MaterialName value="Material.Plus"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="da3e206f-ff1d-40dc-b24e-e6d306c3ed30"/>
 			<MaterialName value="Material.Purple"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="815b8150-cc02-4935-842b-8e845efad18f"/>
-			<MaterialName value="Material.Purple.001"/>
-		</Item>
-		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="7fb40cd8-2f5e-44c8-a956-80957bd771b0"/>
 			<MaterialName value="Material.Red"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="5fb6ba9e-cb74-4253-88ba-5b5c09f08ac1"/>
-			<MaterialName value="Material.Red.001"/>
+			<MaterialGuid value="6c75b593-6d20-4f38-92cd-7d46bc5c1377"/>
+			<MaterialName value="Material.Seven"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="651e31dc-7004-4260-b9fe-5ecab1fc36ad"/>
+			<MaterialName value="Material.Six"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="5583e320-2b23-4fbf-8a4d-9f13f59817de"/>
+			<MaterialName value="Material.Three"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="bc5f4494-4b47-4a1e-a48a-2b3b9218fbb6"/>
+			<MaterialName value="Material.Two"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="b5e77cdf-0d0f-4c55-84aa-78721bbd45d4"/>
+			<MaterialName value="Material.Unit"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="f414a833-ee88-4f14-8fa4-ce391306b6bc"/>
+			<MaterialName value="Material.Zero"/>
 		</Item>
 	</MaterialList>
 </importer>

@@ -2,7 +2,7 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                  SUPPLEMENTARY FILE                  | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |                     PRODUCE TREE                     | |
+| ||   \/   ||  V_/_  |                PRODUCE TREE COLLECTOR                | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
@@ -102,12 +102,9 @@ EBF:registerBehaviorTree({
             Type = "SEQUENCER",
             Children = {
                 {
-                    Name = "SetupGatheringWork",
-                    Type = "SETUP_GATHERING_WORK",
-                    AgentData = "AgentData",
-                    GatheringData = "GatheringData",
-                    StepsCountLoopData = "WorkLoop",
-                    GatherWaitData = "DoJobTimer"
+                    Name = "HasWorkplace",
+                    Type = "IS_WORKPLACE_AVAILABLE",
+                    AgentData = "AgentData"
                 },
                 {
                     Name = "SetWorkplaceDestination",
@@ -123,6 +120,14 @@ EBF:registerBehaviorTree({
                     BuildingPathType = "",
                     AnimationData = "",
                     AnimationSpeedMultiplier = ""
+                },
+                {
+                    Name = "SetupGatheringWork",
+                    Type = "SETUP_GATHERING_WORK",
+                    AgentData = "AgentData",
+                    GatheringData = "GatheringData",
+                    StepsCountLoopData = "WorkLoop",
+                    GatherWaitData = "DoJobTimer"
                 },
                 {
                     Name = "GatherRequest",

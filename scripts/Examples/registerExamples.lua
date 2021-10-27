@@ -17,7 +17,7 @@ EBF:registerAssetProcessor("models/FoundationEBF.fbx", { DataType = "BUILDING_AS
 EBF:dofile("scripts/Examples/animationExamples.lua")
 EBF:dofile("scripts/Examples/particleEmitterExamples.lua")
 EBF:dofile("scripts/Examples/resourceProductionExamples.lua")
-EBF:dofile("scripts/Examples/numberDisplayExample.lua")
+EBF:dofile("scripts/Examples/numberDisplayExamples.lua")
 
 -- Behavior Tree Examples
 EBF:dofile("scripts/Examples/BehaviorTreeExamples/radialConfinedAgent.lua")
@@ -74,7 +74,7 @@ EBF:registerAsset({
         {
             Name = "FOUNDATIONEBF_EXAMPLE_PARTS_NUMBER_DISPLAY_CATEGORY",
             BuildingPartList = { 
-                "NUMBER_DISPLAY_PART"
+                "NUMBER_DISPLAY_EXAMPLE_1_PART", "NUMBER_DISPLAY_EXAMPLE_2_PART", "NUMBER_DISPLAY_EXAMPLE_3_PART"
             }
         }
     }

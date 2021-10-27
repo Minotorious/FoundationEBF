@@ -474,17 +474,28 @@
 		<meta id="9892ec55-8fb1-438b-b0bd-fe31d7bb7e38" name="DefaultZero"/>
 		<meta id="eecd0d0c-da24-4eeb-ae51-cee1390a012f" name="NumberDisplayPart">
 			<meta id="a7130611-358c-4113-9fff-e6dbbd3ed25b" name="Cube.027"/>
-			<meta id="77c71d46-ebb5-4fca-805a-86dd0ad8ae61" name="Node.Decimal"/>
-			<meta id="f58cc434-802d-47df-9696-6cde376ebf1b" name="Node.DecimalPoint"/>
-			<meta id="a15e1b2e-64cc-45ff-8b2e-e577925baf59" name="Node.One"/>
-			<meta id="3fde4124-ce9e-424d-b82d-46a485586b26" name="Node.Sign"/>
-			<meta id="1426f5fe-2d98-40dc-83cd-bebc05df2674" name="Node.Ten"/>
-			<meta id="5ad90ed0-1474-4271-9283-c78137790294" name="Node.Unit"/>
+			<meta id="2bccaad3-0577-4db6-8055-59ef56c882d6" name="Node.NumberDisplay"/>
+		</meta>
+		<meta id="62d84f28-7fbe-4179-8c71-ec3dfe5ea795" name="NumberDisplayExample1">
+			<meta id="12f88d05-314b-4c67-b7eb-7962fc81b0ab" name="Node.Decimal"/>
+			<meta id="5bdbf1a7-f915-40b7-a929-0892f18332d0" name="Node.DecimalPoint"/>
+			<meta id="865c6e57-3a8a-45b1-9e96-61d4e2259dd0" name="Node.One"/>
+			<meta id="e31ace70-1783-43de-aa3b-bc42b95aad93" name="Node.Sign"/>
+			<meta id="7e9f6777-0a79-4985-8cdc-651baac1a4db" name="Node.Ten"/>
+		</meta>
+		<meta id="21301b55-5a8a-4305-8624-6ebcd06aa380" name="NumberDisplayExample2">
+			<meta id="251a754f-536a-4097-a434-bdbb53d8f882" name="Node.One.001"/>
+		</meta>
+		<meta id="a282a41d-26fa-480d-8786-6130d8e08573" name="NumberDisplayExample3">
+			<meta id="f85e95a0-09f6-4a34-b143-0e56d22856c4" name="Node.Decimal.002"/>
+			<meta id="53e24faf-0733-4276-833e-7110d1d6af87" name="Node.DecimalPoint.002"/>
+			<meta id="e21fcc83-15aa-4dcb-9acf-7698ad993ae7" name="Node.One.002"/>
+			<meta id="aa0d62a0-b25d-49c9-b44c-8a391b57c26c" name="Node.Unit.002"/>
 		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="213ffb5474e7420a252c77d4cce280cd"/>
+	<Md5Checksum value="1e743d55fc1c916e95a9686915a1f4fa"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -1936,6 +1947,17 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
+						<NodeName value="Node.NumberDisplay"/>
+					</Item>
+				</ChildList>
+				<NodeName value="NumberDisplayPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
 						<NodeName value="Node.Decimal"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
@@ -1958,13 +1980,45 @@
 						<ChildList/>
 						<NodeName value="Node.Ten"/>
 					</Item>
+				</ChildList>
+				<NodeName value="NumberDisplayExample1"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Node.Unit"/>
+						<NodeName value="Node.One.001"/>
 					</Item>
 				</ChildList>
-				<NodeName value="NumberDisplayPart"/>
+				<NodeName value="NumberDisplayExample2"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.Decimal.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.DecimalPoint.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.One.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Node.Unit.002"/>
+					</Item>
+				</ChildList>
+				<NodeName value="NumberDisplayExample3"/>
 			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>

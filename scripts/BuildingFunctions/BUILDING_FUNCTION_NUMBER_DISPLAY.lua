@@ -37,6 +37,8 @@ local BUILDING_FUNCTION_NUMBER_DISPLAY = {
     TypeName = "BUILDING_FUNCTION_NUMBER_DISPLAY",
     ParentType = "BUILDING_FUNCTION",
     Properties = {
+        { Name = "NumberDisplayPrefab", Type = "PREFAB", Default = nil },
+        { Name = "NumberDisplayNodeName", Type = "string", Default = "Node.NumberDisplay" },
         { Name = "DigitNodeNames", Type = "list<string>", Default = { "Node.Thousand", "Node.Hundred", "Node.Ten", "Node.One", "Node.Decimal" } },
         { Name = "DecimalNodeName", Type = "string", Default = "Node.DecimalPoint" },
         { Name = "SignNodeName", Type = "string", Default = "Node.Sign" },
@@ -60,16 +62,42 @@ local BUILDING_FUNCTION_NUMBER_DISPLAY = {
 
 function BUILDING_FUNCTION_NUMBER_DISPLAY:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
-    comp = gameObject:getOrCreateComponent("COMP_NUMBER_DISPLAY")
-    comp:setNumberDisplayData(self)
+    gameObject:forEachChild(
+        function(child)
+            if child.Name == self.NumberDisplayNodeName then
+                local compCheck = child:findFirstObjectWithComponentDown("COMP_NUMBER_DISPLAY")
+                if compCheck == nil then
+                    local displayObject = child:getLevel():createObject(self.NumberDisplayPrefab, child:getGlobalPosition(), child:getGlobalOrientation())
+                    displayObject:setParent(child, true)
+                    comp = displayObject:getOrCreateComponent("COMP_NUMBER_DISPLAY")
+                    comp:setNumberDisplayData(self)
+                else
+                    compCheck:setNumberDisplayData(self)
+                end
+            end
+        end
+    )
     
     return true
 end
 
 function BUILDING_FUNCTION_NUMBER_DISPLAY:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
-    comp = gameObject:getOrCreateComponent("COMP_NUMBER_DISPLAY")
-    comp:setNumberDisplayData(self)
+    gameObject:forEachChild(
+        function(child)
+            if child.Name == self.NumberDisplayNodeName then
+                local compCheck = child:findFirstObjectWithComponentDown("COMP_NUMBER_DISPLAY")
+                if compCheck == nil then
+                    local displayObject = child:getLevel():createObject(self.NumberDisplayPrefab, child:getGlobalPosition(), child:getGlobalOrientation())
+                    displayObject:setParent(child, true)
+                    comp = displayObject:getOrCreateComponent("COMP_NUMBER_DISPLAY")
+                    comp:setNumberDisplayData(self)
+                else
+                    compCheck:setNumberDisplayData(self)
+                end
+            end
+        end
+    )
 end
 
 EBF:registerClass(BUILDING_FUNCTION_NUMBER_DISPLAY)
@@ -264,6 +292,7 @@ function COMP_NUMBER_DISPLAY:setValue(value)
 end
 
 function COMP_NUMBER_DISPLAY:update()
+    self:getOwner():globalLookAt(self:getLevel():find("Camera"):getGlobalPosition(), false)
     if self.valueChanged then
         if self.signNode ~= nil then
             if self.CurrentSign == "+" then

@@ -125,7 +125,7 @@ EBF:registerBehaviorTree({
                     AgentData = "AgentData"
                 },
                 {
-                    Name = "StartProduction",
+                    Name = "StartWorkShift",
                     Type = "START_WORK_SHIFT",
                     AgentData = "AgentData"
                 },
@@ -242,11 +242,16 @@ EBF:registerBehaviorTree({
                                     AnimationSpeedMultiplier = ""
                                 }
                             }
+                        },
+                        {
+                            Name = "AlwaysTrue",
+                            Type = "CHECK_IF_TRUE",
+                            BoolValue = "ShouldReceiveXp"
                         }
                     }
                 },
                 {
-                    Name = "FinishProduction",
+                    Name = "FinishWorkShift",
                     Type = "FINISH_WORK_SHIFT",
                     AgentData = "AgentData"
                 },

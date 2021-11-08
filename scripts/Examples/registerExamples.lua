@@ -17,6 +17,7 @@ EBF:registerAssetProcessor("models/FoundationEBF.fbx", { DataType = "BUILDING_AS
 EBF:dofile("scripts/Examples/animationExamples.lua")
 EBF:dofile("scripts/Examples/particleEmitterExamples.lua")
 EBF:dofile("scripts/Examples/resourceProductionExamples.lua")
+EBF:dofile("scripts/Examples/numberDisplayExamples.lua")
 
 -- Behavior Tree Examples
 EBF:dofile("scripts/Examples/BehaviorTreeExamples/radialConfinedAgent.lua")
@@ -29,7 +30,7 @@ EBF:registerAsset({
 	Id = "FOUNDATIONEBF_EXAMPLES",
 	Name = "FOUNDATIONEBF_EXAMPLES_NAME",
 	Description = "FOUNDATIONEBF_EXAMPLES_DESC",
-	BuildingType = "GENERAL",
+	BuildingType = "MODS",
 	AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE",
     BuildingPartSetList = {
         {
@@ -68,6 +69,12 @@ EBF:registerAsset({
             Name = "FOUNDATIONEBF_EXAMPLE_PARTS_BEHAVIOR_TREES_CATEGORY",
             BuildingPartList = { 
                 "RADIAL_ENFORCER_PART", "RECTANGULAR_ENFORCER_PART"
+            }
+        },
+        {
+            Name = "FOUNDATIONEBF_EXAMPLE_PARTS_NUMBER_DISPLAY_CATEGORY",
+            BuildingPartList = { 
+                "NUMBER_DISPLAY_EXAMPLE_1_PART", "NUMBER_DISPLAY_EXAMPLE_2_PART", "NUMBER_DISPLAY_EXAMPLE_3_PART"
             }
         }
     }

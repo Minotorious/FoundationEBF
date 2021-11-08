@@ -27,3 +27,5 @@ EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_PLANTATION.lua")
 EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_PLANTER.lua")
 
 -- Other
+EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_NUMBER_DISPLAY.lua")
+--EBF:dofile("scripts/BuildingFunctions/BUILDING_FUNCTION_DYNAMIC_INDICATOR.lua")

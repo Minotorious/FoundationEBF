@@ -51,7 +51,7 @@ local COMP_PLANTATION = {
         { Name = "Plantable", Type = "PREFAB", Default = nil },
         { Name = "PlantingDelay", Type = "float", Default = 30.0 },
         { Name = "GatheringDelay", Type = "float", Default = 30.0 },
-        { Name = "GrowingStepList", Type = "GROWING_STEP_LIST", Default = nil },
+        { Name = "GrowingStepList", Type = "GROWING_STEP_LIST", Default = nil }
     }
 }
 

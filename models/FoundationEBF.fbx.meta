@@ -166,6 +166,8 @@
 		<meta id="18e1b0d6-4414-4e74-a47e-9fba44526ac5" name="DefaultUnit_Material.Unit"/>
 		<meta id="c0cfdfa2-099d-4482-ac2b-1cc37748ce55" name="DefaultZero_Material.Zero"/>
 		<meta id="6d98894c-9101-4fd6-afe4-befc96a496b3" name="Cube.027_Material.Grey"/>
+		<meta id="78554768-dde4-4821-bba4-80abc850677b" name="IndicatorDisplay_LOD_012_Material.Nine"/>
+		<meta id="44fde7e4-9cf6-422b-980c-b208736f16d9" name="IndicatorDisplay_LOD_0123_Material.Nine"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
 		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
@@ -492,10 +494,27 @@
 			<meta id="e21fcc83-15aa-4dcb-9acf-7698ad993ae7" name="Node.One.002"/>
 			<meta id="aa0d62a0-b25d-49c9-b44c-8a391b57c26c" name="Node.Unit.002"/>
 		</meta>
+		<meta id="ae5bfecd-539a-4a92-9c5f-b0336f88771d" name="IndicatorDisplay">
+			<meta id="4614bcd4-c528-414b-acce-693b8f3c778b" name="Indicator.013"/>
+			<meta id="ae6745db-46c6-4521-b7da-d4d48a0f979c" name="Indicator.014"/>
+			<meta id="75ac8708-8fa1-41c5-93d0-c645fc2bb27a" name="Indicator.015"/>
+			<meta id="91a89c9a-23af-4e2a-964d-818ffcd7ff9c" name="Indicator.016"/>
+			<meta id="5446550c-25bf-41e5-9cde-863ad3e3128e" name="Indicator.017"/>
+			<meta id="2a3ce853-e030-4ee0-b14d-267b8b7fb731" name="Indicator.018"/>
+			<meta id="151fca1b-29a1-44ed-9b67-70b395484eb9" name="Indicator.019"/>
+			<meta id="67b3fd9f-179c-4652-a574-290b6a270dcb" name="Indicator.020"/>
+			<meta id="061d15ed-c974-47fb-b774-1cae252dfd65" name="Indicator.021"/>
+			<meta id="ef848ff2-219f-4d63-bc2b-e9848e7891d1" name="Indicator.022"/>
+			<meta id="5d987792-72e5-4d7f-a0ff-9fc08e714e67" name="Indicator.023"/>
+			<meta id="280fcffe-26b3-4e30-9262-15493022e883" name="Indicator.024"/>
+		</meta>
+	</meta>
+	<meta id="00a967ef-b438-416c-86c0-d7a8e6507419" type="group" folder="true" name="LOD">
+		<meta id="587cc0ba-c293-4b84-9683-f10f25359375" name="IndicatorDisplay"/>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="1e743d55fc1c916e95a9686915a1f4fa"/>
+	<Md5Checksum value="105d4581de546ac4eb9dda919b9965ee"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -2019,6 +2038,72 @@
 					</Item>
 				</ChildList>
 				<NodeName value="NumberDisplayExample3"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.013"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.014"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.015"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.016"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.017"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.018"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.019"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.020"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.021"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.022"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.023"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Indicator.024"/>
+					</Item>
+				</ChildList>
+				<NodeName value="IndicatorDisplay"/>
 			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>

@@ -242,6 +242,11 @@ EBF:registerBehaviorTree({
                                     AnimationSpeedMultiplier = ""
                                 }
                             }
+                        },
+                        {
+                            Name = "AlwaysTrue",
+                            Type = "CHECK_IF_TRUE",
+                            BoolValue = "ShouldReceiveXp"
                         }
                     }
                 },

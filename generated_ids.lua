@@ -143,4 +143,5 @@ IdMap = {
 	{ "textures/DefaultUnit.png", "", "76e222f3-f362-4361-8ac8-5e44fe5f8439" },
 	{ "textures/DefaultZero.png", "", "1635a7eb-7624-4537-b49d-4c9dd29a252c" },
 	{ "BEHAVIOR_PRODUCE_TREE_COLLECTOR/HasWorkplace", "", "14471902-fac6-4c90-836d-3a5331bbe995" },
+	{ "BEHAVIOR_PLANTATION_FARMER/AlwaysTrue", "", "3fa9f19a-d7e0-4860-9430-5ea63344b2c7" },
 }

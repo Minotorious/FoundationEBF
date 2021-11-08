@@ -30,7 +30,7 @@ EBF:registerAsset({
 	Id = "FOUNDATIONEBF_EXAMPLES",
 	Name = "FOUNDATIONEBF_EXAMPLES_NAME",
 	Description = "FOUNDATIONEBF_EXAMPLES_DESC",
-	BuildingType = "GENERAL",
+	BuildingType = "MODS",
 	AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE",
     BuildingPartSetList = {
         {

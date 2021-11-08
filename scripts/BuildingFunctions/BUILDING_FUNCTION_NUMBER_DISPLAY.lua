@@ -83,21 +83,7 @@ end
 
 function BUILDING_FUNCTION_NUMBER_DISPLAY:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
-    gameObject:forEachChild(
-        function(child)
-            if child.Name == self.NumberDisplayNodeName then
-                local compCheck = child:findFirstObjectWithComponentDown("COMP_NUMBER_DISPLAY")
-                if compCheck == nil then
-                    local displayObject = child:getLevel():createObject(self.NumberDisplayPrefab, child:getGlobalPosition(), child:getGlobalOrientation())
-                    displayObject:setParent(child, true)
-                    comp = displayObject:getOrCreateComponent("COMP_NUMBER_DISPLAY")
-                    comp:setNumberDisplayData(self)
-                else
-                    compCheck:setNumberDisplayData(self)
-                end
-            end
-        end
-    )
+    self:activateBuilding(gameObject)
 end
 
 EBF:registerClass(BUILDING_FUNCTION_NUMBER_DISPLAY)

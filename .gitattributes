@@ -1,1 +1,4 @@
 *.psd export-ignore
+*.ai export-ignore
+.gitignore export-ignore
+.gitattribtes export-ignore

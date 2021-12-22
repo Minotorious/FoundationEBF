@@ -144,4 +144,5 @@ IdMap = {
 	{ "textures/DefaultZero.png", "", "1635a7eb-7624-4537-b49d-4c9dd29a252c" },
 	{ "BEHAVIOR_PRODUCE_TREE_COLLECTOR/HasWorkplace", "", "14471902-fac6-4c90-836d-3a5331bbe995" },
 	{ "BEHAVIOR_PLANTATION_FARMER/AlwaysTrue", "", "3fa9f19a-d7e0-4860-9430-5ea63344b2c7" },
+	{ "ModPreviewImage_FoundationEBF.png", "", "55c8d841-4324-4180-b540-4eaba6d196b8" },
 }

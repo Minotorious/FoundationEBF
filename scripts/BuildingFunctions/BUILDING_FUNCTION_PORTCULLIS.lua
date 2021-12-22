@@ -81,10 +81,6 @@ function COMP_PORTCULLIS:setPortcullisData(buildingFunctionData)
     self.DataDelivered = true
 end
 
-function COMP_PORTCULLIS:init()
-    
-end
-
 function COMP_PORTCULLIS:openingSequence()
     local dt = self:getLevel():getDeltaTime()
     local moveIncrement = dt*self.OpeningSpeed

@@ -116,10 +116,6 @@ function COMP_SIMPLE_DRAWBRIDGE:setDrawbridgeData(buildingFunctionData)
     self.DataDelivered = true
 end
 
-function COMP_SIMPLE_DRAWBRIDGE:init()
-    
-end
-
 function COMP_SIMPLE_DRAWBRIDGE:chainClosingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.ChainRotationSpeed

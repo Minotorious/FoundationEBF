@@ -84,10 +84,6 @@ function COMP_SINGLE_DOOR:setSingleDoorData(buildingFunctionData)
     self.DataDelivered = true
 end
 
-function COMP_SINGLE_DOOR:init()
-    
-end
-
 function COMP_SINGLE_DOOR:openingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.OpeningSpeed

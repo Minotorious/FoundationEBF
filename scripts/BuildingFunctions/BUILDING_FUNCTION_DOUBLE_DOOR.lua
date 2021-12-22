@@ -90,10 +90,6 @@ function COMP_DOUBLE_DOOR:setDoubleDoorData(buildingFunctionData)
     self.DataDelivered = true
 end
 
-function COMP_DOUBLE_DOOR:init()
-    
-end
-
 function COMP_DOUBLE_DOOR:openingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.OpeningSpeed

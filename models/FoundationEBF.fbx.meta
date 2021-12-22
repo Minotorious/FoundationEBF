@@ -168,6 +168,14 @@
 		<meta id="6d98894c-9101-4fd6-afe4-befc96a496b3" name="Cube.027_Material.Grey"/>
 		<meta id="78554768-dde4-4821-bba4-80abc850677b" name="IndicatorDisplay_LOD_012_Material.Nine"/>
 		<meta id="44fde7e4-9cf6-422b-980c-b208736f16d9" name="IndicatorDisplay_LOD_0123_Material.Nine"/>
+		<meta id="bb364409-b82f-4d64-ae22-37d95ccf41f8" name="Step8.002_Material.Purple"/>
+		<meta id="66956fa8-07df-4a13-afd0-e6c22be5c487" name="Step8.003_Material.Purple"/>
+		<meta id="6d3aa2d5-f84d-4837-b0ac-c25c7e08ea99" name="Step8.001_Material.Purple"/>
+		<meta id="3d55a3a2-70d3-4fb1-abb7-17e5829f8892" name="Step1.007_Material.Green"/>
+		<meta id="21461120-e652-4e40-9387-475a486ed21b" name="Step8.008_Material.Blue"/>
+		<meta id="e0abe263-12a3-42bf-aa32-554efde935ea" name="Step9.001Keep.001_Material.Blue"/>
+		<meta id="12941064-d040-4f3f-a59e-9394272855b4" name="Step9.002Keep.001_Material.Blue"/>
+		<meta id="0dc58168-60ef-42a1-8d66-83a19cded8ef" name="Step9.003Keep.001_Material.Blue"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
 		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
@@ -515,6 +523,7 @@
 </meta>
 <importer type="GamCFbxImporterConfiguration">
 	<Md5Checksum value="105d4581de546ac4eb9dda919b9965ee"/>
+	<ModelVersion value="30"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>

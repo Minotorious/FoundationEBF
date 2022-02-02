@@ -82,7 +82,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "RADIAL_ENFORCER_PART",
     Name = "RADIAL_ENFORCER_PART_NAME",
-	--Description = "RADIAL_ENFORCER_PART_DESC",
+	Description = "RADIAL_ENFORCER_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",

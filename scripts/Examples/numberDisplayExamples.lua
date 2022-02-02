@@ -130,7 +130,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "NUMBER_DISPLAY_EXAMPLE_1_PART",
     Name = "NUMBER_DISPLAY_EXAMPLE_1_PART_NAME",
-	--Description = "NUMBER_DISPLAY_EXAMPLE_1_PART_DESC",
+	Description = "NUMBER_DISPLAY_EXAMPLE_1_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -151,7 +151,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "NUMBER_DISPLAY_EXAMPLE_2_PART",
     Name = "NUMBER_DISPLAY_EXAMPLE_2_PART_NAME",
-	--Description = "NUMBER_DISPLAY_EXAMPLE_2_PART_DESC",
+	Description = "NUMBER_DISPLAY_EXAMPLE_2_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -172,7 +172,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "NUMBER_DISPLAY_EXAMPLE_3_PART",
     Name = "NUMBER_DISPLAY_EXAMPLE_3_PART_NAME",
-	--Description = "NUMBER_DISPLAY_EXAMPLE_3_PART_DESC",
+	Description = "NUMBER_DISPLAY_EXAMPLE_3_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -201,6 +201,7 @@ EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_NUMBER_DISPLAY",
     Id = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_1",
     Name = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_1_NAME",
+    Description = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_1_DESC",
     NumberDisplayPrefab = "PREFAB_NUMBER_DISPLAY_EXAMPLE_1",
     DigitNodeNames = { "Node.Ten", "Node.One", "Node.Decimal" },
     ZeroPrefab = "PREFAB_ZERO_DEFAULT",
@@ -219,10 +220,17 @@ EBF:registerAsset({
     UnitPrefab = "PREFAB_UNIT_DEFAULT"
 })
 
+--[[
+    Here we override the default and set a Number Display with only 1 digit.
+    Make sure you list the digit nodes in descending order!
+    Important Note: It is necessary to set at minimum the number prefabs here!
+    Default number prefabs are provided with the EBF and are named as below.
+]]--
 EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_NUMBER_DISPLAY",
     Id = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_2",
     Name = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_2_NAME",
+    Description = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_2_DESC",
     NumberDisplayPrefab = "PREFAB_NUMBER_DISPLAY_EXAMPLE_2",
     DigitNodeNames = { "Node.One.001" },
     ZeroPrefab = "PREFAB_ZERO_DEFAULT",
@@ -241,10 +249,17 @@ EBF:registerAsset({
     UnitPrefab = "PREFAB_UNIT_DEFAULT"
 })
 
+--[[
+    Here we override the default and set a Number Display with only 2 digits.
+    Make sure you list the digit nodes in descending order!
+    Important Note: It is necessary to set at minimum the number prefabs here!
+    Default number prefabs are provided with the EBF and are named as below.
+]]--
 EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_NUMBER_DISPLAY",
     Id = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_3",
     Name = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_3_NAME",
+    Description = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_3_DESC",
     NumberDisplayPrefab = "PREFAB_NUMBER_DISPLAY_EXAMPLE_3",
     DigitNodeNames = { "Node.One.002", "Node.Decimal.002" },
     DecimalNodeName = "Node.DecimalPoint.002",

@@ -31,7 +31,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "SINGLE_DOOR_PART",
     Name = "SINGLE_DOOR_PART_NAME",
-	--Description = "SINGLE_DOOR_PART_DESC",
+	Description = "SINGLE_DOOR_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -60,7 +60,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "DOUBLE_DOOR_PART",
     Name = "DOUBLE_DOOR_PART_NAME",
-	--Description = "DOUBLE_DOOR_PART_DESC",
+	Description = "DOUBLE_DOOR_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -89,7 +89,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PORTCULLIS_PART",
     Name = "PORTCULLIS_PART_NAME",
-	--Description = "PORTCULLIS_PART_DESC",
+	Description = "PORTCULLIS_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -118,7 +118,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "SIMPLE_DRAWBRIDGE_PART",
     Name = "SIMPLE_DRAWBRIDGE_PART_NAME",
-	--Description = "SIMPLE_DRAWBRIDGE_PART_DESC",
+	Description = "SIMPLE_DRAWBRIDGE_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -153,6 +153,7 @@ EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_SINGLE_DOOR",
     Id = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE",
     Name = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE_DESC",
     DoorPivotPoint = { 1, 1, 0 }
 })
 
@@ -160,6 +161,7 @@ EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_DOUBLE_DOOR",
     Id = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE",
     Name = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE_DESC",
     LeftPivotPoint = { 2, 1, 0 },
     RightPivotPoint = { -2, 1, 0 }
 })
@@ -167,13 +169,15 @@ EBF:registerAsset({
 EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PORTCULLIS",
     Id = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE",
-    Name = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE_NAME"
+    Name = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE_DESC"
 })
 
 EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE",
     Id = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE",
     Name = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE_DESC",
     DrawbridgePivotPoint = { 0, 0.8, -2.2 },
     ChainEclipsePoint = -2.5
 })

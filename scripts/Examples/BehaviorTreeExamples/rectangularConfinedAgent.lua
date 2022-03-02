@@ -31,7 +31,7 @@ local COMP_RECTANGULAR_ENFORCER = {
     }
 }
 
-function COMP_RECTANGULAR_ENFORCER:init()
+function COMP_RECTANGULAR_ENFORCER:onEnabled()
     if not self.HasAgents then
         local pos = self:getOwner():getGlobalPosition()
         

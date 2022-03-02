@@ -129,7 +129,8 @@ function COMP_PLANTING_POT:initPlant()
             if starts_with(child.Name, "Base") then
                 return
             else
-                child:setScale(0)
+                --child:setScale(0)
+                child.Active = false
             end
         end
     )
@@ -142,11 +143,13 @@ function COMP_PLANTING_POT:growingStep(stepName)
             if starts_with(child.Name, "Base") then
                 return
             elseif starts_with(child.Name, stepName) then
-                child:setScale(1)
+                --child:setScale(1)
+                child.Active = true
             elseif ends_with(child.Name, "Keep") then
                 return
             else
-                child:setScale(0)
+                --child:setScale(0)
+                child.Active = false
             end
         end
     )

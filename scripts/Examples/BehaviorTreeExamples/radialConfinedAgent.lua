@@ -21,7 +21,7 @@ EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/RadialConfinedAgent", "PREF
     The HasAgents property only exists to prevent reloading
     from spawning extra new Agents every time. I highly 
     recommend using something similar in your component!
- ]]--
+]]--
 
 local COMP_RADIAL_ENFORCER = {
 	TypeName = "COMP_RADIAL_ENFORCER",
@@ -31,7 +31,7 @@ local COMP_RADIAL_ENFORCER = {
     }
 }
 
-function COMP_RADIAL_ENFORCER:init()
+function COMP_RADIAL_ENFORCER:onEnabled()
     if not self.HasAgents then
         local pos = self:getOwner():getGlobalPosition()
         
@@ -76,6 +76,7 @@ EBF:registerPrefabComponent(
         RoadPaintSpeed = 0.0
     }
 )
+
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
 EBF:registerAsset({

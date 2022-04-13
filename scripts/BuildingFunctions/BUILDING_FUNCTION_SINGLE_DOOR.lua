@@ -26,7 +26,7 @@ local BUILDING_FUNCTION_SINGLE_DOOR = {
 
 function BUILDING_FUNCTION_SINGLE_DOOR:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
-    comp = gameObject:getOrCreateComponent("COMP_SINGLE_DOOR")
+    local comp = gameObject:getOrCreateComponent("COMP_SINGLE_DOOR")
     comp:setSingleDoorData(self)
     
     return true
@@ -34,7 +34,7 @@ end
 
 function BUILDING_FUNCTION_SINGLE_DOOR:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
-    comp = gameObject:getOrCreateComponent("COMP_SINGLE_DOOR")
+    local comp = gameObject:getOrCreateComponent("COMP_SINGLE_DOOR")
     comp:setSingleDoorData(self)
 end
 

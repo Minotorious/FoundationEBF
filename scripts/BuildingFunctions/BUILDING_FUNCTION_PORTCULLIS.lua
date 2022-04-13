@@ -25,7 +25,7 @@ local BUILDING_FUNCTION_PORTCULLIS = {
 
 function BUILDING_FUNCTION_PORTCULLIS:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
-    comp = gameObject:getOrCreateComponent("COMP_PORTCULLIS")
+    local comp = gameObject:getOrCreateComponent("COMP_PORTCULLIS")
     comp:setPortcullisData(self)
     
     return true
@@ -33,7 +33,7 @@ end
 
 function BUILDING_FUNCTION_PORTCULLIS:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
-    comp = gameObject:getOrCreateComponent("COMP_PORTCULLIS")
+    local comp = gameObject:getOrCreateComponent("COMP_PORTCULLIS")
     comp:setPortcullisData(self)
 end
 

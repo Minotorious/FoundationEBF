@@ -36,7 +36,7 @@ end
 function BUILDING_FUNCTION_PLANTATION:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
     self:activateBuilding(gameObject)
-    compPlantation = gameObject:getEnabledComponent("COMP_PLANTATION")
+    local compPlantation = gameObject:getEnabledComponent("COMP_PLANTATION")
     compPlantation:initPlants()
 end
 

@@ -39,7 +39,7 @@ EBF:registerBehaviorTreeNode({
                                             
                                             compPot:setTargeted(true)
                                             
-                                            comp = self.AgentData.Agent:getOwner():getOrCreateComponent("COMP_SAVE_PLANTING_POT")
+                                            local comp = self.AgentData.Agent:getOwner():getOrCreateComponent("COMP_SAVE_PLANTING_POT")
                                             comp:setPlantingPot(compPot)
                                             
                                             local moveSpot = nil

@@ -21,7 +21,7 @@ local BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR = {
 }
 
 function BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR:activateBuilding(gameObject)
-    comp = gameObject:getOrCreateComponent("COMP_RESOURCE_GENERATOR")
+    local comp = gameObject:getOrCreateComponent("COMP_RESOURCE_GENERATOR")
     comp:setResourceGeneratorData(self.ResourceGenerator)
     comp:setMaxQuantity(self.MaxQuantity)
     comp.GrowRate = self.GrowRate

@@ -19,7 +19,7 @@ EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/RadialConfinedAgent", "PREF
     Defining a Component to spawn our custom Agents in game:
 
     The HasAgents property only exists to prevent reloading
-    from spawning extra new Agents every time. I highly 
+    from spawning extra new Agents every time. I highly
     recommend using something similar in your component!
 ]]--
 
@@ -27,22 +27,32 @@ local COMP_RADIAL_ENFORCER = {
 	TypeName = "COMP_RADIAL_ENFORCER",
 	ParentType = "COMPONENT",
 	Properties = {
-        { Name = "HasAgents", Type = "boolean", Default = false, Flags = { "SAVE_GAME" } }
+        { Name = "HasAgents", Type = "boolean", Default = false, Flags = { "SAVE_GAME" } },
+        { Name = "Agents", Type = "list<GAME_OBJECT>", Default = {}, Flags = { "SAVE_GAME" } }
     }
 }
 
 function COMP_RADIAL_ENFORCER:onEnabled()
     if not self.HasAgents then
         local pos = self:getOwner():getGlobalPosition()
-        
+
         for i = 1,10,1 do
             local agent = self:getLevel():createObject("PREFAB_RADIAL_CONFINED_AGENT", pos)
-            
+            table.insert(self.Agents, agent)
+
             local comp = agent:getComponent("COMP_ENFORCE_RADIUS")
             comp:setEnforcer(self:getOwner())
         end
-        
+
         self.HasAgents = true
+    end
+end
+
+function COMP_RADIAL_ENFORCER:onFinalize(isClearingLevel)
+    if not isClearingLevel then
+        for i, agent in ipairs(self.Agents) do
+            agent:destroy()
+        end
     end
 end
 

@@ -25,15 +25,15 @@ EBF:registerBehaviorTreeNode({
             
             --local compPot = nil
             --compPot = self.PlantingPot.Component
-            comp = self.AgentData.Agent:getOwner():getEnabledComponent("COMP_SAVE_PLANTING_POT")
+            local comp = self.AgentData.Agent:getOwner():getEnabledComponent("COMP_SAVE_PLANTING_POT")
             if comp ~= nil then
-                compPot = comp:getPlantingPot()
+                local compPot = comp:getPlantingPot()
                 
                 if compPot ~= nil then
                     local pos = compPot:getOwner():getGlobalPosition()
                     local orientation = { 0, 0, 0, 1 }
                     quaternion.setEulerAngles(orientation, { 0, math.random()*360, 0 })
-                    plantObject = plantation:getLevel():createObject(plantation.Plantable, pos, orientation)
+                    local plantObject = plantation:getLevel():createObject(plantation.Plantable, pos, orientation)
                     
                     compPot:setOccupied(true, plantObject)
                     compPot:initPlant()

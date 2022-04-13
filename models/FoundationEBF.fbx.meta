@@ -141,7 +141,6 @@
 		<meta id="9e2e32db-e1c3-4f39-a83e-1f401d9aded9" name="Step4.000Keep.001_Material.Red"/>
 		<meta id="05928b1b-b8a0-4c17-924c-1f18cf332d16" name="Step4.001Keep.001_Material.Grey"/>
 		<meta id="08b4d004-c65f-4d1b-97e3-8eb6a2d504c4" name="Step5.000Keep.001_Material.Purple"/>
-		<meta id="5ecb85d6-8243-466b-bbf2-185a73a055cf" name="Step5.002Keep.001_Material.Purple"/>
 		<meta id="0173014c-8f08-4623-8762-535e1770a4ed" name="Step6.006_Material.Purple"/>
 		<meta id="35a1f65d-ad46-49cc-b2cb-bc4a6846ba9e" name="Step6.005_Material.Purple"/>
 		<meta id="54163eef-0bd2-4fc9-b859-43d689255537" name="Step6.004_Material.Purple"/>
@@ -176,6 +175,7 @@
 		<meta id="e0abe263-12a3-42bf-aa32-554efde935ea" name="Step9.001Keep.001_Material.Blue"/>
 		<meta id="12941064-d040-4f3f-a59e-9394272855b4" name="Step9.002Keep.001_Material.Blue"/>
 		<meta id="0dc58168-60ef-42a1-8d66-83a19cded8ef" name="Step9.003Keep.001_Material.Blue"/>
+		<meta id="135c076c-5935-4c56-a96c-968dc1cda5b7" name="Step5.002Keep.001_Material.Purple"/>
 	</meta>
 	<meta id="32f6e140-7fb2-4704-950b-2527194b474d" name="Prefab">
 		<meta id="4e8c45a2-7285-4480-af71-ca77b98df797" name="DoubleDoorPart">
@@ -516,13 +516,25 @@
 			<meta id="5d987792-72e5-4d7f-a0ff-9fc08e714e67" name="Indicator.023"/>
 			<meta id="280fcffe-26b3-4e30-9262-15493022e883" name="Indicator.024"/>
 		</meta>
+		<meta id="2164b71c-67f2-4465-80ec-89daf2c357e2" name="UPSExample1Part">
+			<meta id="caf3bf62-8cba-468c-93bc-c7ac3af86cbd" name="Cube.028"/>
+		</meta>
+		<meta id="f2f2c59c-6c80-4872-b43f-aba1c380f98b" name="UPSExampleSpawn1">
+			<meta id="6af588d8-f0b9-4cb5-a757-095a0baa64e2" name="Cube.029"/>
+		</meta>
+		<meta id="d3884d87-49df-42bf-8118-fea7fe461647" name="UPSExampleSpawn2">
+			<meta id="db2a9ca4-67f8-4199-82e0-6ff9a4288654" name="Cube.030"/>
+		</meta>
+		<meta id="f55d9010-8e34-4ade-967c-9d8aa82b2840" name="UPSExampleSpawn3">
+			<meta id="3bea5305-c708-4955-8083-8f3e81962a1c" name="Cube.031"/>
+		</meta>
 	</meta>
 	<meta id="00a967ef-b438-416c-86c0-d7a8e6507419" type="group" folder="true" name="LOD">
 		<meta id="587cc0ba-c293-4b84-9683-f10f25359375" name="IndicatorDisplay"/>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="105d4581de546ac4eb9dda919b9965ee"/>
+	<Md5Checksum value="5573c94aaa3df723d7df8fbb0ddb6984"/>
 	<ModelVersion value="30"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
@@ -2113,6 +2125,50 @@
 					</Item>
 				</ChildList>
 				<NodeName value="IndicatorDisplay"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.028"/>
+					</Item>
+				</ChildList>
+				<NodeName value="UPSExample1Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.029"/>
+					</Item>
+				</ChildList>
+				<NodeName value="UPSExampleSpawn1"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.030"/>
+					</Item>
+				</ChildList>
+				<NodeName value="UPSExampleSpawn2"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.031"/>
+					</Item>
+				</ChildList>
+				<NodeName value="UPSExampleSpawn3"/>
 			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>

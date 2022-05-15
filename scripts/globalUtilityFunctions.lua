@@ -14,6 +14,10 @@ function starts_with(str, start)
    return str:sub(1, #start) == start
 end
 
+function contains(str, subStr)
+   return str:find(subStr, 1, true) ~= nil
+end
+
 function ends_with(str, ending)
    return ending == "" or str:sub(-#ending) == ending
 end

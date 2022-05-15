@@ -36,9 +36,10 @@ function COMP_UPS_EXAMPLE_1:onEnabled()
         local compUPS = self:getLevel():find("COMP_UNIFIED_PREFAB_SPAWNER")
 
         if compUPS ~= nil then
-            local objects3 = compUPS:radialCountSpawn("UPSExampleSpawn3", self:getOwner():getGlobalPosition(), 50, 10, 10)
-            local objects2 = compUPS:radialCountSpawn("UPSExampleSpawn2", self:getOwner():getGlobalPosition(), 50, 10, 10)
-            local objects1 = compUPS:radialCountSpawn("UPSExampleSpawn1", self:getOwner():getGlobalPosition(), 50, 10, 10)
+            local pos = self:getOwner():getGlobalPosition()
+            local objects3 = compUPS:radialCountSpawn("UPSExampleSpawn3", pos, 50, 10, 10)
+            local objects2 = compUPS:radialCountSpawn("UPSExampleSpawn2", pos, 50, 10, 10)
+            local objects1 = compUPS:radialCountSpawn("UPSExampleSpawn1", pos, 50, 10, 10)
 
             for i, object in ipairs(objects3) do
                 table.insert(self.SpawnedObjects, object)
@@ -109,9 +110,11 @@ EBF:registerAsset({
     ObjectId = "UPSExampleSpawn1",
     ObjectPrefab = "PREFAB_UPS_EXAMPLE_SPAWN_1",
     ObjectArea = { 2, 2 },
-    ExclusionRadius = 10,
+    AreaCheckResolution = { 1, 1 },
+    SelfExclusionRadius = 10,
+    OnTerrain = false,
     OnWater = true,
-    OnTerrain = false
+    MinAllowedSlope = 60
 })
 
 EBF:registerAsset({
@@ -121,7 +124,9 @@ EBF:registerAsset({
     ObjectPrefab = "PREFAB_UPS_EXAMPLE_SPAWN_2",
     ObjectArea = { 10, 4 },
     EdgeCheckResoluton = { 4, 1 },
-    ExclusionRadius = 10
+    AreaCheckMode = "Cross",
+    AreaCheckResolution = { 4, 1 },
+    SelfExclusionRadius = 10
 })
 
 EBF:registerAsset({
@@ -131,7 +136,9 @@ EBF:registerAsset({
     ObjectPrefab = "PREFAB_UPS_EXAMPLE_SPAWN_3",
     ObjectArea = { 6, 6 },
     EdgeCheckResoluton = { 2, 2 },
-    ExclusionRadius = 10
+    AreaCheckMode = "Combined",
+    AreaCheckResolution = { 2, 2 },
+    SelfExclusionRadius = 10
 })
 
 EBF:overrideAsset({

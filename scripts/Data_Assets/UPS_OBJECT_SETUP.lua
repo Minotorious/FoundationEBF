@@ -19,12 +19,13 @@ local UPS_OBJECT_SETUP = {
         { Name = "ObjectArea", Type = "vec2f", Default = { 1, 1 } },
         { Name = "EdgeCheckResoluton", Type = "vec2i", Default = { 0, 0 } },
         { Name = "AreaCheckMode", Type = "string", Default = "Hourglass" }, -- Cross, Combined
-        { Name = "AreaCheckResolution", Type = "integer", Default = 0 },
+        { Name = "AreaCheckResolution", Type = "vec2i", Default = { 0, 0 } },
         { Name = "OnTerrain", Type = "boolean", Default = true },
         { Name = "OnWater", Type = "boolean", Default = false },
-        { Name = "MinAllowedSlope", Type = "float", Default = 60.0 }, -- 0 to 90
+        { Name = "MinAllowedSlope", Type = "float", Default = 80.0 }, -- 0 to 90
         { Name = "AllowedAngles", Type = "vec2f", Default = { -180, 180 } },
-        { Name = "ExclusionRadius", Type = "float", Default = 50.0 }
+        { Name = "SelfExclusionRadius", Type = "float", Default = 50.0 },
+        { Name = "BuildingPartExclusionRadius", Type = "float", Default = 10.0 } -- 0 to disable
     }
 }
 

@@ -35,4 +35,4 @@ EBF:log("Registering Behavior Trees")
 EBF:dofile("scripts/BehaviorTrees/registerBehaviorTrees.lua")
 
 -- Examples
-EBF:dofile("scripts/Examples/registerExamples.lua")
+--EBF:dofile("scripts/Examples/registerExamples.lua")

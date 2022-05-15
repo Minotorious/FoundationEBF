@@ -132,14 +132,14 @@ end
 
 function COMP_UNIFIED_PREFAB_SPAWNER:checkPosAgainstSpawnedObjects(position, objectSetup)
     for i, object in pairs(self.SpawnedObjects) do
-        if object:is("UPS_SPAWNED_OBJECT") then
+        if object ~= nil and object:is("UPS_SPAWNED_OBJECT") then
             local gameObject = object.Object
             if gameObject ~= nil and gameObject:is("GAME_OBJECT") then
                 local posObj = object.Object:getGlobalPosition()
 
                 if object.ObjectSetup.ObjectId == objectSetup.ObjectId then
                     local distSq = (posObj.x - position[1])^2 + (posObj.z - position[3])^2
-                    if distSq < objectSetup.ExclusionRadius^2 then
+                    if distSq < objectSetup.SelfExclusionRadius^2 then
                         return false
                     end
                 end
@@ -160,6 +160,27 @@ function COMP_UNIFIED_PREFAB_SPAWNER:checkPosAgainstSpawnedObjects(position, obj
     end
 
     return true
+end
+
+function COMP_UNIFIED_PREFAB_SPAWNER:checkPosAgainstBuildingParts(position, objectSetup)
+    local posAllowed = true
+    if objectSetup.BuildingPartExclusionRadius > 0 then
+        self:getLevel():getComponentManager("COMP_BUILDING_PART"):getAllComponent():forEach(
+            function(buildingPart)
+                local posBP = buildingPart:getOwner():getGlobalPosition()
+                local distSq = (posBP.x - position[1])^2 + (posBP.z - position[3])^2
+                if distSq < objectSetup.BuildingPartExclusionRadius^2 then
+                    posAllowed = false
+                end
+            end
+        )
+    end
+
+    if not posAllowed then
+        return false
+    else
+        return true
+    end
 end
 
 function COMP_UNIFIED_PREFAB_SPAWNER:checkObjectBoundingBox(center, orientation, objectSetup)
@@ -200,51 +221,119 @@ function COMP_UNIFIED_PREFAB_SPAWNER:checkObjectBoundingBox(center, orientation,
 end
 
 function COMP_UNIFIED_PREFAB_SPAWNER:checkObjectInternalArea(center, orientation, objectSetup)
+    local internalArea = {}
+    local crossMode = ( objectSetup.AreaCheckMode == "Cross" or objectSetup.AreaCheckMode == "Combined" )
+    local hourglassMode = ( objectSetup.AreaCheckMode == "Hourglass" or objectSetup.AreaCheckMode == "Combined" )
 
+    if crossMode == true then
+        -- xEdge Resolution
+        if objectSetup.AreaCheckResolution.x > 0 then
+            for i = 1,objectSetup.AreaCheckResolution.x do
+                table.insert(internalArea, { i*objectSetup.ObjectArea.x/(objectSetup.AreaCheckResolution.x*2 + 2), center[2],  0 })
+                table.insert(internalArea, { -i*objectSetup.ObjectArea.x/(objectSetup.AreaCheckResolution.x*2 + 2), center[2],  0 })
+            end
+        end
+
+        -- yEdge Resolution
+        if objectSetup.AreaCheckResolution.y > 0 then
+            for i = 1,objectSetup.AreaCheckResolution.y do
+                table.insert(internalArea, {  0, center[2], i*objectSetup.ObjectArea.y/(objectSetup.AreaCheckResolution.y*2 + 2) })
+                table.insert(internalArea, {  0, center[2], -i*objectSetup.ObjectArea.y/(objectSetup.AreaCheckResolution.y*2 + 2) })
+            end
+        end
+    end
+
+    if hourglassMode == true then
+        if objectSetup.AreaCheckResolution.x > 0 and objectSetup.AreaCheckResolution.y > 0 then
+            local resolution = 1
+            if objectSetup.AreaCheckResolution.x > objectSetup.AreaCheckResolution.y then
+                resolution = objectSetup.AreaCheckResolution.x
+            else
+                resolution = objectSetup.AreaCheckResolution.y
+            end
+
+            -- diagonals Resolution
+            for i = 1,resolution do
+                table.insert(internalArea, { i*objectSetup.ObjectArea.x/(objectSetup.AreaCheckResolution.x*2 + 2), center[2],  i*objectSetup.ObjectArea.y/(objectSetup.AreaCheckResolution.y*2 + 2) })
+                table.insert(internalArea, { i*objectSetup.ObjectArea.x/(objectSetup.AreaCheckResolution.x*2 + 2), center[2],  -i*objectSetup.ObjectArea.y/(objectSetup.AreaCheckResolution.y*2 + 2) })
+                table.insert(internalArea, { -i*objectSetup.ObjectArea.x/(objectSetup.AreaCheckResolution.x*2 + 2), center[2],  i*objectSetup.ObjectArea.y/(objectSetup.AreaCheckResolution.y*2 + 2) })
+                table.insert(internalArea, { -i*objectSetup.ObjectArea.x/(objectSetup.AreaCheckResolution.x*2 + 2), center[2],  -i*objectSetup.ObjectArea.y/(objectSetup.AreaCheckResolution.y*2 + 2) })
+            end
+        end
+    end
+
+    for i, point in ipairs(internalArea) do
+        local rotTransPoint = self:rotateTranslatePoint(point, center, orientation, false)
+        local check1 = self:checkPosAgainstSpawnedObjects(rotTransPoint, objectSetup)
+        local check2 = self:isPositionAllowed(rotTransPoint, objectSetup)
+        if not ( check1 and check2 ) then
+            return false
+        end
+    end
 
     return true
 end
 
-function COMP_UNIFIED_PREFAB_SPAWNER:radialCountSpawn(SpawnObjectId, center, radius, SpawnCount, AttemptCount)
-    local objectSetup = self:getObjectSetupFromId(SpawnObjectId)
-
-    local gameObjects = {}
-
-    for i = 1, SpawnCount do
-        for j = 1, AttemptCount do
-            --EBF:log("Object: " .. tostring(i) .. " Attempt: " ..tostring(j))
-            local pos = self:pickRadialRandomPosition(center, radius)
-            local orient = self:pickRandomOrientation(objectSetup.AllowedAngles)
-
-            local check1 = self:checkPosAgainstSpawnedObjects(pos, objectSetup)
-            if check1 == true then
-                local check2 = self:isPositionAllowed(pos, objectSetup)
-                if check2 == true then
-                    local check3 = self:checkObjectBoundingBox(pos, orient, objectSetup)
-                    if check3 == true then
-                        local gameObject = self:getLevel():createObject(objectSetup.ObjectPrefab, pos, orient)
-                        table.insert(gameObjects, gameObject)
-                        EBF:log("Spawned: " .. tostring(gameObject))
-
-                        local spawnedObject = foundation.createData(
-                            {
-                                DataType = "UPS_SPAWNED_OBJECT"
-                            }
-                        )
-
-                        spawnedObject.Object = gameObject
-                        spawnedObject.ObjectSetup = objectSetup
-                        table.insert(self.SpawnedObjects, spawnedObject)
-                        break
+function COMP_UNIFIED_PREFAB_SPAWNER:checkSpawning(pos, orient, objectSetup)
+    local check0 = self:checkPosAgainstBuildingParts(pos, objectSetup)
+    if check0 == true then
+        local check1 = self:checkPosAgainstSpawnedObjects(pos, objectSetup)
+        if check1 == true then
+            local check2 = self:isPositionAllowed(pos, objectSetup)
+            if check2 == true then
+                local check3 = self:checkObjectBoundingBox(pos, orient, objectSetup)
+                if check3 == true then
+                    local check4 = self:checkObjectInternalArea(pos, orient, objectSetup)
+                    if check4 == true then
+                        return true
                     end
                 end
             end
         end
     end
 
-    self:reindexSpawnedObjects()
+    return false
+end
 
-    return gameObjects
+function COMP_UNIFIED_PREFAB_SPAWNER:radialCountSpawn(SpawnObjectId, center, radius, SpawnCount, AttemptCount)
+    local objectSetup = self:getObjectSetupFromId(SpawnObjectId)
+
+    if objectSetup ~= nil then
+        local gameObjects = {}
+
+        for i = 1, SpawnCount do
+            for j = 1, AttemptCount do
+                --EBF:log("Object: " .. tostring(i) .. " Attempt: " ..tostring(j))
+                local pos = self:pickRadialRandomPosition(center, radius)
+                local orient = self:pickRandomOrientation(objectSetup.AllowedAngles)
+
+                local check = self:checkSpawning(pos, orient, objectSetup)
+                if check == true then
+                    local gameObject = self:getLevel():createObject(objectSetup.ObjectPrefab, pos, orient)
+                    table.insert(gameObjects, gameObject)
+                    --EBF:log("Spawned: " .. tostring(gameObject))
+
+                    local spawnedObject = foundation.createData(
+                        {
+                            DataType = "UPS_SPAWNED_OBJECT"
+                        }
+                    )
+
+                    spawnedObject.Object = gameObject
+                    spawnedObject.ObjectSetup = objectSetup
+                    table.insert(self.SpawnedObjects, spawnedObject)
+                    break
+                end
+            end
+        end
+
+        self:reindexSpawnedObjects()
+
+        return gameObjects
+    end
+
+    EBF:log("Error in function COMP_UNIFIED_PREFAB_SPAWNER:radialCountSpawn(...). No UPS_OBJECT_SETUP found with the provided SpawnObjectId!")
+    return nil
 end
 
 function COMP_UNIFIED_PREFAB_SPAWNER:radialFillSpawn()

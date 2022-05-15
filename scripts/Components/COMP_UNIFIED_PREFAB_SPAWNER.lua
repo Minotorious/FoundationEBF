@@ -344,12 +344,45 @@ function COMP_UNIFIED_PREFAB_SPAWNER:radialFillSpawn()
     return gameObjects
 end
 
-function COMP_UNIFIED_PREFAB_SPAWNER:rectangularCountSpawn()
-    local gameObjects = {}
+function COMP_UNIFIED_PREFAB_SPAWNER:rectangularCountSpawn(SpawnObjectId, center, orientation, rectangle, SpawnCount, AttemptCount)
+    local objectSetup = self:getObjectSetupFromId(SpawnObjectId)
 
+    if objectSetup ~= nil then
+        local gameObjects = {}
 
+        for i = 1, SpawnCount do
+            for j = 1, AttemptCount do
+                --EBF:log("Object: " .. tostring(i) .. " Attempt: " ..tostring(j))
+                local pos = self:pickRectangularRandomPosition(center, orientation, rectangle)
+                local orient = self:pickRandomOrientation(objectSetup.AllowedAngles)
 
-    return gameObjects
+                local check = self:checkSpawning(pos, orient, objectSetup)
+                if check == true then
+                    local gameObject = self:getLevel():createObject(objectSetup.ObjectPrefab, pos, orient)
+                    table.insert(gameObjects, gameObject)
+                    --EBF:log("Spawned: " .. tostring(gameObject))
+
+                    local spawnedObject = foundation.createData(
+                        {
+                            DataType = "UPS_SPAWNED_OBJECT"
+                        }
+                    )
+
+                    spawnedObject.Object = gameObject
+                    spawnedObject.ObjectSetup = objectSetup
+                    table.insert(self.SpawnedObjects, spawnedObject)
+                    break
+                end
+            end
+        end
+
+        self:reindexSpawnedObjects()
+
+        return gameObjects
+    end
+
+    EBF:log("Error in function COMP_UNIFIED_PREFAB_SPAWNER:rectangularCountSpawn(...). No UPS_OBJECT_SETUP found with the provided SpawnObjectId!")
+    return nil
 end
 
 function COMP_UNIFIED_PREFAB_SPAWNER:rectangularFillSpawn()
@@ -385,12 +418,45 @@ function COMP_UNIFIED_PREFAB_SPAWNER:hexagonTargetedSpawn()
 end
 
 
-function COMP_UNIFIED_PREFAB_SPAWNER:mapCountSpawn()
-    local gameObjects = {}
+function COMP_UNIFIED_PREFAB_SPAWNER:mapCountSpawn(SpawnObjectId, SpawnCount, AttemptCount)
+    local objectSetup = self:getObjectSetupFromId(SpawnObjectId)
 
+    if objectSetup ~= nil then
+        local gameObjects = {}
 
+        for i = 1, SpawnCount do
+            for j = 1, AttemptCount do
+                --EBF:log("Object: " .. tostring(i) .. " Attempt: " ..tostring(j))
+                local pos = self:pickMapWideRandomPosition()
+                local orient = self:pickRandomOrientation(objectSetup.AllowedAngles)
 
-    return gameObjects
+                local check = self:checkSpawning(pos, orient, objectSetup)
+                if check == true then
+                    local gameObject = self:getLevel():createObject(objectSetup.ObjectPrefab, pos, orient)
+                    table.insert(gameObjects, gameObject)
+                    --EBF:log("Spawned: " .. tostring(gameObject))
+
+                    local spawnedObject = foundation.createData(
+                        {
+                            DataType = "UPS_SPAWNED_OBJECT"
+                        }
+                    )
+
+                    spawnedObject.Object = gameObject
+                    spawnedObject.ObjectSetup = objectSetup
+                    table.insert(self.SpawnedObjects, spawnedObject)
+                    break
+                end
+            end
+        end
+
+        self:reindexSpawnedObjects()
+
+        return gameObjects
+    end
+
+    EBF:log("Error in function COMP_UNIFIED_PREFAB_SPAWNER:mapCountSpawn(...). No UPS_OBJECT_SETUP found with the provided SpawnObjectId!")
+    return nil
 end
 
 function COMP_UNIFIED_PREFAB_SPAWNER:mapFillSpawn()

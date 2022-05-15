@@ -21,9 +21,9 @@ EBF:registerBehaviorTreeNode({
         local workplace = self.AgentData.Agent:getOwner():getEnabledComponent("COMP_VILLAGER"):getJobInstance().Workplace
         
         if workplace ~= nil then
-            comp = self.AgentData.Agent:getOwner():getEnabledComponent("COMP_SAVE_PLANTING_POT")
+            local comp = self.AgentData.Agent:getOwner():getEnabledComponent("COMP_SAVE_PLANTING_POT")
             if comp ~= nil then
-                compPot = comp:getPlantingPot()
+                local compPot = comp:getPlantingPot()
                 
                 if compPot ~= nil then
                     compPot.CurrentPlant:destroy()

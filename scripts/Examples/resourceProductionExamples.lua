@@ -34,7 +34,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "DEFINED_RESOURCE_GENERATOR_PART",
     Name = "DEFINED_RESOURCE_GENERATOR_PART_NAME",
-	--Description = "DEFINED_RESOURCE_GENERATOR_PART_DESC",
+	Description = "DEFINED_RESOURCE_GENERATOR_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -56,7 +56,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PRODUCE_TREE_PART",
     Name = "PRODUCE_TREE_PART_NAME",
-	--Description = "PRODUCE_TREE_PART_DESC",
+	Description = "PRODUCE_TREE_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -120,7 +120,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PLANTATION_PART",
     Name = "PLANTATION_PART_NAME",
-	--Description = "PLANTATION_PART_DESC",
+	Description = "PLANTATION_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -142,7 +142,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PLANTER_1_PART",
     Name = "PLANTER_1_PART_NAME",
-	--Description = "PLANTER_1_PART_DESC",
+	Description = "PLANTER_1_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -164,7 +164,7 @@ EBF:registerAsset({
 	DataType = "BUILDING_PART",
 	Id = "PLANTER_2_PART",
     Name = "PLANTER_2_PART_NAME",
-	--Description = "PLANTER_2_PART_DESC",
+	Description = "PLANTER_2_PART_DESC",
     Category = "CORE",
 	ConstructorData = {
 		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
@@ -213,7 +213,8 @@ EBF:registerAsset({
 EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR",
     Id = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_EXAMPLE",
-    Name = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_NAME",
+    Name = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR_EXAMPLE_DESC",
     ResourceGenerator = "BUILDING_FUNCTION_RESOURCE_GENERATOR_GEMS",
     MaxQuantity = 50,
     GrowRate = 2.5
@@ -236,6 +237,7 @@ EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PRODUCE_TREE",
     Id = "BUILDING_FUNCTION_PRODUCE_TREE_EXAMPLE",
     Name = "BUILDING_FUNCTION_PRODUCE_TREE_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_PRODUCE_TREE_EXAMPLE_DESC",
     DefaultSpawners = 2,
     DaysToSpawn = 7,
     SpawnerScalingSpeed = 0.01,
@@ -248,6 +250,7 @@ EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PLANTATION",
     Id = "BUILDING_FUNCTION_PLANTATION_EXAMPLE",
     Name = "BUILDING_FUNCTION_PLANTATION_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_PLANTATION_EXAMPLE_DESC",
     WorkerCapacity = 3,
     RelatedJob = { Job = "PLANTATION_FARMER_EXAMPLE", Behavior = "BEHAVIOR_PLANTATION_FARMER" },
     ResourceProduced = {
@@ -290,6 +293,7 @@ EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PLANTER",
     Id = "BUILDING_FUNCTION_PLANTER_1_EXAMPLE",
     Name = "BUILDING_FUNCTION_PLANTER_1_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_PLANTER_1_EXAMPLE_DESC",
     GatheringAnimation = "SCYTHE",
     FollowPlantingPath = true
 })
@@ -298,6 +302,7 @@ EBF:registerAsset({
     DataType = "BUILDING_FUNCTION_PLANTER",
     Id = "BUILDING_FUNCTION_PLANTER_2_EXAMPLE",
     Name = "BUILDING_FUNCTION_PLANTER_2_EXAMPLE_NAME",
+    Description = "BUILDING_FUNCTION_PLANTER_2_EXAMPLE_DESC",
     PlantingAnimation = "FORESTER",
     FollowPlantingPath = false
 })

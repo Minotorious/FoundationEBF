@@ -27,12 +27,16 @@ function COMP_ENFORCE_RECTANGLE:getPosition()
     if self.Enforcer ~= nil then
         local x = ( math.random() * self.Rectangle.x ) - self.Rectangle.x/2
         local y = ( math.random() * self.Rectangle.y ) - self.Rectangle.y/2
-        
+
         local enforcerPos = self.Enforcer:getGlobalPosition()
-        
-        local pos = { enforcerPos.x + x, enforcerPos.y, enforcerPos.z + y }
-        
-        return pos
+        local enforcerOrient = self.Enforcer:getGlobalOrientation()
+
+        local theta = quaternion.getEulerAngles(enforcerOrient)
+
+        local rotatedX = x*math.sin(theta.y) + y*math.cos(theta.y);
+        local rotatedY = x*math.cos(theta.y) - y*math.sin(theta.y);
+
+        return { enforcerPos.x + rotatedX, enforcerPos.y, enforcerPos.z + rotatedY }
     else
         return nil
     end

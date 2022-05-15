@@ -10,7 +10,7 @@ local EBF = ...
 
 --[[----------------------- DEFAULT PREFABS & MATERIALS -----------------------]]--
 
-function registerDefaulDigit(digit)
+local function registerDefaulDigit(digit)
     EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/Default" .. digit, "PREFAB_" .. string.upper(digit) .. "_DEFAULT")
     EBF:registerAssetId("textures/Default" .. digit .. ".png", "DEFAULT_" .. string.upper(digit) .. "_TEXTURE")
 
@@ -69,7 +69,7 @@ function BUILDING_FUNCTION_NUMBER_DISPLAY:activateBuilding(gameObject)
                 if compCheck == nil then
                     local displayObject = child:getLevel():createObject(self.NumberDisplayPrefab, child:getGlobalPosition(), child:getGlobalOrientation())
                     displayObject:setParent(child, true)
-                    comp = displayObject:getOrCreateComponent("COMP_NUMBER_DISPLAY")
+                    local comp = displayObject:getOrCreateComponent("COMP_NUMBER_DISPLAY")
                     comp:setNumberDisplayData(self)
                 else
                     compCheck:setNumberDisplayData(self)

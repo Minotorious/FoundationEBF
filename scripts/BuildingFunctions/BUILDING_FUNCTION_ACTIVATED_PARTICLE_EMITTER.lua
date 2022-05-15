@@ -23,7 +23,7 @@ local BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER = {
 
 function BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
-    comp = gameObject:getOrCreateComponent("COMP_ACTIVATED_PARTICLE_EMITTER")
+    local comp = gameObject:getOrCreateComponent("COMP_ACTIVATED_PARTICLE_EMITTER")
     comp:setTriggeredParticleEmitterData(self)
     
     return true
@@ -31,7 +31,7 @@ end
 
 function BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
-    comp = gameObject:getOrCreateComponent("COMP_ACTIVATED_PARTICLE_EMITTER")
+    local comp = gameObject:getOrCreateComponent("COMP_ACTIVATED_PARTICLE_EMITTER")
     comp:setTriggeredParticleEmitterData(self)
 end
 
@@ -73,7 +73,7 @@ function COMP_ACTIVATED_PARTICLE_EMITTER:setTriggeredParticleEmitterData(buildin
             if starts_with(child.Name, self.TriggerNodeName) then
                 self.triggerPos = child:getGlobalPosition()
             elseif starts_with(child.Name, self.EmitterNodeName) then
-                compEmitter = child:getComponent("COMP_PARTICLE_EMITTER")
+                local compEmitter = child:getComponent("COMP_PARTICLE_EMITTER")
                 if compEmitter ~= nil then
                     self:addToEmitterCompList(compEmitter)
                 end

@@ -32,7 +32,7 @@ local BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE = {
 
 function BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
-    comp = gameObject:getOrCreateComponent("COMP_SIMPLE_DRAWBRIDGE")
+    local comp = gameObject:getOrCreateComponent("COMP_SIMPLE_DRAWBRIDGE")
     comp:setDrawbridgeData(self)
     
     return true
@@ -40,7 +40,7 @@ end
 
 function BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
-    comp = gameObject:getOrCreateComponent("COMP_SIMPLE_DRAWBRIDGE")
+    local comp = gameObject:getOrCreateComponent("COMP_SIMPLE_DRAWBRIDGE")
     comp:setDrawbridgeData(self)
 end
 
@@ -95,7 +95,7 @@ function COMP_SIMPLE_DRAWBRIDGE:setDrawbridgeData(buildingFunctionData)
     self.ChainRotationSpeed =  buildingFunctionData.ChainRotationSpeed
     self.ChainEclipsePoint =  buildingFunctionData.ChainEclipsePoint
     
-    i = 1
+    local i = 1
     self:getOwner():forEachChild(
         function(child)
             if starts_with(child.Name, self.TriggerNodeName) then

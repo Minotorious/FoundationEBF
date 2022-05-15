@@ -36,7 +36,7 @@ end
 function BUILDING_FUNCTION_PLANTATION:reloadBuildingFunction(gameObject)
     --EBF:log("Building Function Reload")
     self:activateBuilding(gameObject)
-    compPlantation = gameObject:getEnabledComponent("COMP_PLANTATION")
+    local compPlantation = gameObject:getEnabledComponent("COMP_PLANTATION")
     compPlantation:initPlants()
 end
 
@@ -61,7 +61,7 @@ end
 
 function COMP_PLANTATION:init()
     local compMainGameLoop = self:getLevel():find("COMP_MAIN_GAME_LOOP")
-    event.register(self, compMainGameLoop.ON_NEW_DAY, 
+    event.register(self, compMainGameLoop.ON_NEW_DAY,
         function()
             local building = self:getOwner():findFirstObjectWithComponentUp("COMP_BUILDING")
             building:getBuildingPartList():forEach(

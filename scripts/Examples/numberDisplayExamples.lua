@@ -32,9 +32,9 @@ EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/NumberDisplayExample3", "PR
 ]]--
 
 local COMP_SET_NUMBER_DISPLAY_EXAMPLE_1_VALUE = {
-	TypeName = "COMP_SET_NUMBER_DISPLAY_EXAMPLE_1_VALUE",
-	ParentType = "COMPONENT",
-	Properties = {}
+    TypeName = "COMP_SET_NUMBER_DISPLAY_EXAMPLE_1_VALUE",
+    ParentType = "COMPONENT",
+    Properties = {}
 }
 
 function COMP_SET_NUMBER_DISPLAY_EXAMPLE_1_VALUE:create()
@@ -64,9 +64,9 @@ end
 EBF:registerClass(COMP_SET_NUMBER_DISPLAY_EXAMPLE_1_VALUE)
 
 local COMP_SET_NUMBER_DISPLAY_EXAMPLE_2_VALUE = {
-	TypeName = "COMP_SET_NUMBER_DISPLAY_EXAMPLE_2_VALUE",
-	ParentType = "COMPONENT",
-	Properties = {}
+    TypeName = "COMP_SET_NUMBER_DISPLAY_EXAMPLE_2_VALUE",
+    ParentType = "COMPONENT",
+    Properties = {}
 }
 
 function COMP_SET_NUMBER_DISPLAY_EXAMPLE_2_VALUE:create()
@@ -91,9 +91,9 @@ end
 EBF:registerClass(COMP_SET_NUMBER_DISPLAY_EXAMPLE_2_VALUE)
 
 local COMP_SET_NUMBER_DISPLAY_EXAMPLE_3_VALUE = {
-	TypeName = "COMP_SET_NUMBER_DISPLAY_EXAMPLE_3_VALUE",
-	ParentType = "COMPONENT",
-	Properties = {}
+    TypeName = "COMP_SET_NUMBER_DISPLAY_EXAMPLE_3_VALUE",
+    ParentType = "COMPONENT",
+    Properties = {}
 }
 
 function COMP_SET_NUMBER_DISPLAY_EXAMPLE_3_VALUE:create()
@@ -127,63 +127,63 @@ EBF:registerPrefabComponent("PREFAB_NUMBER_DISPLAY_EXAMPLE_3", { DataType = "COM
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "NUMBER_DISPLAY_EXAMPLE_1_PART",
+    DataType = "BUILDING_PART",
+    Id = "NUMBER_DISPLAY_EXAMPLE_1_PART",
     Name = "NUMBER_DISPLAY_EXAMPLE_1_PART_NAME",
-	Description = "NUMBER_DISPLAY_EXAMPLE_1_PART_DESC",
+    Description = "NUMBER_DISPLAY_EXAMPLE_1_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_NUMBER_DISPLAY_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_NUMBER_DISPLAY_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 0.5, 0.5 }, { 0, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_1"
 })
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "NUMBER_DISPLAY_EXAMPLE_2_PART",
+    DataType = "BUILDING_PART",
+    Id = "NUMBER_DISPLAY_EXAMPLE_2_PART",
     Name = "NUMBER_DISPLAY_EXAMPLE_2_PART_NAME",
-	Description = "NUMBER_DISPLAY_EXAMPLE_2_PART_DESC",
+    Description = "NUMBER_DISPLAY_EXAMPLE_2_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_NUMBER_DISPLAY_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_NUMBER_DISPLAY_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 0.5, 0.5 }, { 0, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_2"
 })
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "NUMBER_DISPLAY_EXAMPLE_3_PART",
+    DataType = "BUILDING_PART",
+    Id = "NUMBER_DISPLAY_EXAMPLE_3_PART",
     Name = "NUMBER_DISPLAY_EXAMPLE_3_PART_NAME",
-	Description = "NUMBER_DISPLAY_EXAMPLE_3_PART_DESC",
+    Description = "NUMBER_DISPLAY_EXAMPLE_3_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_NUMBER_DISPLAY_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_NUMBER_DISPLAY_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 0.5, 0.5 }, { 0, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_NUMBER_DISPLAY_EXAMPLE_3"

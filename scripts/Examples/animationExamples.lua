@@ -28,120 +28,120 @@ EBF:configurePrefabFlagList("models/FoundationEBF.fbx/Prefab/SimpleDrawbridgePar
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "SINGLE_DOOR_PART",
+    DataType = "BUILDING_PART",
+    Id = "SINGLE_DOOR_PART",
     Name = "SINGLE_DOOR_PART_NAME",
-	Description = "SINGLE_DOOR_PART_DESC",
+    Description = "SINGLE_DOOR_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_SINGLE_DOOR_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_SINGLE_DOOR_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 0.05, 0.05 }, { 1, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 0.05, 0.05 }, { -1.1, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 2, 0.05 }, { 0, 0 } ),
                 Type = { GRASS_CLEAR = true }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_SINGLE_DOOR_EXAMPLE"
 })
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "DOUBLE_DOOR_PART",
+    DataType = "BUILDING_PART",
+    Id = "DOUBLE_DOOR_PART",
     Name = "DOUBLE_DOOR_PART_NAME",
-	Description = "DOUBLE_DOOR_PART_DESC",
+    Description = "DOUBLE_DOOR_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_DOUBLE_DOOR_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_DOUBLE_DOOR_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 0.05, 5 }, { 2, 2.5 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 0.05, 5 }, { -2, 2.5 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 4, 0.05 }, { 0, 0 } ),
                 Type = { GRASS_CLEAR = true }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_DOUBLE_DOOR_EXAMPLE"
 })
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "PORTCULLIS_PART",
+    DataType = "BUILDING_PART",
+    Id = "PORTCULLIS_PART",
     Name = "PORTCULLIS_PART_NAME",
-	Description = "PORTCULLIS_PART_DESC",
+    Description = "PORTCULLIS_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_PORTCULLIS_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_PORTCULLIS_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 0.05, 10 }, { 2, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 0.05, 10 }, { -2, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 4, 10 }, { 0, 0 } ),
                 Type = { GRASS_CLEAR = true }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_PORTCULLIS_EXAMPLE"
 })
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "SIMPLE_DRAWBRIDGE_PART",
+    DataType = "BUILDING_PART",
+    Id = "SIMPLE_DRAWBRIDGE_PART",
     Name = "SIMPLE_DRAWBRIDGE_PART_NAME",
-	Description = "SIMPLE_DRAWBRIDGE_PART_DESC",
+    Description = "SIMPLE_DRAWBRIDGE_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_SIMPLE_DRAWBRIDGE_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_SIMPLE_DRAWBRIDGE_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 0.05, 16 }, { 2, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 0.05, 16 }, { -2, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 4, 6 }, { 0, 5 } ),
                 Type = { GRASS_CLEAR = true }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 4, 6 }, { 0, -5 } ),
                 Type = { GRASS_CLEAR = true }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE_EXAMPLE"

@@ -11,9 +11,9 @@ local EBF = ...
 --[[----------------------------- CUSTOM COMPONENT ----------------------------]]--
 
 local COMP_ENFORCE_RECTANGLE = {
-	TypeName = "COMP_ENFORCE_RECTANGLE",
-	ParentType = "COMPONENT",
-	Properties = {
+    TypeName = "COMP_ENFORCE_RECTANGLE",
+    ParentType = "COMPONENT",
+    Properties = {
         { Name = "Rectangle", Type = "vec2f", Default = { 1, 1 } },
         { Name = "Enforcer", Type = "GAME_OBJECT", Default = nil, Flags = { "SAVE_GAME" } }
     }

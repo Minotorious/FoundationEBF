@@ -11,9 +11,9 @@ local EBF = ...
 --[[----------------------------- CUSTOM COMPONENT ----------------------------]]--
 
 local COMP_SUN_CONTROLLER = {
-	TypeName = "COMP_SUN_CONTROLLER",
-	ParentType = "COMPONENT",
-	Properties = {
+    TypeName = "COMP_SUN_CONTROLLER",
+    ParentType = "COMPONENT",
+    Properties = {
         { Name = "Sun", Type = "GAME_OBJECT", Default = nil, Flags = { "SAVE_GAME" } },
         { Name = "SunOrigOrient", Type = "quaternion", Default = { 0, 0, 0, 1 }, Flags = { "SAVE_GAME" } }
     }

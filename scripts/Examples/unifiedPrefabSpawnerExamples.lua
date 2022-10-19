@@ -23,9 +23,9 @@ EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/UPSExampleSpawn3", "PREFAB_
 ]]--
 
 local COMP_UPS_EXAMPLE_1 = {
-	TypeName = "COMP_UPS_EXAMPLE_1",
-	ParentType = "COMPONENT",
-	Properties = {
+    TypeName = "COMP_UPS_EXAMPLE_1",
+    ParentType = "COMPONENT",
+    Properties = {
         { Name = "HasSpawned", Type = "boolean", Default = false, Flags = { "SAVE_GAME" } },
         { Name = "SpawnedObjects", Type = "list<GAME_OBJECT>", Default = {}, Flags = { "SAVE_GAME" } }
     }
@@ -83,21 +83,21 @@ EBF:registerPrefabComponent("PREFAB_UPS_EXAMPLE_SPAWN_3", { DataType = "COMP_GRO
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "UPS_EXAMPLE_1_PART",
+    DataType = "BUILDING_PART",
+    Id = "UPS_EXAMPLE_1_PART",
     Name = "UPS_EXAMPLE_1_PART_NAME",
-	Description = "UPS_EXAMPLE_1_PART_DESC",
+    Description = "UPS_EXAMPLE_1_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_UPS_EXAMPLE_1_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_UPS_EXAMPLE_1_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 2, 2 }, { 0, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			}
+            }
         }
     }
 })

@@ -25,7 +25,7 @@ function BUILDING_FUNCTION_DEFINED_RESOURCE_GENERATOR:activateBuilding(gameObjec
     comp:setResourceGeneratorData(self.ResourceGenerator)
     comp:setMaxQuantity(self.MaxQuantity)
     comp.GrowRate = self.GrowRate
-    
+
     return true
 end
 

@@ -25,7 +25,7 @@ function BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER:activateBuilding(gameObjec
     --EBF:log("Building Function Activate Building")
     local comp = gameObject:getOrCreateComponent("COMP_ACTIVATED_PARTICLE_EMITTER")
     comp:setTriggeredParticleEmitterData(self)
-    
+
     return true
 end
 
@@ -67,7 +67,7 @@ function COMP_ACTIVATED_PARTICLE_EMITTER:setTriggeredParticleEmitterData(buildin
     self.TriggerNodeName = buildingFunctionData.TriggerNodeName
     self.TriggeringDistance = buildingFunctionData.TriggeringDistance
     self.TriggerDuration = buildingFunctionData.TriggerDuration
-    
+
     self:getOwner():forEachChild(
         function(child)
             if starts_with(child.Name, self.TriggerNodeName) then
@@ -80,7 +80,7 @@ function COMP_ACTIVATED_PARTICLE_EMITTER:setTriggeredParticleEmitterData(buildin
             end
         end
     )
-    
+
     self.DataDelivered = true
 end
 
@@ -89,9 +89,9 @@ function COMP_ACTIVATED_PARTICLE_EMITTER:update()
         self:getLevel():getComponentManager("COMP_AGENT"):getAllComponent():forEach(
             function(agent)
                 local agentPos = agent:getOwner():getGlobalPosition()
-                
+
                 local distance = math.sqrt( (self.triggerPos.x - agentPos.x)^2 + (self.triggerPos.y - agentPos.y)^2 + (self.triggerPos.z - agentPos.z)^2 )
-                
+
                 if distance <= self.TriggeringDistance then
                     self.timer = self.TriggerDuration
                     for i, compEmitter in ipairs(self.emitterCompList) do
@@ -102,7 +102,7 @@ function COMP_ACTIVATED_PARTICLE_EMITTER:update()
                 end
             end
         )
-        
+
         if self.timer > 0 then
             local dt = self:getLevel():getDeltaTime()
             self.timer = self.timer - dt

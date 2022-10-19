@@ -34,5 +34,13 @@ EBF:dofile("scripts/BehaviorTreeNodes/registerBehaviorTreeNodes.lua")
 EBF:log("Registering Behavior Trees")
 EBF:dofile("scripts/BehaviorTrees/registerBehaviorTrees.lua")
 
+-- Mandates
+--EBF:log("Registering Mandates")
+--EBF:dofile("scripts/Mandates/registerMandates.lua")
+
+-- Textures & Materials
+EBF:log("Registering Textures and Materials")
+EBF:dofile("scripts/Textures_Materials/registerTextures_Materials.lua")
+
 -- Examples
 --EBF:dofile("scripts/Examples/registerExamples.lua")

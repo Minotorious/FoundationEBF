@@ -11,87 +11,97 @@ local EBF = ...
 --[[------------------------------ BEHAVIOR TREE ------------------------------]]--
 
 EBF:registerBehaviorTree({
-	Id = "BEHAVIOR_PLANTATION_FARMER",
-	VariableList = {
-		{
-			Name = "AgentData",
-			DataType = "BEHAVIOR_TREE_DATA_AGENT",
-			IsPublic = true,
-			InitialValue = {}
-		},
+    Id = "BEHAVIOR_PLANTATION_FARMER",
+    VariableList = {
         {
-			Name = "GatheringData",
-			DataType = "BEHAVIOR_TREE_DATA_GATHERING",
-			IsPublic = false,
-			InitialValue = {}
-		},
-		{
-			Name = "DoJobTimer",
-			DataType = "BEHAVIOR_TREE_DATA_WAIT",
-			IsPublic = false,
-			InitialValue = {
-				TimeToWait = 0,
-				Animation = AGENT_ANIMATION.IDLE,
-				SetIdleAfterWait = false
-			}
-		},
-		{
-			Name = "WorkplacePosition",
-			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
-			IsPublic = false,
-			InitialValue = {
-				CanNavigateOnGround = true,
-				CanNavigateOnWater = false,
-				IsSetOrientationOnDestination = true
-			}
-		},
+            Name = "AgentData",
+            DataType = "BEHAVIOR_TREE_DATA_AGENT",
+            IsPublic = true,
+            InitialValue = {}
+        },
         {
-			Name = "ResourcePosition",
-			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
-			IsPublic = false,
-			InitialValue = {
-				CanNavigateOnGround = true,
-				CanNavigateOnWater = false,
-				IsSetOrientationOnDestination = true
-			}
-		},
+            Name = "ComponentData",
+            --DataType = "BEHAVIOR_TREE_DATA_COMPONENT",
+            DataType = "BEHAVIOR_TREE_DATA_VOID_OBJECT",
+            IsPublic = true,
+            InitialValue = {
+                Object = nil,
+                Component = nil
+            }
+        },
         {
-			Name = "ShouldLookAtResourcePosition",
-			DataType = "BEHAVIOR_TREE_DATA_BOOL",
-			IsPublic = false,
-			InitialValue = {
-				Value = true
-			}
-		},
+            Name = "ProductionData",
+            DataType = "BEHAVIOR_TREE_DATA_RESOURCE_PRODUCTION",
+            IsPublic = false,
+            InitialValue = {}
+        },
         {
-			Name = "ShouldUseWorkplaceAnim",
-			DataType = "BEHAVIOR_TREE_DATA_BOOL",
-			IsPublic = false,
-			InitialValue = {
-				Value = false
-			}
-		},
+            Name = "DoJobTimer",
+            DataType = "BEHAVIOR_TREE_DATA_WAIT",
+            IsPublic = false,
+            InitialValue = {
+                TimeToWait = 0,
+                Animation = AGENT_ANIMATION.IDLE,
+                SetIdleAfterWait = false
+            }
+        },
         {
-			Name = "ShouldReceiveXp",
-			DataType = "BEHAVIOR_TREE_DATA_BOOL",
-			IsPublic = false,
-			InitialValue = {
-				Value = true
-			}
-		},
-		{
-			Name = "WorkLoop",
-			DataType = "BEHAVIOR_TREE_DATA_LOOP",
-			IsPublic = true,
-			InitialValue = {
-				LoopCount = 1,
-				Duration = 0,
-				IsInfinite = false,
-				IsDuration = false
-			}
-		}
-	},
-	Root = {
+            Name = "WorkplacePosition",
+            DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+            IsPublic = false,
+            InitialValue = {
+                CanNavigateOnGround = true,
+                CanNavigateOnWater = false,
+                IsSetOrientationOnDestination = true
+            }
+        },
+        {
+            Name = "ResourcePosition",
+            DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+            IsPublic = false,
+            InitialValue = {
+                CanNavigateOnGround = true,
+                CanNavigateOnWater = false,
+                IsSetOrientationOnDestination = true
+            }
+        },
+        {
+            Name = "ShouldLookAtResourcePosition",
+            DataType = "BEHAVIOR_TREE_DATA_BOOL",
+            IsPublic = false,
+            InitialValue = {
+                Value = true
+            }
+        },
+        {
+            Name = "ShouldUseWorkplaceAnim",
+            DataType = "BEHAVIOR_TREE_DATA_BOOL",
+            IsPublic = false,
+            InitialValue = {
+                Value = false
+            }
+        },
+        {
+            Name = "ShouldReceiveXp",
+            DataType = "BEHAVIOR_TREE_DATA_BOOL",
+            IsPublic = false,
+            InitialValue = {
+                Value = true
+            }
+        },
+        {
+            Name = "WorkLoop",
+            DataType = "BEHAVIOR_TREE_DATA_LOOP",
+            IsPublic = true,
+            InitialValue = {
+                LoopCount = 1,
+                Duration = 0,
+                IsInfinite = false,
+                IsDuration = false
+            }
+        }
+    },
+    Root = {
         Name = "WorkLoopRepeater",
         Type = "REPEAT",
         RepeatData = "WorkLoop",
@@ -149,7 +159,8 @@ EBF:registerBehaviorTree({
                                     Type = "PLANTATION_SETUP_GATHER",
                                     AgentData = "AgentData",
                                     PotPosition = "ResourcePosition",
-                                    GatherWaitData = "DoJobTimer"
+                                    GatherWaitData = "DoJobTimer",
+                                    ComponentData = "ComponentData"
                                 },
                                 {
                                     Name = "GoToGatherable",
@@ -170,12 +181,14 @@ EBF:registerBehaviorTree({
                                     Name = "ProduceResource",
                                     Type = "PRODUCE_RESOURCE",
                                     AgentData = "AgentData",
-                                    TimeToWait = "DoJobTimer"
+                                    TimeToWait = "DoJobTimer",
+                                    ResourceProducedList = "ProductionData"
                                 },
                                 {
                                     Name = "GatherResource",
                                     Type = "PLANTATION_GATHER",
-                                    AgentData = "AgentData"
+                                    AgentData = "AgentData",
+                                    ComponentData = "ComponentData"
                                 },
                                 {
                                     Name = "GoToWorkplaceFinGather",
@@ -203,7 +216,8 @@ EBF:registerBehaviorTree({
                                     Type = "PLANTATION_SETUP_PLANT",
                                     AgentData = "AgentData",
                                     PotPosition = "ResourcePosition",
-                                    PlantWaitData = "DoJobTimer"
+                                    PlantWaitData = "DoJobTimer",
+                                    ComponentData = "ComponentData"
                                 },
                                 {
                                     Name = "GoToPot",
@@ -230,7 +244,8 @@ EBF:registerBehaviorTree({
                                 {
                                     Name = "PlantPot",
                                     Type = "PLANTATION_PLANT",
-                                    AgentData = "AgentData"
+                                    AgentData = "AgentData",
+                                    ComponentData = "ComponentData"
                                 },
                                 {
                                     Name = "GoToWorkplaceFinPlant",
@@ -262,5 +277,5 @@ EBF:registerBehaviorTree({
                 }
             }
         }
-	}
+    }
 })

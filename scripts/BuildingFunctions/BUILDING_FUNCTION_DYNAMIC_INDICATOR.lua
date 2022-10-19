@@ -48,7 +48,7 @@ function BUILDING_FUNCTION_DYNAMIC_INDICATOR:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
     local compDynamicIndicator = gameObject:getOrCreateComponent("COMP_DYNAMIC_INDICATOR")
     compDynamicIndicator:setDynamicIndicatorData(self)
-    
+
     return true
 end
 
@@ -80,7 +80,7 @@ end
 
 function COMP_DYNAMIC_INDICATOR:createIndicatorGameObject(prefab, parent)
     local gameObject = self:getLevel():createObject(prefab, parent:getGlobalPosition(), parent:getGlobalOrientation())
-    
+
     if parent ~= nil then
         gameObject:setParent(parent, true)
     end
@@ -88,9 +88,9 @@ end
 
 function COMP_DYNAMIC_INDICATOR:setIndicator(prefab)
     if self.IsInitialised then
-        
-        
-        
+
+
+
         self.valueChanged = true
     end
 end

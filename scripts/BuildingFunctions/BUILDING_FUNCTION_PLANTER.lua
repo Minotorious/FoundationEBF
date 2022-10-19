@@ -28,7 +28,7 @@ function BUILDING_FUNCTION_PLANTER:activateBuilding(gameObject)
     local compPlanter = gameObject:getOrCreateComponent("COMP_PLANTER")
     compPlanter:setPlanterData(self)
     compPlanter:createPots(gameObject, self.PlantPositionNodeName)
-    
+
     return true
 end
 
@@ -182,21 +182,3 @@ function COMP_PLANTATION_PLANTABLE:onDestroy(isClearingLevel)
 end
 
 EBF:registerClass(COMP_PLANTATION_PLANTABLE)
-
-local COMP_SAVE_PLANTING_POT = {
-	TypeName = "COMP_SAVE_PLANTING_POT",
-	ParentType = "COMPONENT",
-	Properties = {
-        { Name = "PlantingPot", Type = "COMP_PLANTING_POT", Default = nil, Flags = { "SAVE_GAME" } }
-    }
-}
-
-function COMP_SAVE_PLANTING_POT:setPlantingPot(compPot)
-    self.PlantingPot = compPot
-end
-
-function COMP_SAVE_PLANTING_POT:getPlantingPot()
-    return self.PlantingPot
-end
-
-EBF:registerClass(COMP_SAVE_PLANTING_POT)

@@ -34,7 +34,7 @@ function BUILDING_FUNCTION_SIMPLE_DRAWBRIDGE:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
     local comp = gameObject:getOrCreateComponent("COMP_SIMPLE_DRAWBRIDGE")
     comp:setDrawbridgeData(self)
-    
+
     return true
 end
 
@@ -94,7 +94,7 @@ function COMP_SIMPLE_DRAWBRIDGE:setDrawbridgeData(buildingFunctionData)
     self.Chain2PivotNodeName =  buildingFunctionData.Chain2PivotNodeName
     self.ChainRotationSpeed =  buildingFunctionData.ChainRotationSpeed
     self.ChainEclipsePoint =  buildingFunctionData.ChainEclipsePoint
-    
+
     local i = 1
     self:getOwner():forEachChild(
         function(child)
@@ -112,18 +112,18 @@ function COMP_SIMPLE_DRAWBRIDGE:setDrawbridgeData(buildingFunctionData)
             end
         end
     )
-    
+
     self.DataDelivered = true
 end
 
 function COMP_SIMPLE_DRAWBRIDGE:chainClosingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.ChainRotationSpeed
-    
+
     if self.chainAngle < self.OpeningAngle*math.pi/360 then
         local Chain1PivotPoint = self.Chain1PivotNode.Position
         local Chain2PivotPoint = self.Chain2PivotNode.Position
-        
+
         self:getOwner():forEachChild(
             function(child)
                 if starts_with(child.Name, self.Chain1NodeName) then
@@ -137,7 +137,7 @@ function COMP_SIMPLE_DRAWBRIDGE:chainClosingSequence()
     else
         local Chain1PivotPoint = self.Chain1PivotNode.Position
         local Chain2PivotPoint = self.Chain2PivotNode.Position
-        
+
         --EBF:log("Chain Closing Correction")
         local diff = self.chainAngle - self.OpeningAngle*math.pi/360
         self:getOwner():forEachChild(
@@ -156,7 +156,7 @@ end
 function COMP_SIMPLE_DRAWBRIDGE:closingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.OpeningSpeed
-    
+
     if self.drawbridgeAngle < self.OpeningAngle*math.pi/180 then
         self:getOwner():forEachChild(
             function(child)
@@ -192,11 +192,11 @@ end
 function COMP_SIMPLE_DRAWBRIDGE:chainOpeningSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.ChainRotationSpeed
-    
+
     if self.chainAngle > 0 then
         local Chain1PivotPoint = self.Chain1PivotNode.Position
         local Chain2PivotPoint = self.Chain2PivotNode.Position
-        
+
         self:getOwner():forEachChild(
             function(child)
                 if starts_with(child.Name, self.Chain1NodeName) then
@@ -210,7 +210,7 @@ function COMP_SIMPLE_DRAWBRIDGE:chainOpeningSequence()
     else
         local Chain1PivotPoint = self.Chain1PivotNode.Position
         local Chain2PivotPoint = self.Chain2PivotNode.Position
-        
+
         --EBF:log("Chain Opening Correction")
         local diff = 0 - self.chainAngle
         self:getOwner():forEachChild(
@@ -229,7 +229,7 @@ end
 function COMP_SIMPLE_DRAWBRIDGE:openingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.OpeningSpeed
-    
+
     if self.drawbridgeAngle > 0 then
         self:getOwner():forEachChild(
             function(child)
@@ -282,17 +282,17 @@ function COMP_SIMPLE_DRAWBRIDGE:update()
         self:getLevel():getComponentManager("COMP_AGENT"):getAllComponent():forEach(
             function(agent)
                 local agentPos = agent:getOwner():getGlobalPosition()
-                
+
                 local distance1 = math.sqrt( (self.triggerPos1.x - agentPos.x)^2 + (self.triggerPos1.y - agentPos.y)^2 + (self.triggerPos1.z - agentPos.z)^2 )
                 local distance2 = math.sqrt( (self.triggerPos2.x - agentPos.x)^2 + (self.triggerPos2.y - agentPos.y)^2 + (self.triggerPos2.z - agentPos.z)^2 )
-                
+
                 if distance1 <= self.TriggeringDistance or distance2 <= self.TriggeringDistance then
                     self.timer = self.OpenHoldTime
                     self.sequence = 1
                 end
             end
         )
-        
+
         if self.sequence == 1 then
             self:openingSequence()
             self:chainOpeningSequence()

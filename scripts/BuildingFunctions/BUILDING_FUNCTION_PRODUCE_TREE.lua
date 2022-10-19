@@ -29,11 +29,11 @@ local BUILDING_FUNCTION_PRODUCE_TREE = {
 
 function BUILDING_FUNCTION_PRODUCE_TREE:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
-    
+
     local comp = gameObject:getOrCreateComponent("COMP_PRODUCE_TREE")
     comp:setProduceTreeData(self)
     comp:calculateNoSpawners()
-    
+
     return true
 end
 
@@ -105,9 +105,9 @@ function COMP_PRODUCE_TREE:raycast(pos)
     local FromPosition = { pos[1], pos[2]+100, pos[3] }
     local ToPosition = { pos[1], pos[2]-100, pos[3] }
     local flagTerrain = bit.bor(bit.lshift(1, OBJECT_FLAG.TERRAIN:toNumber()))
-    
+
     self:getLevel():rayCast(FromPosition, ToPosition, raycastResultTerrain, flagTerrain)
-    
+
     return raycastResultTerrain.Position.y
 end
 
@@ -175,7 +175,7 @@ function COMP_PRODUCE_TREE:setProduceTreeData(buildingFunctionProduceTree)
     self.ResourceContainerComponent = buildingFunctionProduceTree.ResourceContainerComponent
     self.ResourceContainersPerSpawner = buildingFunctionProduceTree.ResourceContainersPerSpawner
     self.ResourceContainerFallingSpeed = buildingFunctionProduceTree.ResourceContainerFallingSpeed
-    
+
     self.DataDelivered = true
 end
 
@@ -329,7 +329,7 @@ function COMP_PRODUCE_TREE:calculateNoSpawners()
                         break
                     end
                 end
-                
+
                 if partFound == false then
                     self.NoSpawners = self.NoSpawners + self.SpawnerIncrease
                     --EBF:log("PreEditedLocalPartList: " .. tostring(partList))

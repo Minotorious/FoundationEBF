@@ -14,8 +14,7 @@ local GROWING_STEP_LIST = {
     TypeName = "GROWING_STEP_LIST",
     Properties = {
         { Name = "Days", Type = "list<integer>", Default = {} },
-        { Name = "Steps", Type = "list<string>", Default = {} },
-        { Name = "GrowingSteps", Type = "list<GROWING_STEP>", Default = {} }
+        { Name = "Steps", Type = "list<string>", Default = {} }
     }
 }
 

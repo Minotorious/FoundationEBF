@@ -28,7 +28,7 @@ function BUILDING_FUNCTION_SINGLE_DOOR:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
     local comp = gameObject:getOrCreateComponent("COMP_SINGLE_DOOR")
     comp:setSingleDoorData(self)
-    
+
     return true
 end
 
@@ -72,7 +72,7 @@ function COMP_SINGLE_DOOR:setSingleDoorData(buildingFunctionData)
     self.TriggeringDistance = buildingFunctionData.TriggeringDistance
     self.DoorNodeName = buildingFunctionData.DoorNodeName
     self.DoorPivotPoint = buildingFunctionData.DoorPivotPoint
-    
+
     self:getOwner():forEachChild(
         function(child)
             if starts_with(child.Name, self.TriggerNodeName) then
@@ -80,14 +80,14 @@ function COMP_SINGLE_DOOR:setSingleDoorData(buildingFunctionData)
             end
         end
     )
-    
+
     self.DataDelivered = true
 end
 
 function COMP_SINGLE_DOOR:openingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.OpeningSpeed
-    
+
     if self.angle < self.OpeningAngle*math.pi/180 then
         self:getOwner():forEachChild(
             function(child)
@@ -114,7 +114,7 @@ end
 function COMP_SINGLE_DOOR:closingSequence()
     local dt = self:getLevel():getDeltaTime()
     local rotation = dt*self.OpeningSpeed
-    
+
     if self.angle > 0 then
         self:getOwner():forEachChild(
             function(child)
@@ -142,16 +142,16 @@ function COMP_SINGLE_DOOR:update()
         self:getLevel():getComponentManager("COMP_AGENT"):getAllComponent():forEach(
             function(agent)
                 local agentPos = agent:getOwner():getGlobalPosition()
-                
+
                 local distance = math.sqrt( (self.triggerPos.x - agentPos.x)^2 + (self.triggerPos.y - agentPos.y)^2 + (self.triggerPos.z - agentPos.z)^2 )
-                
+
                 if distance <= self.TriggeringDistance then
                     self.timer = self.OpenHoldTime
                     self.sequence = 1
                 end
             end
         )
-        
+
         if self.sequence == 1 then
             self:openingSequence()
         elseif self.sequence == 2 then

@@ -12,7 +12,7 @@ local EBF = ...
 
 local function registerDefaulDigit(digit)
     EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/Default" .. digit, "PREFAB_" .. string.upper(digit) .. "_DEFAULT")
-    EBF:registerAssetId("textures/Default" .. digit .. ".png", "DEFAULT_" .. string.upper(digit) .. "_TEXTURE")
+    EBF:registerAssetId("textures/numberDisplay/Default" .. digit .. ".png", "DEFAULT_" .. string.upper(digit) .. "_TEXTURE")
 
     EBF:registerAssetId("models/FoundationEBF.fbx/Materials/Material." .. digit, "MATERIAL_" .. string.upper(digit))
     EBF:overrideAsset({
@@ -142,13 +142,13 @@ end
 
 function COMP_NUMBER_DISPLAY:setNumberDisplayData(buildingFunctionData)
     for i, nodeName in ipairs(self.DigitNodeNames) do
-        self.DigitNodeNames[i]=nil 
+        self.DigitNodeNames[i]=nil
     end
-    
+
     for i, nodeName in ipairs(buildingFunctionData.DigitNodeNames) do
         table.insert(self.DigitNodeNames, nodeName)
     end
-    
+
     self.DecimalNodeName = buildingFunctionData.DecimalNodeName
     self.SignNodeName = buildingFunctionData.SignNodeName
     self.UnitNodeName = buildingFunctionData.UnitNodeName
@@ -166,7 +166,7 @@ function COMP_NUMBER_DISPLAY:setNumberDisplayData(buildingFunctionData)
     self.MinusPrefab = buildingFunctionData.MinusPrefab
     self.DecimalPrefab = buildingFunctionData.DecimalPrefab
     self.UnitPrefab = buildingFunctionData.UnitPrefab
-    
+
     self:initDisplay()
 end
 

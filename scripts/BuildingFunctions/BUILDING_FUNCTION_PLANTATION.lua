@@ -18,18 +18,19 @@ local BUILDING_FUNCTION_PLANTATION = {
         { Name = "PlantingDelay", Type = "float", Default = 30.0 },
         { Name = "GatheringDelay", Type = "float", Default = 30.0 },
         { Name = "GrowingStepList", Type = "GROWING_STEP_LIST", Default = nil }
+        --{ Name = "GrowingStepList", Type = "list<GROWING_STEP>", Default = nil }
     }
 }
 
 function BUILDING_FUNCTION_PLANTATION:activateBuilding(gameObject)
     --EBF:log("Building Function Activate Building")
-    
+
     local compWorkplace = gameObject:getOrCreateComponent("COMP_WORKPLACE")
     compWorkplace:setWorkplaceData(self)
-    
+
     local compPlantation = gameObject:getOrCreateComponent("COMP_PLANTATION")
     compPlantation:setPlantationData(self)
-    
+
     return true
 end
 
@@ -52,6 +53,7 @@ local COMP_PLANTATION = {
         { Name = "PlantingDelay", Type = "float", Default = 30.0 },
         { Name = "GatheringDelay", Type = "float", Default = 30.0 },
         { Name = "GrowingStepList", Type = "GROWING_STEP_LIST", Default = nil }
+        --{ Name = "GrowingStepList", Type = "list<GROWING_STEP>", Default = nil }
     }
 }
 
@@ -96,8 +98,16 @@ function COMP_PLANTATION:setPlantationData(buildingFunctionPlantation)
     self.PlantingDelay = buildingFunctionPlantation.PlantingDelay
     self.GatheringDelay = buildingFunctionPlantation.GatheringDelay
     self.TendingDelay = buildingFunctionPlantation.TendingDelay
-    self.GrowingStepList = buildingFunctionPlantation.GrowingStepList
-    
+
+    local GrowingStepList = foundation.createData(
+        {
+            DataType = "GROWING_STEP_LIST",
+            Days = buildingFunctionPlantation.GrowingStepList.Days,
+            Steps = buildingFunctionPlantation.GrowingStepList.Steps
+        }
+    )
+    self.GrowingStepList = GrowingStepList
+
     self.DataDelivered = true
 end
 

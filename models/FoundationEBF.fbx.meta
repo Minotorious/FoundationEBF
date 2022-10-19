@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<meta id="29bb3c7c-f208-4670-a273-cd0e318cef67">
+<meta id="636b60aa-1eff-4f28-a371-0e98435b72f9">
 	<meta id="84146db4-01cd-474f-ae55-4da683bd63d2" type="group" folder="true" name="Materials">
 		<meta id="7e723158-6d48-4381-944b-39e4cb7ef786" name="Material.Brown"/>
 		<meta id="7fb40cd8-2f5e-44c8-a956-80957bd771b0" name="Material.Red"/>
@@ -515,6 +515,8 @@
 			<meta id="ef848ff2-219f-4d63-bc2b-e9848e7891d1" name="Indicator.022"/>
 			<meta id="5d987792-72e5-4d7f-a0ff-9fc08e714e67" name="Indicator.023"/>
 			<meta id="280fcffe-26b3-4e30-9262-15493022e883" name="Indicator.024"/>
+			<meta id="480291fb-311b-42db-876a-a16063a4824c" name="IndicatorDisplay_0_LODA"/>
+			<meta id="69fa568e-f9cc-436f-a7bd-71c234c721e4" name="IndicatorDisplay_0_LODB"/>
 		</meta>
 		<meta id="2164b71c-67f2-4465-80ec-89daf2c357e2" name="UPSExample1Part">
 			<meta id="caf3bf62-8cba-468c-93bc-c7ac3af86cbd" name="Cube.028"/>
@@ -530,18 +532,20 @@
 		</meta>
 	</meta>
 	<meta id="00a967ef-b438-416c-86c0-d7a8e6507419" type="group" folder="true" name="LOD">
-		<meta id="587cc0ba-c293-4b84-9683-f10f25359375" name="IndicatorDisplay"/>
+		<meta id="267ace8d-6044-4ba5-ac03-f2d5f0c92fb6" name="IndicatorDisplay_0_LODA"/>
+		<meta id="420ee9cc-032c-4415-8979-e5295e0f491c" name="IndicatorDisplay_0_LODB"/>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
 	<Md5Checksum value="5573c94aaa3df723d7df8fbb0ddb6984"/>
-	<ModelVersion value="30"/>
+	<ModelVersion value="31"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
 	<ImportAnimation value="false"/>
 	<IgnoreRootAnimation value="false"/>
 	<FlipXAxis value="true"/>
+	<ZUpSource value="false"/>
 	<MergeDuplicateMeshes value="true"/>
 	<GenerateLod value="false"/>
 	<OverrideExistingLod value="false"/>
@@ -2122,6 +2126,16 @@
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
 						<NodeName value="Indicator.024"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="IndicatorDisplay_0_LODA"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="IndicatorDisplay_0_LODB"/>
 					</Item>
 				</ChildList>
 				<NodeName value="IndicatorDisplay"/>

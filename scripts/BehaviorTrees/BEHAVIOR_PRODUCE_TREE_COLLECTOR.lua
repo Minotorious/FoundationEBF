@@ -11,89 +11,89 @@ local EBF = ...
 --[[------------------------------ BEHAVIOR TREE ------------------------------]]--
 
 EBF:registerBehaviorTree({
-	Id = "BEHAVIOR_PRODUCE_TREE_COLLECTOR",
-	VariableList = {
-		{
-			Name = "AgentData",
-			DataType = "BEHAVIOR_TREE_DATA_AGENT",
-			IsPublic = true,
-			InitialValue = {}
-		},
+    Id = "BEHAVIOR_PRODUCE_TREE_COLLECTOR",
+    VariableList = {
         {
-			Name = "GatheringData",
-			DataType = "BEHAVIOR_TREE_DATA_GATHERING",
-			IsPublic = false,
-			InitialValue = {}
-		},
-		{
-			Name = "DoJobTimer",
-			DataType = "BEHAVIOR_TREE_DATA_WAIT",
-			IsPublic = false,
-			InitialValue = {
-				TimeToWait = 0,
-				Animation = AGENT_ANIMATION.GATHER,
-				SetIdleAfterWait = false
-			}
-		},
-		{
-			Name = "WorkplacePosition",
-			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
-			IsPublic = false,
-			InitialValue = {
-				CanNavigateOnGround = true,
-				CanNavigateOnWater = false,
-				IsSetOrientationOnDestination = true
-			}
-		},
+            Name = "AgentData",
+            DataType = "BEHAVIOR_TREE_DATA_AGENT",
+            IsPublic = true,
+            InitialValue = {}
+        },
         {
-			Name = "ResourcePosition",
-			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
-			IsPublic = false,
-			InitialValue = {
-				CanNavigateOnGround = true,
-				CanNavigateOnWater = false,
-				IsSetOrientationOnDestination = true
-			}
-		},
+            Name = "GatheringData",
+            DataType = "BEHAVIOR_TREE_DATA_GATHERING",
+            IsPublic = false,
+            InitialValue = {}
+        },
         {
-			Name = "AroundResourcePosition",
-			DataType = "BEHAVIOR_TREE_DATA_LOCATION",
-			IsPublic = false,
-			InitialValue = {
-				CanNavigateOnGround = true,
-				CanNavigateOnWater = false,
-				IsSetOrientationOnDestination = true
-			}
-		},
+            Name = "DoJobTimer",
+            DataType = "BEHAVIOR_TREE_DATA_WAIT",
+            IsPublic = false,
+            InitialValue = {
+                TimeToWait = 0,
+                Animation = AGENT_ANIMATION.GATHER,
+                SetIdleAfterWait = false
+            }
+        },
         {
-			Name = "ShouldLookAtResourcePosition",
-			DataType = "BEHAVIOR_TREE_DATA_BOOL",
-			IsPublic = false,
-			InitialValue = {
-				Value = true
-			}
-		},
+            Name = "WorkplacePosition",
+            DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+            IsPublic = false,
+            InitialValue = {
+                CanNavigateOnGround = true,
+                CanNavigateOnWater = false,
+                IsSetOrientationOnDestination = true
+            }
+        },
         {
-			Name = "ShouldReceiveXp",
-			DataType = "BEHAVIOR_TREE_DATA_BOOL",
-			IsPublic = false,
-			InitialValue = {
-				Value = false
-			}
-		},
-		{
-			Name = "WorkLoop",
-			DataType = "BEHAVIOR_TREE_DATA_LOOP",
-			IsPublic = true,
-			InitialValue = {
-				LoopCount = 1,
-				Duration = 0,
-				IsInfinite = false,
-				IsDuration = false
-			}
-		}
-	},
-	Root = {
+            Name = "ResourcePosition",
+            DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+            IsPublic = false,
+            InitialValue = {
+                CanNavigateOnGround = true,
+                CanNavigateOnWater = false,
+                IsSetOrientationOnDestination = true
+            }
+        },
+        {
+            Name = "AroundResourcePosition",
+            DataType = "BEHAVIOR_TREE_DATA_LOCATION",
+            IsPublic = false,
+            InitialValue = {
+                CanNavigateOnGround = true,
+                CanNavigateOnWater = false,
+                IsSetOrientationOnDestination = true
+            }
+        },
+        {
+            Name = "ShouldLookAtResourcePosition",
+            DataType = "BEHAVIOR_TREE_DATA_BOOL",
+            IsPublic = false,
+            InitialValue = {
+                Value = true
+            }
+        },
+        {
+            Name = "ShouldReceiveXp",
+            DataType = "BEHAVIOR_TREE_DATA_BOOL",
+            IsPublic = false,
+            InitialValue = {
+                Value = false
+            }
+        },
+        {
+            Name = "WorkLoop",
+            DataType = "BEHAVIOR_TREE_DATA_LOOP",
+            IsPublic = true,
+            InitialValue = {
+                LoopCount = 1,
+                Duration = 0,
+                IsInfinite = false,
+                IsDuration = false
+            }
+        }
+    },
+    Root = {
         Name = "WorkLoopRepeater",
         Type = "REPEAT",
         RepeatData = "WorkLoop",
@@ -202,5 +202,5 @@ EBF:registerBehaviorTree({
                 }
             }
         }
-	}
+    }
 })

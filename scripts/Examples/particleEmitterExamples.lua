@@ -87,46 +87,46 @@ EBF:registerPrefabComponent("models/FoundationEBF.fbx/Prefab/DeactivatedParticle
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "ACTIVATED_PARTICLE_EMITTER_PART",
+    DataType = "BUILDING_PART",
+    Id = "ACTIVATED_PARTICLE_EMITTER_PART",
     Name = "ACTIVATED_PARTICLE_EMITTER_PART_NAME",
-	Description = "ACTIVATED_PARTICLE_EMITTER_PART_DESC",
+    Description = "ACTIVATED_PARTICLE_EMITTER_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_ACTIVATED_PARTICLE_EMITTER_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_ACTIVATED_PARTICLE_EMITTER_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 1, 1 }, { 0, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_ACTIVATED_PARTICLE_EMITTER_EXAMPLE"
 })
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "DEACTIVATED_PARTICLE_EMITTER_PART",
+    DataType = "BUILDING_PART",
+    Id = "DEACTIVATED_PARTICLE_EMITTER_PART",
     Name = "DEACTIVATED_PARTICLE_EMITTER_PART_NAME",
-	Description = "DEACTIVATED_PARTICLE_EMITTER_PART_DESC",
+    Description = "DEACTIVATED_PARTICLE_EMITTER_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_DEACTIVATED_PARTICLE_EMITTER_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_DEACTIVATED_PARTICLE_EMITTER_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 2, 1 }, { 3, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			},
+            },
             {
                 Polygon = polygon.createRectangle( { 2, 1 }, { -3, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false }
-			}
+            }
         }
     },
     AssetBuildingFunction = "BUILDING_FUNCTION_DEACTIVATED_PARTICLE_EMITTER_EXAMPLE"

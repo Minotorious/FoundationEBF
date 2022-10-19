@@ -24,9 +24,9 @@ EBF:registerAssetId("models/FoundationEBF.fbx/Prefab/RectangularConfinedAgent", 
  ]]--
 
 local COMP_RECTANGULAR_ENFORCER = {
-	TypeName = "COMP_RECTANGULAR_ENFORCER",
-	ParentType = "COMPONENT",
-	Properties = {
+    TypeName = "COMP_RECTANGULAR_ENFORCER",
+    ParentType = "COMPONENT",
+    Properties = {
         { Name = "HasAgents", Type = "boolean", Default = false, Flags = { "SAVE_GAME" } },
         { Name = "Agents", Type = "list<GAME_OBJECT>", Default = {}, Flags = { "SAVE_GAME" } }
     }
@@ -87,21 +87,21 @@ EBF:registerPrefabComponent(
 --[[------------------------ BUILDINGS & BUILDING PARTS -----------------------]]--
 
 EBF:registerAsset({
-	DataType = "BUILDING_PART",
-	Id = "RECTANGULAR_ENFORCER_PART",
+    DataType = "BUILDING_PART",
+    Id = "RECTANGULAR_ENFORCER_PART",
     Name = "RECTANGULAR_ENFORCER_PART_NAME",
-	Description = "RECTANGULAR_ENFORCER_PART_DESC",
+    Description = "RECTANGULAR_ENFORCER_PART_DESC",
     Category = "CORE",
-	ConstructorData = {
-		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-		CoreObjectPrefab = "PREFAB_RECTANGULAR_ENFORCER_PART"
-	},
-	BuildingZone = {
-		ZoneEntryList = {
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_RECTANGULAR_ENFORCER_PART"
+    },
+    BuildingZone = {
+        ZoneEntryList = {
             {
                 Polygon = polygon.createRectangle( { 2, 2 }, { 0, 0 } ),
                 Type = { DEFAULT = true, NAVIGABLE = false, GRASS_CLEAR = true  }
-			}
+            }
         }
     },
     IsVisibleWhenBuilt = true

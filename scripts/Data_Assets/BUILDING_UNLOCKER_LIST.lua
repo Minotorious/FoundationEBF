@@ -2,17 +2,27 @@
 | ||\\    //||       /|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\ |
 | || \\  // ||  (o_ / |                  SUPPLEMENTARY FILE                  | |
 | ||  \\//  ||  //\/  |                         ----                         | |
-| ||   \/   ||  V_/_  |                 REGISTER COMPONENTS                  | |
+| ||   \/   ||  V_/_  |                BUILDING UNLOCKER LIST                | |
 | ||        ||        |‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗/ |
 \---------------------------------------------------------------------------]]--
 
 local EBF = ...
 
---[[-------------------------------- DO FILES ---------------------------------]]--
+--[[--------------------------------- ASSETS ----------------------------------]]--
 
-EBF:dofile("scripts/Components/COMP_ENFORCE_RADIUS.lua")
-EBF:dofile("scripts/Components/COMP_ENFORCE_RECTANGLE.lua")
-EBF:dofile("scripts/Components/COMP_SUN_CONTROLLER.lua")
-EBF:dofile("scripts/Components/COMP_COLLIDER_GROUNDED_PARTS.lua")
-EBF:dofile("scripts/Components/COMP_UNIFIED_PREFAB_SPAWNER.lua")
-EBF:dofile("scripts/Components/COMP_BUILDING_UNLOCKER.lua")
+local BUILDING_UNLOCKER_LIST = {
+    TypeName = "BUILDING_UNLOCKER_LIST",
+    ParentType = "ASSET",
+    Properties = {
+        { Name = "Buildings", Type = "list<BUILDING>", Default = {} }
+    }
+}
+
+EBF:registerClass(BUILDING_UNLOCKER_LIST)
+
+--[[----------------------------- DEFAULT ASSET -------------------------------]]--
+
+EBF:registerAsset({
+    DataType = "BUILDING_UNLOCKER_LIST",
+    Id = "BUILDING_UNLOCKER_LIST_DEFAULT"
+})

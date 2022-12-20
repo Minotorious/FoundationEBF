@@ -18,9 +18,9 @@ EBF:registerBehaviorTreeNode({
     },
 
     Update = function(self, level, instance)
-        local rand = math.random() * 100
+        local rand = math.random()
 
-        local probability = nil 
+        local probability = nil
         probability = self.Probability
 
         if rand <= probability then

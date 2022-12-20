@@ -27,7 +27,7 @@ local UPS_MANDATE_TYPE = {
     }
 }
 
-function UPS_MANDATE_TYPE:updatePossibleMandateList(inOutMandateList, mandateOffice)
+function UPS_MANDATE_TYPE:updatePossibleMandateList(outMandateList, mandateOffice)
     --EBF:log("Generating Mandate List")
     local UPSComponent = mandateOffice:getLevel():find("COMP_UNIFIED_PREFAB_SPAWNER")
 
@@ -62,7 +62,25 @@ function UPS_MANDATE_TYPE:updatePossibleMandateList(inOutMandateList, mandateOff
         newInstance.UPSComponent = self.UPSComponent
         newInstance.Duration = self.DurationInSec
 
-        table.insert(inOutMandateList, newInstance)
+        table.insert(outMandateList, newInstance)
+    end
+
+    for i, entry in pairs(outMandateList) do
+        EBF:log(tostring(entry))
+        if entry:is("UPS_MANDATE_INSTANCE") then
+            EBF:log("Found UPS Mandate with ObjectID: " .. entry.UPSObjectId .. ", at position: " .. tostring(i))
+            for j, entryj in pairs(outMandateList) do
+                if j > i then
+                    if entryj:is("UPS_MANDATE_INSTANCE") then
+                        EBF:log("Found Duplicate UPS Mandate with ObjectID: " .. entryj.UPSObjectId .. ", at position: " .. tostring(j))
+                        if entry.UPSObjectId == entryj.UPSObjectId then
+                            EBF:log("Nullifying Duplicate")
+                            outMandateList[j] = nil
+                        end
+                    end
+                end
+            end
+        end
     end
 end
 

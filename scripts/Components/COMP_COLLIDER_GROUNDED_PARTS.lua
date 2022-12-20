@@ -61,7 +61,7 @@ function COMP_COLLIDER_GROUNDED_PARTS:onEnabled()
             end
         end
     end
-)
+    )
 end
 
 EBF:registerClass(COMP_COLLIDER_GROUNDED_PARTS)
